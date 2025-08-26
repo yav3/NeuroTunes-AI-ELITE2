@@ -1,0 +1,14 @@
+# mirror dockerignore essentials
+.git
+node_modules
+dist/**
+.vscode
+*.log
+# music_library/**  # COMMENTED OUT - music library required for full functionality
+assets/audio/**
+attached_assets/**
+uploads/**
+logs/**
+scripts/**
+*.zip
+*.backup
