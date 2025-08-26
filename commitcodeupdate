@@ -1,0 +1,94 @@
+You’re passing the URL string into fetch’s method field. The browser is literally trying to use "/api/tracks/6119/favorite" as the HTTP verb, hence: “not a valid HTTP method.”
+
+Quick fix (frontend)
+
+Replace any code like this:
+
+// ❌ wrong
+const method = `/api/tracks/${id}/favorite`;
+await fetch(method, { method }); // method is a URL string here
+
+
+with:
+
+// ✅ correct
+export async function toggleFavorite(id: number, isCurrentlyFavorite: boolean) {
+  const url = `/api/tracks/${id}/favorite`;
+  const res = await fetch(url, {
+    method: isCurrentlyFavorite ? 'DELETE' : 'POST', // or 'PATCH'
+    headers: { 'Content-Type': 'application/json' },
+    credentials: 'include',
+  });
+  if (!res.ok) throw new Error(`Favorite toggle failed: ${res.status}`);
+  return res.json(); // expect { id, favorite: boolean } or similar
+}
+
+
+Call site example with optimistic UI:
+
+const onToggle = async () => {
+  try {
+    setFavorite((prev) => !prev);                 // optimistic
+    await toggleFavorite(track.id, favorite);     // uses previous state
+  } catch (e) {
+    setFavorite((prev) => !prev);                 // revert on failure
+    console.error(e);
+  }
+};
+
+
+If you’re using a wrapper like api(url, method, body), double-check you didn’t swap params or reuse a variable named method for the URL.
+
+Backend (Express) routes that match
+
+Use RESTful verbs so the client logic above works:
+
+import { Router } from 'express';
+const router = Router();
+
+// Mark favorite
+router.post('/tracks/:id/favorite', async (req, res) => {
+  const id = Number(req.params.id);
+  // TODO: use req.user.id for per-user favorites
+  await db.favoriteAdd({ userId: req.user.id, trackId: id });
+  res.json({ id, favorite: true });
+});
+
+// Unfavorite
+router.delete('/tracks/:id/favorite', async (req, res) => {
+  const id = Number(req.params.id);
+  await db.favoriteRemove({ userId: req.user.id, trackId: id });
+  res.json({ id, favorite: false });
+});
+
+export default router;
+
+
+If your API instead expects a PATCH:
+
+// client
+await fetch(`/api/tracks/${id}`, {
+  method: 'PATCH',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ favorite: !isCurrentlyFavorite }),
+});
+
+// server
+router.patch('/tracks/:id', async (req, res) => {
+  const id = Number(req.params.id);
+  const { favorite } = req.body;
+  await db.tracks.updateFavorite({ userId: req.user.id, trackId: id, favorite });
+  res.json({ id, favorite });
+});
+
+Sanity checks
+
+Ensure method is one of: GET|POST|PUT|PATCH|DELETE|HEAD|OPTIONS (uppercase).
+
+Don’t reuse a variable called method for the URL.
+
+If you use cookies/session auth, keep credentials: 'include'.
+
+Return JSON so the caller can reconcile state.
+
+Make that change and the favorite toggle should stop throwing. If you paste your current toggle function, I’ll patch it line-by-line.
