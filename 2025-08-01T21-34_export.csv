@@ -1,0 +1,11 @@
+﻿,Title,Source,Sentiment_Label,Polarity,Confidence,Financial_Impact
+0,Trump moves nuclear submarines after Russian ex-president's comments...,BBC,Very Positive,0.5,0.5,25.00%
+1,Confusion and anger in Switzerland - hit by highest tariffs in Europe...,BBC,Positive,0.25,0.5,12.50%
+2,Putin not swayed by Trump's Ukraine war ultimatum...,BBC,Negative,-0.12962962962962962,0.7222222222222222,-9.36%
+3,Trump envoy visits controversial Gaza aid distribution site...,BBC,Neutral,-0.03333333333333333,0.7333333333333334,-2.44%
+4,France suspends Gaza evacuations after student antisemitism row...,BBC,Neutral,0,1,0.00%
+5,Budapest mayor questioned by police over banned pride march...,BBC,Very Positive,0.5,0.4,20.00%
+6,Italy plan to process migrants in Albania dealt blow by EU court...,BBC,Very Positive,0.5,0.5,25.00%
+7,Zoo worker killed by leopard in Jerusalem...,BBC,Neutral,0,1,0.00%
+8,Ghislaine Maxwell moved to women's prison in Texas...,BBC,Very Positive,0.5,0.5,25.00%
+9,Rhino horns turned radioactive to fight poachers in South Africa...,BBC,Very Positive,0.5,0.09999999999999998,5.00%
