@@ -1,0 +1,77 @@
+# Development dependencies and files
+node_modules
+.git
+.gitignore
+.env
+.env.*
+
+# Large media directories
+music_library/
+attached_assets/
+uploads/
+
+# Development and build artifacts
+dist/
+dist-*/
+build/
+logs/
+.cache/
+.config/
+
+# Broken symlinks prevention  
+**/*-runtime
+**/pulse/
+
+# Development scripts and configs
+scripts/
+*.log
+*.test.*
+test*
+spec*
+.eslint*
+.prettier*
+jest.config.*
+vitest.config.*
+
+# Documentation and development files
+README.md
+ARCHITECTURE.md
+DEPLOYMENT*.md
+*.zip
+*.backup
+*.restored.*
+
+# TypeScript compilation
+tsconfig.json
+*.d.ts
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python development files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pyproject.toml
+uv.lock
+
+# Package management
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Replit specific development files
+.replit
+.replit.*
+.replitbuild

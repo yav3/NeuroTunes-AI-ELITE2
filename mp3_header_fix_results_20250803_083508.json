@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-08-03T08:35:08.245779",
+  "total_processed": 10,
+  "successfully_fixed": 0,
+  "results": [
+    {
+      "success": false,
+      "file_path": "118_pop_edm_funk_re-energize_remix_1.mp3",
+      "error": "[mp3 @ 0x20b0800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0x20b0700] Error opening input: Invalid argument\nError opening input file /tmp/tmp093wh5_c/input_118_pop_edm_funk_re-energize_remix_1.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 8,
+      "title": "Contemplations of the Universe #1"
+    },
+    {
+      "success": false,
+      "file_path": "118_rock_funk_1970s_remix_focus.mp3",
+      "error": "[mp3 @ 0x746800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0x746700] Error opening input: Invalid argument\nError opening input file /tmp/tmp31m7ragg/input_118_rock_funk_1970s_remix_focus.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 9,
+      "title": "Contemplations of the Universe #2"
+    },
+    {
+      "success": false,
+      "file_path": "2025-06-05_18_03_46_remix_1.mp3",
+      "error": "[mp3 @ 0x2312800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0x2312700] Error opening input: Invalid argument\nError opening input file /tmp/tmph6rf8u1b/input_2025-06-05_18_03_46_remix_1.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 11,
+      "title": "Contemplations of the Universe #4"
+    },
+    {
+      "success": false,
+      "file_path": "2025-06-05_18_03_46_remix_2.mp3",
+      "error": "[mp3 @ 0xdee800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0xdee700] Error opening input: Invalid argument\nError opening input file /tmp/tmpa230b_jn/input_2025-06-05_18_03_46_remix_2.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 12,
+      "title": "Contemplations of the Universe #5"
+    },
+    {
+      "success": false,
+      "file_path": "2025-06-05_18_03_46_remix_3.mp3",
+      "error": "[mp3 @ 0x5ae800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0x5ae700] Error opening input: Invalid argument\nError opening input file /tmp/tmp8i39oxou/input_2025-06-05_18_03_46_remix_3.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 13,
+      "title": "Contemplations of the Universe #6"
+    },
+    {
+      "success": false,
+      "file_path": "23.3s_recording_may_28_12_23_pm_1.mp3",
+      "error": "[mp3 @ 0xb02800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0xb02700] Error opening input: Invalid argument\nError opening input file /tmp/tmpn711yo4d/input_23.3s_recording_may_28_12_23_pm_1.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 15,
+      "title": "Contemplations of the Universe #8"
+    },
+    {
+      "success": false,
+      "file_path": "23.3s_recording_may_28_12_23_pm.mp3",
+      "error": "[mp3 @ 0xce5800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0xce5700] Error opening input: Invalid argument\nError opening input file /tmp/tmp3vtnr3xh/input_23.3s_recording_may_28_12_23_pm.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 16,
+      "title": "Contemplations of the Universe #9"
+    },
+    {
+      "success": false,
+      "file_path": "2_mixolydian_funk_re-energize_depression_remix.mp3",
+      "error": "[mp3 @ 0x1fbc800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0x1fbc700] Error opening input: Invalid argument\nError opening input file /tmp/tmp2muhz_ur/input_2_mixolydian_funk_re-energize_depression_remix.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 17,
+      "title": "Contemplations of the Universe #10"
+    },
+    {
+      "success": false,
+      "file_path": "3_way_tie_rock_instrumental_1970s_re-energize_remix_1.mp3",
+      "error": "[mp3 @ 0xa8f800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0xa8f700] Error opening input: Invalid argument\nError opening input file /tmp/tmp5vs54880/input_3_way_tie_rock_instrumental_1970s_re-energize_remix_1.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 18,
+      "title": "Contemplations of the Universe #11"
+    },
+    {
+      "success": false,
+      "file_path": "5_spot_9_pm_classic_rock_re-energize_focus.mp3",
+      "error": "[mp3 @ 0x1c2e800] Failed to read frame size: Could not seek to 1092.\n[in#0 @ 0x1c2e700] Error opening input: Invalid argument\nError opening input file /tmp/tmpj2ibabrx/input_5_spot_9_pm_classic_rock_re-energize_focus.mp3.\nError opening input files: Invalid argument\n",
+      "track_id": 20,
+      "title": "Contemplations of the Universe #13"
+    }
+  ]
+}

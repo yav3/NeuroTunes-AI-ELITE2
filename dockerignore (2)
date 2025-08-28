@@ -1,0 +1,25 @@
+# OPTIMIZED BUILD CONTEXT EXCLUSION FOR DEPLOYMENT
+.git
+**/*.log
+node_modules
+.pnpm-store
+.npm
+.cache
+.vite
+coverage
+tmp
+**/*.mp3
+**/*.wav
+**/*.flac
+music_library/
+uploads/
+logs/
+**/*.zip
+**/*.tar
+**/*.tgz
+tests/
+.env*
+replit*
+.local
+.DS_Store
+attached_assets/

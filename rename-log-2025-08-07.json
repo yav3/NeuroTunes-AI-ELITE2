@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-08-07T15:33:55.983Z",
+  "mode": "DRY_RUN",
+  "stats": {
+    "total": 0,
+    "renamed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "dbUpdated": 0,
+    "dbFailed": 0
+  },
+  "operations": []
+}

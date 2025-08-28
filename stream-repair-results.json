@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-08-02T22:52:59.424Z",
+  "total_failed": 4,
+  "failures": [
+    {
+      "id": 2109,
+      "title": "phyrgian-summer.-58-bpm.-sleep.",
+      "file_path": "https://pbtgvcjniayedqlajjzz.supabase.co/storage/v1/object/public/neuralpositivemusic/phyrgian-summer.-58-bpm.-sleep..mp3",
+      "status_code": 400,
+      "error_reason": "Needs normalization",
+      "suggested_fix": "httpspbtgvcjniayedqlajjzz.supabase.costoragev1objectpublicneuralpositivemusicphyrgian-summer.-58-bpm.-sleep..mp3"
+    },
+    {
+      "id": 2252,
+      "title": "relaxing_wave",
+      "file_path": "https://pbtgvcjniayedqlajjzz.supabase.co/storage/v1/object/public/neuralpositivemusic/relaxing_wave.mp3",
+      "status_code": 400,
+      "error_reason": "Needs normalization",
+      "suggested_fix": "httpspbtgvcjniayedqlajjzz.supabase.costoragev1objectpublicneuralpositivemusicrelaxing_wave.mp3"
+    },
+    {
+      "id": 2390,
+      "title": "Samba Neruda 2",
+      "file_path": "https://pbtgvcjniayedqlajjzz.supabase.co/storage/v1/object/public/neuralpositivemusic/Samba%20Neruda%202.mp3",
+      "status_code": 400,
+      "error_reason": "Needs normalization",
+      "suggested_fix": "httpspbtgvcjniayedqlajjzz.supabase.costoragev1objectpublicneuralpositivemusicsamba20neruda202.mp3"
+    },
+    {
+      "id": 2442,
+      "title": "sample-therapeutic",
+      "file_path": "https://pbtgvcjniayedqlajjzz.supabase.co/storage/v1/object/public/neuralpositivemusic/sample-therapeutic.mp3",
+      "status_code": 400,
+      "error_reason": "Needs normalization",
+      "suggested_fix": "httpspbtgvcjniayedqlajjzz.supabase.costoragev1objectpublicneuralpositivemusicsample-therapeutic.mp3"
+    }
+  ],
+  "repair_results": {
+    "repaired": 0,
+    "still_broken": 4,
+    "success_rate": "0.0%"
+  }
+}

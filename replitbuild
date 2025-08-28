@@ -1,0 +1,4 @@
+#!/bin/bash
+# Replit deployment build script
+echo "Starting deployment build process..."
+node build.js

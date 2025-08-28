@@ -1,0 +1,4863 @@
+{
+  "created_date": "2025-08-09T02:08:16.543858",
+  "total_files": 326,
+  "files_with_analysis": 48,
+  "library_contents": [
+    {
+      "filename": "118;  Pop, EDM, Funk; Re-Energize (Remix) (1)_1751966154213.mp3",
+      "path": "music_library/118;  Pop, EDM, Funk; Re-Energize (Remix) (1)_1751966154213.mp3",
+      "size": 3423720,
+      "has_analysis": false
+    },
+    {
+      "filename": "1601; Bluegrass; Classical; Sleep_1751966154213.mp3",
+      "path": "music_library/1601; Bluegrass; Classical; Sleep_1751966154213.mp3",
+      "size": 5354492,
+      "has_analysis": false
+    },
+    {
+      "filename": "2 Mixolydian; Funk; Re-Energize, Depression (Remix)_1752343806749.mp3",
+      "path": "music_library/2 Mixolydian; Funk; Re-Energize, Depression (Remix)_1752343806749.mp3",
+      "size": 4745357,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "2 Mixolydian; Funk; Re-Energize, Depression (Remix)_1752343806749.mp3",
+        "metadata": {
+          "filename": "2 Mixolydian; Funk; Re-Energize, Depression (Remix)_1752343806749.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "funk",
+            "modal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "energy",
+            "depression_support"
+          ],
+          "characteristics": [
+            "remix"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.755712"
+        },
+        "vad_metrics": {
+          "valence": 0.76,
+          "energy_arousal": 1.0,
+          "dominance": 0.88,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "groove_therapy",
+          "motivation",
+          "exercise",
+          "depression_treatment",
+          "leadership_training",
+          "mood_enhancement",
+          "rhythm_training",
+          "mood_stabilization",
+          "assertiveness",
+          "celebration",
+          "motor_coordination",
+          "energy_boost",
+          "emotional_support",
+          "embodiment",
+          "activation",
+          "depression_therapy",
+          "empowerment",
+          "confidence_building",
+          "joy_cultivation"
+        ],
+        "spectral_properties": {
+          "rhythmic_complexity": "syncopated with groove emphasis",
+          "bass_prominence": "strong fundamental frequencies 40-200 Hz",
+          "percussive_elements": "sharp transients and rhythmic punctuation",
+          "harmonic_rhythm": "chord changes aligned with groove",
+          "frequency_emphasis": "mid-range presence for alertness",
+          "dynamic_contrast": "pronounced peaks for stimulation",
+          "rhythmic_drive": "propulsive elements for motivation"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.755745"
+      }
+    },
+    {
+      "filename": "3 way tie; Rock, instrumental, 1970s, Re-Energize (Remix) (1)_1751965370364.mp3",
+      "path": "music_library/3 way tie; Rock, instrumental, 1970s, Re-Energize (Remix) (1)_1751965370364.mp3",
+      "size": 4828799,
+      "has_analysis": false
+    },
+    {
+      "filename": "Ace; Indie Pop; Focus (Remix)_1751909985809.mp3",
+      "path": "music_library/Ace; Indie Pop; Focus (Remix)_1751909985809.mp3",
+      "size": 5271640,
+      "has_analysis": false
+    },
+    {
+      "filename": "A dance of the court; Renassaince, Clavier; (Remastered) (Remix); Sleep 60 BPM (1)_1751966154213.mp3",
+      "path": "music_library/A dance of the court; Renassaince, Clavier; (Remastered) (Remix); Sleep 60 BPM (1)_1751966154213.mp3",
+      "size": 3066926,
+      "has_analysis": false
+    },
+    {
+      "filename": "Adoration; EDM - classical reimagined; HIIT_1751993688198.mp3",
+      "path": "music_library/Adoration; EDM - classical reimagined; HIIT_1751993688198.mp3",
+      "size": 5070326,
+      "has_analysis": false
+    },
+    {
+      "filename": "Adoration; EDM - classical reimagined; HIIT (2)_1751966154213.mp3",
+      "path": "music_library/Adoration; EDM - classical reimagined; HIIT (2)_1751966154213.mp3",
+      "size": 5070326,
+      "has_analysis": false
+    },
+    {
+      "filename": "\u201cA Dream\u201d; for my father, from the poetry of William Blake; Jazz-Boss Nova-Classical; Duet; Sleep_1751965370364.mp3",
+      "path": "music_library/\u201cA Dream\u201d; for my father, from the poetry of William Blake; Jazz-Boss Nova-Classical; Duet; Sleep_1751965370364.mp3",
+      "size": 3953133,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Duet for Bluegrass; Bluegrass, Classical, Instrumental; Relaxation_1751966154213.mp3",
+      "path": "music_library/A Duet for Bluegrass; Bluegrass, Classical, Instrumental; Relaxation_1751966154213.mp3",
+      "size": 4660354,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Duet for Strings; Bluegrass - Big Band, Instrumental; Re-Energize (Remix)_1751993916058.mp3",
+      "path": "music_library/A Duet for Strings; Bluegrass - Big Band, Instrumental; Re-Energize (Remix)_1751993916058.mp3",
+      "size": 2622933,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Duet for Strings; Bluegrass, Instrumental; Relaxation (Remix)_1752343806749.mp3",
+      "path": "music_library/A Duet for Strings; Bluegrass, Instrumental; Relaxation (Remix)_1752343806749.mp3",
+      "size": 4381881,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "A Duet for Strings; Bluegrass, Instrumental; Relaxation (Remix)_1752343806749.mp3",
+        "metadata": {
+          "filename": "A Duet for Strings; Bluegrass, Instrumental; Relaxation (Remix)_1752343806749.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "bluegrass",
+            "instrumental",
+            "duet"
+          ],
+          "instruments": [
+            "voice",
+            "strings",
+            "instrumental"
+          ],
+          "purposes": [
+            "relaxation"
+          ],
+          "characteristics": [
+            "remix"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.757514"
+        },
+        "vad_metrics": {
+          "valence": 0.77,
+          "energy_arousal": 0.33,
+          "dominance": 0.46,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Gentle uplifting positivity"
+        },
+        "therapeutic_applications": [
+          "gentle_relaxation",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "joy_cultivation",
+          "meditation",
+          "celebration",
+          "mindfulness"
+        ],
+        "spectral_properties": {
+          "frequency_range": "55-4000 Hz fundamental range",
+          "spectral_character": "smooth harmonic progression with bow resonance",
+          "emotional_expressivity": "very high",
+          "harmonic_complexity": "moderate to high with vibrato",
+          "attack_characteristics": "smooth onset with breath dynamics",
+          "vibrato_characteristics": "natural pitch and amplitude modulation",
+          "ensemble_blend": "harmonic reinforcement and beating"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.757542"
+      }
+    },
+    {
+      "filename": "A Duet for Strings; Bluegrass, Instrumental; REMIX,  Relaxation.  (3)_1751993916059.mp3",
+      "path": "music_library/A Duet for Strings; Bluegrass, Instrumental; REMIX,  Relaxation.  (3)_1751993916059.mp3",
+      "size": 4813739,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Duet for Strings in NY; Jazz, Bluegrass, Instrumental; Relaxation (Remix) (1)_1751966154213.mp3",
+      "path": "music_library/A Duet for Strings in NY; Jazz, Bluegrass, Instrumental; Relaxation (Remix) (1)_1751966154213.mp3",
+      "size": 5317463,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Duet with Bluegrass and Jazz; Jazz; Relaxation (1)_1752343806749.mp3",
+      "path": "music_library/A Duet with Bluegrass and Jazz; Jazz; Relaxation (1)_1752343806749.mp3",
+      "size": 4692888,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "A Duet with Bluegrass and Jazz; Jazz; Relaxation (1)_1752343806749.mp3",
+        "metadata": {
+          "filename": "A Duet with Bluegrass and Jazz; Jazz; Relaxation (1)_1752343806749.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "jazz",
+            "bluegrass",
+            "duet"
+          ],
+          "instruments": [
+            "voice"
+          ],
+          "purposes": [
+            "relaxation"
+          ],
+          "characteristics": [],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 1,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.759199"
+        },
+        "vad_metrics": {
+          "valence": 0.77,
+          "energy_arousal": 0.28,
+          "dominance": 0.54,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Gentle uplifting positivity"
+        },
+        "therapeutic_applications": [
+          "gentle_relaxation",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "joy_cultivation",
+          "meditation",
+          "celebration",
+          "mindfulness"
+        ],
+        "spectral_properties": {
+          "frequency_range": "85-1100 Hz fundamental, up to 4000 Hz harmonics",
+          "spectral_character": "formant-rich with vocal tract resonances",
+          "emotional_expressivity": "very high",
+          "harmonic_complexity": "moderate to high with vibrato",
+          "attack_characteristics": "smooth onset with breath dynamics"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.759218"
+      }
+    },
+    {
+      "filename": "A Game; Indie Pop; Focus (Remix)_1751909985808.mp3",
+      "path": "music_library/A Game; Indie Pop; Focus (Remix)_1751909985808.mp3",
+      "size": 3165017,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Gentle Brow; Instrumental, Baroque; Relaxation (Remix) 2_1751966154213.mp3",
+      "path": "music_library/A Gentle Brow; Instrumental, Baroque; Relaxation (Remix) 2_1751966154213.mp3",
+      "size": 2781411,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Gentle Light Falls Upon My Lover's Brow;  Baroque; Relaxation_1752343806749.mp3",
+      "path": "music_library/A Gentle Light Falls Upon My Lover's Brow;  Baroque; Relaxation_1752343806749.mp3",
+      "size": 2565683,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "A Gentle Light Falls Upon My Lover's Brow;  Baroque; Relaxation_1752343806749.mp3",
+        "metadata": {
+          "filename": "A Gentle Light Falls Upon My Lover's Brow;  Baroque; Relaxation_1752343806749.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque"
+          ],
+          "instruments": [],
+          "purposes": [
+            "relaxation"
+          ],
+          "characteristics": [
+            "gentle",
+            "lover"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.761160"
+        },
+        "vad_metrics": {
+          "valence": 0.9,
+          "energy_arousal": 0.25,
+          "dominance": 0.5,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Gentle uplifting positivity"
+        },
+        "therapeutic_applications": [
+          "gentle_relaxation",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "romantic_connection",
+          "intimacy_building",
+          "love_meditation",
+          "balanced_control",
+          "joy_cultivation",
+          "meditation",
+          "celebration",
+          "mindfulness",
+          "relationship_therapy"
+        ],
+        "spectral_properties": {
+          "harmonic_complexity": "very high with counterpoint",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.761182"
+      }
+    },
+    {
+      "filename": "A Gentle Light Falls Upon My Lover's Brow;  Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "path": "music_library/A Gentle Light Falls Upon My Lover's Brow;  Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "size": 2781441,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Great Rejoicing; Baroque, Classical; Relaxation (2)_1751966154213.mp3",
+      "path": "music_library/A Great Rejoicing; Baroque, Classical; Relaxation (2)_1751966154213.mp3",
+      "size": 4088107,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Guitarist Walks; Classical; Re-Energize (Remix)_1751966154213.mp3",
+      "path": "music_library/A Guitarist Walks; Classical; Re-Energize (Remix)_1751966154213.mp3",
+      "size": 3465064,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Guitarist Walks; Classical; Re-Energize (Remix)_1751993916060.mp3",
+      "path": "music_library/A Guitarist Walks; Classical; Re-Energize (Remix)_1751993916060.mp3",
+      "size": 3465064,
+      "has_analysis": false
+    },
+    {
+      "filename": "Allegria; Duet; Cantata_ Crossover - Classical; Re-Energize_1751993979635.mp3",
+      "path": "music_library/Allegria; Duet; Cantata_ Crossover - Classical; Re-Energize_1751993979635.mp3",
+      "size": 5312860,
+      "has_analysis": false
+    },
+    {
+      "filename": "All Kinds;   Instrumental Americana, 2020s; Relaxation (Remix)_1751966756358.mp3",
+      "path": "music_library/All Kinds;   Instrumental Americana, 2020s; Relaxation (Remix)_1751966756358.mp3",
+      "size": 4422937,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Loving Glance; Big Band, American Songbook Re-Energize (Remix) (1)_1751966154213.mp3",
+      "path": "music_library/A Loving Glance; Big Band, American Songbook Re-Energize (Remix) (1)_1751966154213.mp3",
+      "size": 3747956,
+      "has_analysis": false
+    },
+    {
+      "filename": "Alpha; EDM; FOCUS_1751910301763.mp3",
+      "path": "music_library/Alpha; EDM; FOCUS_1751910301763.mp3",
+      "size": 4144770,
+      "has_analysis": false
+    },
+    {
+      "filename": "Alternatives; Electronica; Focus (Remix)_1751979575805.mp3",
+      "path": "music_library/Alternatives; Electronica; Focus (Remix)_1751979575805.mp3",
+      "size": 6085570,
+      "has_analysis": false
+    },
+    {
+      "filename": "Alternative tunings; Electronica; Focus (Remix)_1751979575805.mp3",
+      "path": "music_library/Alternative tunings; Electronica; Focus (Remix)_1751979575805.mp3",
+      "size": 4188037,
+      "has_analysis": false
+    },
+    {
+      "filename": "American Dream; EDM_ Focus_1751910081127.mp3",
+      "path": "music_library/American Dream; EDM_ Focus_1751910081127.mp3",
+      "size": 5161006,
+      "has_analysis": false
+    },
+    {
+      "filename": "American Songbook; Jazz; Relaxation (Remix) (1)_1751966756358.mp3",
+      "path": "music_library/American Songbook; Jazz; Relaxation (Remix) (1)_1751966756358.mp3",
+      "size": 4017432,
+      "has_analysis": false
+    },
+    {
+      "filename": "Amongst the Tall Grass;  Instrumental Americana, 2020s; Relaxation (Remix) (1)_1751966756359.mp3",
+      "path": "music_library/Amongst the Tall Grass;  Instrumental Americana, 2020s; Relaxation (Remix) (1)_1751966756359.mp3",
+      "size": 4222370,
+      "has_analysis": false
+    },
+    {
+      "filename": "Andorra La Vella; flamenco - classical; Re-Energize (1)_1751966756359.mp3",
+      "path": "music_library/Andorra La Vella; flamenco - classical; Re-Energize (1)_1751966756359.mp3",
+      "size": 4680975,
+      "has_analysis": false
+    },
+    {
+      "filename": "An Enchanted Fresco; World - Classical; FOCUS (Remix) (1)_1751966756359.mp3",
+      "path": "music_library/An Enchanted Fresco; World - Classical; FOCUS (Remix) (1)_1751966756359.mp3",
+      "size": 4821765,
+      "has_analysis": false
+    },
+    {
+      "filename": "Answering the Muse; Classical; Sleep (Remix)_1751966756358.mp3",
+      "path": "music_library/Answering the Muse; Classical; Sleep (Remix)_1751966756358.mp3",
+      "size": 6080243,
+      "has_analysis": false
+    },
+    {
+      "filename": "Arctic Kitties Do Nature; Indie Pop, 2020s; Re-Energize, HIIT (1)_1751966756358.mp3",
+      "path": "music_library/Arctic Kitties Do Nature; Indie Pop, 2020s; Re-Energize, HIIT (1)_1751966756358.mp3",
+      "size": 4556537,
+      "has_analysis": false
+    },
+    {
+      "filename": "Arctic Kitties In Nature; Indie Pop, 2020s; Re-Energize, HIIT_1751966756359.mp3",
+      "path": "music_library/Arctic Kitties In Nature; Indie Pop, 2020s; Re-Energize, HIIT_1751966756359.mp3",
+      "size": 4843158,
+      "has_analysis": false
+    },
+    {
+      "filename": "Artic Kitties Band; Indie Pop, 2020s; HIIT, Re-Energize (Remix)_1751966756358.mp3",
+      "path": "music_library/Artic Kitties Band; Indie Pop, 2020s; HIIT, Re-Energize (Remix)_1751966756358.mp3",
+      "size": 5978379,
+      "has_analysis": false
+    },
+    {
+      "filename": "Astronauts Walking Distance; Rock, instrumental, 1970s, Re-Energize (Remix)_1751966756358.mp3",
+      "path": "music_library/Astronauts Walking Distance; Rock, instrumental, 1970s, Re-Energize (Remix)_1751966756358.mp3",
+      "size": 671999,
+      "has_analysis": false
+    },
+    {
+      "filename": "Astronaut View; EDM; FOCUS (Remix)_1751912236090.mp3",
+      "path": "music_library/Astronaut View; EDM; FOCUS (Remix)_1751912236090.mp3",
+      "size": 4553456,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Tune You Knew By Heart As A Child; Jazz; Relaxation (Remix)_1751966154213.mp3",
+      "path": "music_library/A Tune You Knew By Heart As A Child; Jazz; Relaxation (Remix)_1751966154213.mp3",
+      "size": 4541882,
+      "has_analysis": false
+    },
+    {
+      "filename": "Autumn, Gentle Light; Instrumental,  Electronic, Baroque; Relaxation (Remix) (1)_1751966756358.mp3",
+      "path": "music_library/Autumn, Gentle Light; Instrumental,  Electronic, Baroque; Relaxation (Remix) (1)_1751966756358.mp3",
+      "size": 2135523,
+      "has_analysis": false
+    },
+    {
+      "filename": "Autumn Hath Yielded A Most Gentle Light; Instrumental,  Electronic, Baroque; Relaxation (Remix)_1751966756358.mp3",
+      "path": "music_library/Autumn Hath Yielded A Most Gentle Light; Instrumental,  Electronic, Baroque; Relaxation (Remix)_1751966756358.mp3",
+      "size": 4405799,
+      "has_analysis": false
+    },
+    {
+      "filename": "Awake; Country. 88 BPM. _1751966756359.mp3",
+      "path": "music_library/Awake; Country. 88 BPM. _1751966756359.mp3",
+      "size": 3851421,
+      "has_analysis": false
+    },
+    {
+      "filename": "\u201cAwakening\u201d Arioso; Duet, Female, Opera; Re-Energize, Relaxation, Mood Boost_1752343806748.mp3",
+      "path": "music_library/\u201cAwakening\u201d Arioso; Duet, Female, Opera; Re-Energize, Relaxation, Mood Boost_1752343806748.mp3",
+      "size": 5887104,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "\u201cAwakening\u201d Arioso; Duet, Female, Opera; Re-Energize, Relaxation, Mood Boost_1752343806748.mp3",
+        "metadata": {
+          "filename": "\u201cAwakening\u201d Arioso; Duet, Female, Opera; Re-Energize, Relaxation, Mood Boost_1752343806748.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "opera",
+            "duet",
+            "arioso"
+          ],
+          "instruments": [
+            "voice"
+          ],
+          "purposes": [
+            "energy",
+            "relaxation",
+            "mood_boost",
+            "awakening"
+          ],
+          "characteristics": [
+            "awakening",
+            "awake"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.853969"
+        },
+        "vad_metrics": {
+          "valence": 1.0,
+          "energy_arousal": 1.0,
+          "dominance": 1.0,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "motivation",
+          "exercise",
+          "depression_treatment",
+          "life_transitions",
+          "leadership_training",
+          "mood_enhancement",
+          "vocal_therapy",
+          "assertiveness",
+          "celebration",
+          "emotional_catharsis",
+          "dramatic_expression",
+          "energy_boost",
+          "morning_routine",
+          "storytelling",
+          "activation",
+          "spiritual_awakening",
+          "empowerment",
+          "confidence_building",
+          "consciousness_expansion",
+          "joy_cultivation"
+        ],
+        "spectral_properties": {
+          "frequency_range": "85-1100 Hz fundamental, up to 4000 Hz harmonics",
+          "spectral_character": "formant-rich with vocal tract resonances",
+          "emotional_expressivity": "very high",
+          "harmonic_complexity": "moderate to high with vibrato",
+          "attack_characteristics": "smooth onset with breath dynamics",
+          "vocal_projection": "powerful formant resonance for acoustics",
+          "dramatic_dynamics": "extreme dynamic contrasts",
+          "orchestral_support": "full symphonic backing",
+          "linguistic_clarity": "text intelligibility optimization",
+          "frequency_emphasis": "mid-range presence for alertness",
+          "dynamic_contrast": "pronounced peaks for stimulation",
+          "rhythmic_drive": "propulsive elements for motivation"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.853993"
+      }
+    },
+    {
+      "filename": "\u201cAwakening\u201d Arioso; Duet in Two Voices; Baroque; Relaxation (1) (1)_1752343546036.mp3",
+      "path": "music_library/\u201cAwakening\u201d Arioso; Duet in Two Voices; Baroque; Relaxation (1) (1)_1752343546036.mp3",
+      "size": 4345235,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "\u201cAwakening\u201d Arioso; Duet in Two Voices; Baroque; Relaxation (1) (1)_1752343546036.mp3",
+        "metadata": {
+          "filename": "\u201cAwakening\u201d Arioso; Duet in Two Voices; Baroque; Relaxation (1) (1)_1752343546036.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque",
+            "duet",
+            "arioso"
+          ],
+          "instruments": [
+            "voice"
+          ],
+          "purposes": [
+            "relaxation",
+            "awakening"
+          ],
+          "characteristics": [
+            "awakening",
+            "awake"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 1,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.851031"
+        },
+        "vad_metrics": {
+          "valence": 1.0,
+          "energy_arousal": 0.55,
+          "dominance": 0.81,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Confident optimistic leadership"
+        },
+        "therapeutic_applications": [
+          "depression_treatment",
+          "empowerment",
+          "leadership_training",
+          "life_transitions",
+          "mood_enhancement",
+          "confidence_building",
+          "work",
+          "consciousness_expansion",
+          "morning_routine",
+          "study",
+          "focus",
+          "concentration",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "spiritual_awakening"
+        ],
+        "spectral_properties": {
+          "frequency_range": "85-1100 Hz fundamental, up to 4000 Hz harmonics",
+          "spectral_character": "formant-rich with vocal tract resonances",
+          "emotional_expressivity": "very high",
+          "harmonic_complexity": "very high with counterpoint",
+          "attack_characteristics": "smooth onset with breath dynamics",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.851064"
+      }
+    },
+    {
+      "filename": "\u201cAwakening\u201d Arioso; Duet in Two Voices; Baroque; Relaxation (1)_1751965370364.mp3",
+      "path": "music_library/\u201cAwakening\u201d Arioso; Duet in Two Voices; Baroque; Relaxation (1)_1751965370364.mp3",
+      "size": 4345235,
+      "has_analysis": false
+    },
+    {
+      "filename": "\u201cAwakening\u201d Arioso; Duet in Two Voices; Baroque; Relaxation (Remix) (6)_1751965370364.mp3",
+      "path": "music_library/\u201cAwakening\u201d Arioso; Duet in Two Voices; Baroque; Relaxation (Remix) (6)_1751965370364.mp3",
+      "size": 5127438,
+      "has_analysis": false
+    },
+    {
+      "filename": "Barcelona; Movement 2_1751966756358.mp3",
+      "path": "music_library/Barcelona; Movement 2_1751966756358.mp3",
+      "size": 6849365,
+      "has_analysis": false
+    },
+    {
+      "filename": "Barcelona; World Folk- Classical; FOCUS (2) 2_1751966756358.mp3",
+      "path": "music_library/Barcelona; World Folk- Classical; FOCUS (2) 2_1751966756358.mp3",
+      "size": 3166499,
+      "has_analysis": false
+    },
+    {
+      "filename": "Baroque chamber  (1)_1751966756359.mp3",
+      "path": "music_library/Baroque chamber  (1)_1751966756359.mp3",
+      "size": 5048210,
+      "has_analysis": false
+    },
+    {
+      "filename": "Baroque Chamber Orchestral; Relaxation (Remix)_1751992433905.mp3",
+      "path": "music_library/Baroque Chamber Orchestral; Relaxation (Remix)_1751992433905.mp3",
+      "size": 4771909,
+      "has_analysis": false
+    },
+    {
+      "filename": "; Baroque, Classical; Sleep (Remix)_1751965370364.mp3",
+      "path": "music_library/; Baroque, Classical; Sleep (Remix)_1751965370364.mp3",
+      "size": 585232,
+      "has_analysis": false
+    },
+    {
+      "filename": "Baroque Spanish Duet; Jazz; Relaxation (Remix)_1751992433905.mp3",
+      "path": "music_library/Baroque Spanish Duet; Jazz; Relaxation (Remix)_1751992433905.mp3",
+      "size": 4593034,
+      "has_analysis": false
+    },
+    {
+      "filename": "battle cry;  EDM; focus (1)_1751912248609.mp3",
+      "path": "music_library/battle cry;  EDM; focus (1)_1751912248609.mp3",
+      "size": 4078437,
+      "has_analysis": false
+    },
+    {
+      "filename": "battle song; EDM; focus_1751912267241.mp3",
+      "path": "music_library/battle song; EDM; focus_1751912267241.mp3",
+      "size": 3242680,
+      "has_analysis": false
+    },
+    {
+      "filename": "Beast Mode; Indie Pop; Focus_1751904888812.mp3",
+      "path": "music_library/Beast Mode; Indie Pop; Focus_1751904888812.mp3",
+      "size": 7443920,
+      "has_analysis": false
+    },
+    {
+      "filename": "Beautiful Babe; Indie Pop; Focus_1751904903479.mp3",
+      "path": "music_library/Beautiful Babe; Indie Pop; Focus_1751904903479.mp3",
+      "size": 5464770,
+      "has_analysis": false
+    },
+    {
+      "filename": "Berkelely in August; Classic Rock, Jam Band, Improvisational  (Remix), Relaxation_1751992433904.mp3",
+      "path": "music_library/Berkelely in August; Classic Rock, Jam Band, Improvisational  (Remix), Relaxation_1751992433904.mp3",
+      "size": 3969149,
+      "has_analysis": false
+    },
+    {
+      "filename": "Best Friends; Classic Rock- 1970s, Relaxation_1751992433906.mp3",
+      "path": "music_library/Best Friends; Classic Rock- 1970s, Relaxation_1751992433906.mp3",
+      "size": 4231046,
+      "has_analysis": false
+    },
+    {
+      "filename": "Biophillia 2; Instrumental; classical; late 19th century; relaxation; 118 BPM (Remix)_1751992433906.mp3",
+      "path": "music_library/Biophillia 2; Instrumental; classical; late 19th century; relaxation; 118 BPM (Remix)_1751992433906.mp3",
+      "size": 4399809,
+      "has_analysis": false
+    },
+    {
+      "filename": "Biophillia; Instrumental; classical; late 19th century; relaxation; 118 BPM (Remix)_1751992433906.mp3",
+      "path": "music_library/Biophillia; Instrumental; classical; late 19th century; relaxation; 118 BPM (Remix)_1751992433906.mp3",
+      "size": 3141845,
+      "has_analysis": false
+    },
+    {
+      "filename": "Bluegrass Baroque Reveries; Classical, Instrumental; Relaxation_1751992433907.mp3",
+      "path": "music_library/Bluegrass Baroque Reveries; Classical, Instrumental; Relaxation_1751992433907.mp3",
+      "size": 3970107,
+      "has_analysis": false
+    },
+    {
+      "filename": "Bluegrass Baroque Reveries; Classical, Instrumental; Relaxation_1751993916058.mp3",
+      "path": "music_library/Bluegrass Baroque Reveries; Classical, Instrumental; Relaxation_1751993916058.mp3",
+      "size": 3970107,
+      "has_analysis": false
+    },
+    {
+      "filename": "Bluegrass, Instrumental; Relaxation_1751992433907.mp3",
+      "path": "music_library/Bluegrass, Instrumental; Relaxation_1751992433907.mp3",
+      "size": 3970051,
+      "has_analysis": false
+    },
+    {
+      "filename": "Breathe through It; Indie Pop; Focus_1751909069357.mp3",
+      "path": "music_library/Breathe through It; Indie Pop; Focus_1751909069357.mp3",
+      "size": 7910927,
+      "has_analysis": false
+    },
+    {
+      "filename": "Burn too bright for peace_, Contemporary Opera, Classical, Female; Relaxation_1751993916059.mp3",
+      "path": "music_library/Burn too bright for peace_, Contemporary Opera, Classical, Female; Relaxation_1751993916059.mp3",
+      "size": 6136566,
+      "has_analysis": false
+    },
+    {
+      "filename": "Burn too bright for peace_, Contemporary Opera, Classical, Female; Relaxation (2)_1751992433906.mp3",
+      "path": "music_library/Burn too bright for peace_, Contemporary Opera, Classical, Female; Relaxation (2)_1751992433906.mp3",
+      "size": 6125334,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Cantata; Cantata, Classical; Re-Energize (1)_1751965187466.mp3",
+      "path": "music_library/_Cantata; Cantata, Classical; Re-Energize (1)_1751965187466.mp3",
+      "size": 6191216,
+      "has_analysis": false
+    },
+    {
+      "filename": "Cantata_ \u201cDeux Esprits, Un Feu; Duet, Baroque, Classical; French; Re-Energize_1751993916062.mp3",
+      "path": "music_library/Cantata_ \u201cDeux Esprits, Un Feu; Duet, Baroque, Classical; French; Re-Energize_1751993916062.mp3",
+      "size": 4158778,
+      "has_analysis": false
+    },
+    {
+      "filename": "Chemistry by Numbers, The American Songbook; Jazz; Re-Energize_1751993916058.mp3",
+      "path": "music_library/Chemistry by Numbers, The American Songbook; Jazz; Re-Energize_1751993916058.mp3",
+      "size": 4704833,
+      "has_analysis": false
+    },
+    {
+      "filename": "Coffee; Baroque; Relaxation_1751993979635.mp3",
+      "path": "music_library/Coffee; Baroque; Relaxation_1751993979635.mp3",
+      "size": 8783328,
+      "has_analysis": false
+    },
+    {
+      "filename": "Coffee; Baroque; Relaxation (2)_1751992433907.mp3",
+      "path": "music_library/Coffee; Baroque; Relaxation (2)_1751992433907.mp3",
+      "size": 8783328,
+      "has_analysis": false
+    },
+    {
+      "filename": "Come On In; Indie Pop; Focus_1751909069358.mp3",
+      "path": "music_library/Come On In; Indie Pop; Focus_1751909069358.mp3",
+      "size": 4618102,
+      "has_analysis": false
+    },
+    {
+      "filename": "Cook Bro; EDM; FOCUS (Remix)_1751912236090.mp3",
+      "path": "music_library/Cook Bro; EDM; FOCUS (Remix)_1751912236090.mp3",
+      "size": 4878272,
+      "has_analysis": false
+    },
+    {
+      "filename": "Dawn Breaking 3; Electronc; Focus_1751912647323.mp3",
+      "path": "music_library/Dawn Breaking 3; Electronc; Focus_1751912647323.mp3",
+      "size": 4649365,
+      "has_analysis": false
+    },
+    {
+      "filename": "Dawn Breaking 4; Electronc; Focus_1751912647324.mp3",
+      "path": "music_library/Dawn Breaking 4; Electronc; Focus_1751912647324.mp3",
+      "size": 4919208,
+      "has_analysis": false
+    },
+    {
+      "filename": "Dawn Breaking; Electronc; Focus (2)_1751979575805.mp3",
+      "path": "music_library/Dawn Breaking; Electronc; Focus (2)_1751979575805.mp3",
+      "size": 4830866,
+      "has_analysis": false
+    },
+    {
+      "filename": "Daybreak, Ready to Go; Indie Pop; Focus (Remix)_1751909240327.mp3",
+      "path": "music_library/Daybreak, Ready to Go; Indie Pop; Focus (Remix)_1751909240327.mp3",
+      "size": 4432306,
+      "has_analysis": false
+    },
+    {
+      "filename": "Delighted; EDM Rock; Focus _1751912647324.mp3",
+      "path": "music_library/Delighted; EDM Rock; Focus _1751912647324.mp3",
+      "size": 4688934,
+      "has_analysis": false
+    },
+    {
+      "filename": "Delighted; EDM Rock; Focus _1751979575805.mp3",
+      "path": "music_library/Delighted; EDM Rock; Focus _1751979575805.mp3",
+      "size": 4688934,
+      "has_analysis": false
+    },
+    {
+      "filename": "Delight; EDM Rock; Focus _1751912647324.mp3",
+      "path": "music_library/Delight; EDM Rock; Focus _1751912647324.mp3",
+      "size": 5691764,
+      "has_analysis": false
+    },
+    {
+      "filename": "Delight; EDM Rock; Focus _1751979575805.mp3",
+      "path": "music_library/Delight; EDM Rock; Focus _1751979575805.mp3",
+      "size": 5691764,
+      "has_analysis": false
+    },
+    {
+      "filename": "\u201cDeux Esprits, Un Feu_; Bluegrass - Classical; French; Re-Energize (Remix) (2)_1751965370364.mp3",
+      "path": "music_library/\u201cDeux Esprits, Un Feu_; Bluegrass - Classical; French; Re-Energize (Remix) (2)_1751965370364.mp3",
+      "size": 4613346,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Dialogic, Baroque; Classical; Sleep (Remix) (1)_1751965187466.mp3",
+      "path": "music_library/_Dialogic, Baroque; Classical; Sleep (Remix) (1)_1751965187466.mp3",
+      "size": 4967809,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Dialogic, Baroque; Classical; Sleep (Remix)_1752343546035.mp3",
+      "path": "music_library/_Dialogic, Baroque; Classical; Sleep (Remix)_1752343546035.mp3",
+      "size": 4967809,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "_Dialogic, Baroque; Classical; Sleep (Remix)_1752343546035.mp3",
+        "metadata": {
+          "filename": "_Dialogic, Baroque; Classical; Sleep (Remix)_1752343546035.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque"
+          ],
+          "instruments": [],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "dialogic",
+            "remix"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.796155"
+        },
+        "vad_metrics": {
+          "valence": 0.48,
+          "energy_arousal": 0.2,
+          "dominance": 0.52,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Profound meditative neutrality"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "deep_sleep",
+          "balanced_control",
+          "stability",
+          "grounding",
+          "emotional_balance"
+        ],
+        "spectral_properties": {
+          "harmonic_complexity": "very high with counterpoint",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices",
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.796179"
+      }
+    },
+    {
+      "filename": "Dialogic; Instrumental; Baroque; Focus_1751993916063.mp3",
+      "path": "music_library/Dialogic; Instrumental; Baroque; Focus_1751993916063.mp3",
+      "size": 2435805,
+      "has_analysis": false
+    },
+    {
+      "filename": "Diana's Dream; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix)_1751992433907.mp3",
+      "path": "music_library/Diana's Dream; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix)_1751992433907.mp3",
+      "size": 4255665,
+      "has_analysis": false
+    },
+    {
+      "filename": "Do I Even Squat; EDM; FOCUS (Remix)_1751912647326.mp3",
+      "path": "music_library/Do I Even Squat; EDM; FOCUS (Remix)_1751912647326.mp3",
+      "size": 5773461,
+      "has_analysis": false
+    },
+    {
+      "filename": "Do I Lift; EDM; FOCUS (Remix)_1751979575806.mp3",
+      "path": "music_library/Do I Lift; EDM; FOCUS (Remix)_1751979575806.mp3",
+      "size": 5316044,
+      "has_analysis": false
+    },
+    {
+      "filename": "Do I Row 2; EDM; FOCUS (Remix)_1751912647327.mp3",
+      "path": "music_library/Do I Row 2; EDM; FOCUS (Remix)_1751912647327.mp3",
+      "size": 5820793,
+      "has_analysis": false
+    },
+    {
+      "filename": "Dorian Mediations of Spring Evening; Contemp- Classic World Music; Relaxation_1751992433907.mp3",
+      "path": "music_library/Dorian Mediations of Spring Evening; Contemp- Classic World Music; Relaxation_1751992433907.mp3",
+      "size": 4642962,
+      "has_analysis": false
+    },
+    {
+      "filename": "Dorian Mediations of Spring Evening; Contemp- Classic World Music; Relaxation (Remix)_1751992433907.mp3",
+      "path": "music_library/Dorian Mediations of Spring Evening; Contemp- Classic World Music; Relaxation (Remix)_1751992433907.mp3",
+      "size": 4022055,
+      "has_analysis": false
+    },
+    {
+      "filename": "Dorian. Shakespeare's Sonnet LII, A Sonnet In Jazz (Remix); Relaxation; 88 BPM (3)_1751992433907.mp3",
+      "path": "music_library/Dorian. Shakespeare's Sonnet LII, A Sonnet In Jazz (Remix); Relaxation; 88 BPM (3)_1751992433907.mp3",
+      "size": 4058643,
+      "has_analysis": false
+    },
+    {
+      "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (5)_1752343806750.mp3",
+      "path": "music_library/Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (5)_1752343806750.mp3",
+      "size": 4894639,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (5)_1752343806750.mp3",
+        "metadata": {
+          "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (5)_1752343806750.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque",
+            "flamenco",
+            "modal",
+            "chamber"
+          ],
+          "instruments": [
+            "orchestral",
+            "chamber_ensemble"
+          ],
+          "purposes": [
+            "relaxation"
+          ],
+          "characteristics": [
+            "remix",
+            "drama"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 5,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.762964"
+        },
+        "vad_metrics": {
+          "valence": 0.72,
+          "energy_arousal": 0.57,
+          "dominance": 1.0,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Confident optimistic leadership"
+        },
+        "therapeutic_applications": [
+          "depression_treatment",
+          "empowerment",
+          "leadership_training",
+          "passion_expression",
+          "mood_enhancement",
+          "confidence_building",
+          "cultural_connection",
+          "work",
+          "fiery_emotion",
+          "study",
+          "focus",
+          "concentration",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "Spanish_heritage"
+        ],
+        "spectral_properties": {
+          "frequency_range": "20-20000 Hz full spectrum",
+          "spectral_character": "rich, complex, multi-timbral blend",
+          "dynamic_range": "very wide (40+ dB)",
+          "harmonic_density": "extremely high",
+          "spatial_characteristics": "wide stereo field with depth",
+          "harmonic_complexity": "very high with counterpoint",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices",
+          "percussive_guitar": "sharp attack with palm muting",
+          "modal_harmonies": "Phrygian and other exotic scales",
+          "rhythmic_complexity": "complex time signatures and patterns",
+          "cultural_ornaments": "traditional melodic embellishments"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.763000"
+      }
+    },
+    {
+      "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (6)_1752343806750.mp3",
+      "path": "music_library/Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (6)_1752343806750.mp3",
+      "size": 4274927,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (6)_1752343806750.mp3",
+        "metadata": {
+          "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (6)_1752343806750.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque",
+            "flamenco",
+            "modal",
+            "chamber"
+          ],
+          "instruments": [
+            "orchestral",
+            "chamber_ensemble"
+          ],
+          "purposes": [
+            "relaxation"
+          ],
+          "characteristics": [
+            "remix",
+            "drama"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 6,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.765145"
+        },
+        "vad_metrics": {
+          "valence": 0.72,
+          "energy_arousal": 0.57,
+          "dominance": 1.0,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Confident optimistic leadership"
+        },
+        "therapeutic_applications": [
+          "depression_treatment",
+          "empowerment",
+          "leadership_training",
+          "passion_expression",
+          "mood_enhancement",
+          "confidence_building",
+          "cultural_connection",
+          "work",
+          "fiery_emotion",
+          "study",
+          "focus",
+          "concentration",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "Spanish_heritage"
+        ],
+        "spectral_properties": {
+          "frequency_range": "20-20000 Hz full spectrum",
+          "spectral_character": "rich, complex, multi-timbral blend",
+          "dynamic_range": "very wide (40+ dB)",
+          "harmonic_density": "extremely high",
+          "spatial_characteristics": "wide stereo field with depth",
+          "harmonic_complexity": "very high with counterpoint",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices",
+          "percussive_guitar": "sharp attack with palm muting",
+          "modal_harmonies": "Phrygian and other exotic scales",
+          "rhythmic_complexity": "complex time signatures and patterns",
+          "cultural_ornaments": "traditional melodic embellishments"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.765181"
+      }
+    },
+    {
+      "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (7)_1751992433907.mp3",
+      "path": "music_library/Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (7)_1751992433907.mp3",
+      "size": 4812629,
+      "has_analysis": false
+    },
+    {
+      "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (7)_1752343806750.mp3",
+      "path": "music_library/Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (7)_1752343806750.mp3",
+      "size": 4812629,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (7)_1752343806750.mp3",
+        "metadata": {
+          "filename": "Drama; Baroque-Flamenco, Phrygian Chamber Orchestral; Relaxation (Remix) (7)_1752343806750.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque",
+            "flamenco",
+            "modal",
+            "chamber"
+          ],
+          "instruments": [
+            "orchestral",
+            "chamber_ensemble"
+          ],
+          "purposes": [
+            "relaxation"
+          ],
+          "characteristics": [
+            "remix",
+            "drama"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 7,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.767560"
+        },
+        "vad_metrics": {
+          "valence": 0.72,
+          "energy_arousal": 0.57,
+          "dominance": 1.0,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Confident optimistic leadership"
+        },
+        "therapeutic_applications": [
+          "depression_treatment",
+          "empowerment",
+          "leadership_training",
+          "passion_expression",
+          "mood_enhancement",
+          "confidence_building",
+          "cultural_connection",
+          "work",
+          "fiery_emotion",
+          "study",
+          "focus",
+          "concentration",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "Spanish_heritage"
+        ],
+        "spectral_properties": {
+          "frequency_range": "20-20000 Hz full spectrum",
+          "spectral_character": "rich, complex, multi-timbral blend",
+          "dynamic_range": "very wide (40+ dB)",
+          "harmonic_density": "extremely high",
+          "spatial_characteristics": "wide stereo field with depth",
+          "harmonic_complexity": "very high with counterpoint",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices",
+          "percussive_guitar": "sharp attack with palm muting",
+          "modal_harmonies": "Phrygian and other exotic scales",
+          "rhythmic_complexity": "complex time signatures and patterns",
+          "cultural_ornaments": "traditional melodic embellishments"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.767615"
+      }
+    },
+    {
+      "filename": "Dreamy Drone; Classical; Yoga (1)_1752343806750.mp3",
+      "path": "music_library/Dreamy Drone; Classical; Yoga (1)_1752343806750.mp3",
+      "size": 3480930,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Dreamy Drone; Classical; Yoga (1)_1752343806750.mp3",
+        "metadata": {
+          "filename": "Dreamy Drone; Classical; Yoga (1)_1752343806750.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "drone"
+          ],
+          "instruments": [],
+          "purposes": [
+            "yoga"
+          ],
+          "characteristics": [
+            "dreamy"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 1,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.769792"
+        },
+        "vad_metrics": {
+          "valence": 0.69,
+          "energy_arousal": 0.0,
+          "dominance": 0.28,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Blissful tranquil contentment"
+        },
+        "therapeutic_applications": [
+          "flexibility_training",
+          "profound_meditation",
+          "transcendental_states",
+          "receptivity",
+          "body_awareness",
+          "deep_sleep",
+          "yoga_practice",
+          "anxiety_reduction",
+          "stability",
+          "surrender_practice",
+          "grounding",
+          "mindful_movement",
+          "emotional_balance",
+          "letting_go"
+        ],
+        "spectral_properties": {
+          "sustained_tones": "long-held fundamental frequencies",
+          "minimal_rhythmic_change": "static or very slow evolution",
+          "harmonic_stasis": "stable pitch relationships",
+          "meditative_frequencies": "often tuned to healing frequencies"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.769827"
+      }
+    },
+    {
+      "filename": "Drone, Cumulus; FOCUS (Remix) (4)_1751993979635.mp3",
+      "path": "music_library/Drone, Cumulus; FOCUS (Remix) (4)_1751993979635.mp3",
+      "size": 3515174,
+      "has_analysis": false
+    },
+    {
+      "filename": "drum core boat songs; Renaissance Classical; Focus_1751912248608.mp3",
+      "path": "music_library/drum core boat songs; Renaissance Classical; Focus_1751912248608.mp3",
+      "size": 3876063,
+      "has_analysis": false
+    },
+    {
+      "filename": "drumcore; EDM; focus_1751912248609.mp3",
+      "path": "music_library/drumcore; EDM; focus_1751912248609.mp3",
+      "size": 5189840,
+      "has_analysis": false
+    },
+    {
+      "filename": "drummer's day;  EDM; focus_1751912267241.mp3",
+      "path": "music_library/drummer's day;  EDM; focus_1751912267241.mp3",
+      "size": 4487996,
+      "has_analysis": false
+    },
+    {
+      "filename": "drummer's day;  EDM; focus (2)_1751912248609.mp3",
+      "path": "music_library/drummer's day;  EDM; focus (2)_1751912248609.mp3",
+      "size": 4650682,
+      "has_analysis": false
+    },
+    {
+      "filename": "drums for dragon; EDM; focus_1751912248609.mp3",
+      "path": "music_library/drums for dragon; EDM; focus_1751912248609.mp3",
+      "size": 6750900,
+      "has_analysis": false
+    },
+    {
+      "filename": "Duet; EDM; Focus_1751911220996.mp3",
+      "path": "music_library/Duet; EDM; Focus_1751911220996.mp3",
+      "size": 3693715,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Duet, French, Baroque; Re-Energize (Remix) (1)_1751965187466.mp3",
+      "path": "music_library/_Duet, French, Baroque; Re-Energize (Remix) (1)_1751965187466.mp3",
+      "size": 3390880,
+      "has_analysis": false
+    },
+    {
+      "filename": "Duets at Dusk; EDM; Focus_1751911220996.mp3",
+      "path": "music_library/Duets at Dusk; EDM; Focus_1751911220996.mp3",
+      "size": 5480525,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Est-ce ton souffle ou le mien_\u201d; Duet, French, Baroque; Re-Energize (Remix) (1) (1)_1751965187466.mp3",
+      "path": "music_library/_Est-ce ton souffle ou le mien_\u201d; Duet, French, Baroque; Re-Energize (Remix) (1) (1)_1751965187466.mp3",
+      "size": 3333664,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Est-ce ton souffle ou le mien_\u201d; Version 2; Duet, French, Baroque; Re-Energize (Remix)_1751965187466.mp3",
+      "path": "music_library/_Est-ce ton souffle ou le mien_\u201d; Version 2; Duet, French, Baroque; Re-Energize (Remix)_1751965187466.mp3",
+      "size": 4188825,
+      "has_analysis": false
+    },
+    {
+      "filename": "Eternum, rejoice; instrumental, Renaissance; pain relief,_1751993664181.mp3",
+      "path": "music_library/Eternum, rejoice; instrumental, Renaissance; pain relief,_1751993664181.mp3",
+      "size": 4291489,
+      "has_analysis": false
+    },
+    {
+      "filename": "Eternum, sanctum; instrumental, Renaissance; relaxation, pain relief,_1751993664181.mp3",
+      "path": "music_library/Eternum, sanctum; instrumental, Renaissance; relaxation, pain relief,_1751993664181.mp3",
+      "size": 4590684,
+      "has_analysis": false
+    },
+    {
+      "filename": "Ethereal Ionian Festival, 4; Instrumental, Renaissance, World, New Age, Folk; Relaxation_1751992433903.mp3",
+      "path": "music_library/Ethereal Ionian Festival, 4; Instrumental, Renaissance, World, New Age, Folk; Relaxation_1751992433903.mp3",
+      "size": 4670723,
+      "has_analysis": false
+    },
+    {
+      "filename": "Fifth Sequence of the Composer's Meta-modern reveries; Duet, French, Baroque; Re-Energize (Remix)_1751993916062.mp3",
+      "path": "music_library/Fifth Sequence of the Composer's Meta-modern reveries; Duet, French, Baroque; Re-Energize (Remix)_1751993916062.mp3",
+      "size": 3564323,
+      "has_analysis": false
+    },
+    {
+      "filename": "fight today; drumming; focus (5)_1751912267242.mp3",
+      "path": "music_library/fight today; drumming; focus (5)_1751912267242.mp3",
+      "size": 5980847,
+      "has_analysis": false
+    },
+    {
+      "filename": "First Love Summer; EDM; Focus_1751910301766.mp3",
+      "path": "music_library/First Love Summer; EDM; Focus_1751910301766.mp3",
+      "size": 3840553,
+      "has_analysis": false
+    },
+    {
+      "filename": "First Surf's Up; EDM Rock; Focus (Remix)_1751912647324.mp3",
+      "path": "music_library/First Surf's Up; EDM Rock; Focus (Remix)_1751912647324.mp3",
+      "size": 2607856,
+      "has_analysis": false
+    },
+    {
+      "filename": "Flex; Indie Pop; Cool Down_1751909240326.mp3",
+      "path": "music_library/Flex; Indie Pop; Cool Down_1751909240326.mp3",
+      "size": 4171220,
+      "has_analysis": false
+    },
+    {
+      "filename": "Flex; Indie Pop; Re-energize_1751909240325.mp3",
+      "path": "music_library/Flex; Indie Pop; Re-energize_1751909240325.mp3",
+      "size": 4988561,
+      "has_analysis": false
+    },
+    {
+      "filename": "Flex Mode; Indie Pop; Focus_1751904892747.mp3",
+      "path": "music_library/Flex Mode; Indie Pop; Focus_1751904892747.mp3",
+      "size": 6759815,
+      "has_analysis": false
+    },
+    {
+      "filename": "Fly; Indie Pop; Focus_1751909069355.mp3",
+      "path": "music_library/Fly; Indie Pop; Focus_1751909069355.mp3",
+      "size": 5352266,
+      "has_analysis": false
+    },
+    {
+      "filename": "focus-on-a-vivaldi-summer;-focus_1752344121826.mp3",
+      "path": "music_library/focus-on-a-vivaldi-summer;-focus_1752344121826.mp3",
+      "size": 4161765,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-a-vivaldi-summer;-focus_1752344121826.mp3",
+        "metadata": {
+          "filename": "focus-on-a-vivaldi-summer;-focus_1752344121826.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "vivaldi",
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "summer_themed",
+            "seasonal",
+            "vivaldi_inspired"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "summer"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": true,
+          "analysis_timestamp": "2025-07-12T18:26:27.804792"
+        },
+        "vad_metrics": {
+          "valence": 0.92,
+          "energy_arousal": 0.88,
+          "dominance": 0.85,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "leadership_training",
+          "empowerment",
+          "mood_enhancement",
+          "confidence_building",
+          "activation",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.804895"
+      }
+    },
+    {
+      "filename": "focus-on-nature-as-she-rejoices;-focus_1752344121827.mp3",
+      "path": "music_library/focus-on-nature-as-she-rejoices;-focus_1752344121827.mp3",
+      "size": 3266901,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-nature-as-she-rejoices;-focus_1752344121827.mp3",
+        "metadata": {
+          "filename": "focus-on-nature-as-she-rejoices;-focus_1752344121827.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "nature_themed"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "nature"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.806372"
+        },
+        "vad_metrics": {
+          "valence": 0.7,
+          "energy_arousal": 0.7,
+          "dominance": 0.58,
+          "confidence_score": 0.75,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "healthy_boundaries",
+          "balanced_control",
+          "activation",
+          "stability",
+          "grounding",
+          "emotional_balance",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.806390"
+      }
+    },
+    {
+      "filename": "focus-on-presto-e-forte-il-riposo;-movement-2_1752344121826.mp3",
+      "path": "music_library/focus-on-presto-e-forte-il-riposo;-movement-2_1752344121826.mp3",
+      "size": 4712517,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-presto-e-forte-il-riposo;-movement-2_1752344121826.mp3",
+        "metadata": {
+          "filename": "focus-on-presto-e-forte-il-riposo;-movement-2_1752344121826.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "movement_based",
+            "presto",
+            "forte",
+            "riposo"
+          ],
+          "musical_terms": [
+            "presto",
+            "forte",
+            "riposo"
+          ],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.807799"
+        },
+        "vad_metrics": {
+          "valence": 0.62,
+          "energy_arousal": 0.8,
+          "dominance": 0.68,
+          "confidence_score": 0.75,
+          "emotional_interpretation": "Dynamic neutral high energy"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "empowerment",
+          "leadership_training",
+          "confidence_building",
+          "activation",
+          "stability",
+          "assertiveness",
+          "grounding",
+          "emotional_balance",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.807829"
+      }
+    },
+    {
+      "filename": "focus-on-primavera-of-the-mandolin;-focus_1752344121827.mp3",
+      "path": "music_library/focus-on-primavera-of-the-mandolin;-focus_1752344121827.mp3",
+      "size": 4792653,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-primavera-of-the-mandolin;-focus_1752344121827.mp3",
+        "metadata": {
+          "filename": "focus-on-primavera-of-the-mandolin;-focus_1752344121827.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [],
+          "instruments": [
+            "mandolin"
+          ],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "primavera"
+          ],
+          "musical_terms": [
+            "primavera"
+          ],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.809517"
+        },
+        "vad_metrics": {
+          "valence": 0.62,
+          "energy_arousal": 0.65,
+          "dominance": 0.58,
+          "confidence_score": 0.75,
+          "emotional_interpretation": "Balanced centered neutrality"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "healthy_boundaries",
+          "balanced_control",
+          "activation",
+          "stability",
+          "grounding",
+          "emotional_balance",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.809535"
+      }
+    },
+    {
+      "filename": "focus-on-spring-butterflies;-focus_1752344121828.mp3",
+      "path": "music_library/focus-on-spring-butterflies;-focus_1752344121828.mp3",
+      "size": 3957357,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-spring-butterflies;-focus_1752344121828.mp3",
+        "metadata": {
+          "filename": "focus-on-spring-butterflies;-focus_1752344121828.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "spring_themed",
+            "seasonal",
+            "nature_themed"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "spring",
+            "butterflies"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.811277"
+        },
+        "vad_metrics": {
+          "valence": 0.85,
+          "energy_arousal": 0.78,
+          "dominance": 0.61,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.811301"
+      }
+    },
+    {
+      "filename": "focus-on-spring-in-late-may-when-life-awaits;-focus_1752344121827.mp3",
+      "path": "music_library/focus-on-spring-in-late-may-when-life-awaits;-focus_1752344121827.mp3",
+      "size": 3020013,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-spring-in-late-may-when-life-awaits;-focus_1752344121827.mp3",
+        "metadata": {
+          "filename": "focus-on-spring-in-late-may-when-life-awaits;-focus_1752344121827.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "spring_themed",
+            "seasonal"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "spring"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.817282"
+        },
+        "vad_metrics": {
+          "valence": 0.77,
+          "energy_arousal": 0.73,
+          "dominance": 0.61,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.817317"
+      }
+    },
+    {
+      "filename": "focus-on-spring-nature-sings;-focus_1752344121827.mp3",
+      "path": "music_library/focus-on-spring-nature-sings;-focus_1752344121827.mp3",
+      "size": 3686157,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-spring-nature-sings;-focus_1752344121827.mp3",
+        "metadata": {
+          "filename": "focus-on-spring-nature-sings;-focus_1752344121827.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "spring_themed",
+            "seasonal",
+            "nature_themed"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "spring",
+            "nature"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.819194"
+        },
+        "vad_metrics": {
+          "valence": 0.85,
+          "energy_arousal": 0.78,
+          "dominance": 0.61,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.819214"
+      }
+    },
+    {
+      "filename": "focus-on-strings-from-presto-e-forte-il-riposo;-movement-2_1752344121826.mp3",
+      "path": "music_library/focus-on-strings-from-presto-e-forte-il-riposo;-movement-2_1752344121826.mp3",
+      "size": 7044045,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-strings-from-presto-e-forte-il-riposo;-movement-2_1752344121826.mp3",
+        "metadata": {
+          "filename": "focus-on-strings-from-presto-e-forte-il-riposo;-movement-2_1752344121826.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [],
+          "instruments": [
+            "strings"
+          ],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "movement_based",
+            "presto",
+            "forte",
+            "riposo"
+          ],
+          "musical_terms": [
+            "presto",
+            "forte",
+            "riposo"
+          ],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.821190"
+        },
+        "vad_metrics": {
+          "valence": 0.67,
+          "energy_arousal": 0.8,
+          "dominance": 0.68,
+          "confidence_score": 0.75,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "empowerment",
+          "leadership_training",
+          "confidence_building",
+          "activation",
+          "stability",
+          "assertiveness",
+          "grounding",
+          "emotional_balance",
+          "motivation"
+        ],
+        "spectral_properties": {
+          "frequency_range": "55-4000 Hz fundamental range",
+          "spectral_character": "smooth harmonic progression with bow resonance",
+          "vibrato_characteristics": "natural pitch and amplitude modulation",
+          "ensemble_blend": "harmonic reinforcement and beating"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.821211"
+      }
+    },
+    {
+      "filename": "focus-on-summer-i;-focus_1752344121825.mp3",
+      "path": "music_library/focus-on-summer-i;-focus_1752344121825.mp3",
+      "size": 2945781,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-summer-i;-focus_1752344121825.mp3",
+        "metadata": {
+          "filename": "focus-on-summer-i;-focus_1752344121825.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": "i",
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "summer_themed",
+            "seasonal"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "summer"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.823348"
+        },
+        "vad_metrics": {
+          "valence": 0.74,
+          "energy_arousal": 0.75,
+          "dominance": 0.63,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.823374"
+      }
+    },
+    {
+      "filename": "focus-on-summer-ii;-focus_1752344121826.mp3",
+      "path": "music_library/focus-on-summer-ii;-focus_1752344121826.mp3",
+      "size": 3297477,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-summer-ii;-focus_1752344121826.mp3",
+        "metadata": {
+          "filename": "focus-on-summer-ii;-focus_1752344121826.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": "ii",
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "summer_themed",
+            "seasonal"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "summer"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.825013"
+        },
+        "vad_metrics": {
+          "valence": 0.74,
+          "energy_arousal": 0.75,
+          "dominance": 0.63,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.825038"
+      }
+    },
+    {
+      "filename": "focus-on-the-buds-of-spring;-focus_1752344121828.mp3",
+      "path": "music_library/focus-on-the-buds-of-spring;-focus_1752344121828.mp3",
+      "size": 5749773,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-the-buds-of-spring;-focus_1752344121828.mp3",
+        "metadata": {
+          "filename": "focus-on-the-buds-of-spring;-focus_1752344121828.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "spring_themed",
+            "seasonal",
+            "buds"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "spring",
+            "buds"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.827060"
+        },
+        "vad_metrics": {
+          "valence": 0.77,
+          "energy_arousal": 0.73,
+          "dominance": 0.61,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.827085"
+      }
+    },
+    {
+      "filename": "focus-on-the-gentle-spring-rain;-focus_1752344121828.mp3",
+      "path": "music_library/focus-on-the-gentle-spring-rain;-focus_1752344121828.mp3",
+      "size": 4556757,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-the-gentle-spring-rain;-focus_1752344121828.mp3",
+        "metadata": {
+          "filename": "focus-on-the-gentle-spring-rain;-focus_1752344121828.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "spring_themed",
+            "seasonal",
+            "gentle",
+            "nature_themed"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "spring",
+            "rain"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.828874"
+        },
+        "vad_metrics": {
+          "valence": 0.9,
+          "energy_arousal": 0.7,
+          "dominance": 0.53,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.828893"
+      }
+    },
+    {
+      "filename": "focus-on-the-joyous-primavera-of-the-mandolin;-focus_1752344121827.mp3",
+      "path": "music_library/focus-on-the-joyous-primavera-of-the-mandolin;-focus_1752344121827.mp3",
+      "size": 4615125,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-the-joyous-primavera-of-the-mandolin;-focus_1752344121827.mp3",
+        "metadata": {
+          "filename": "focus-on-the-joyous-primavera-of-the-mandolin;-focus_1752344121827.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [],
+          "instruments": [
+            "mandolin"
+          ],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "primavera",
+            "joyous"
+          ],
+          "musical_terms": [
+            "primavera"
+          ],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.830165"
+        },
+        "vad_metrics": {
+          "valence": 0.77,
+          "energy_arousal": 0.73,
+          "dominance": 0.58,
+          "confidence_score": 0.75,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.830185"
+      }
+    },
+    {
+      "filename": "focus-on-the-joyous-spring;-focus_1752344121828.mp3",
+      "path": "music_library/focus-on-the-joyous-spring;-focus_1752344121828.mp3",
+      "size": 3635493,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-the-joyous-spring;-focus_1752344121828.mp3",
+        "metadata": {
+          "filename": "focus-on-the-joyous-spring;-focus_1752344121828.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "spring_themed",
+            "seasonal",
+            "joyous"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "spring"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.832007"
+        },
+        "vad_metrics": {
+          "valence": 0.92,
+          "energy_arousal": 0.81,
+          "dominance": 0.61,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.832033"
+      }
+    },
+    {
+      "filename": "focus-on-the-start-of-spring;-focus_1752344121826.mp3",
+      "path": "music_library/focus-on-the-start-of-spring;-focus_1752344121826.mp3",
+      "size": 3098973,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-the-start-of-spring;-focus_1752344121826.mp3",
+        "metadata": {
+          "filename": "focus-on-the-start-of-spring;-focus_1752344121826.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "spring_themed",
+            "seasonal"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "spring"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.833466"
+        },
+        "vad_metrics": {
+          "valence": 0.77,
+          "energy_arousal": 0.73,
+          "dominance": 0.61,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Joyful vibrant activation"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "healthy_boundaries",
+          "mood_enhancement",
+          "balanced_control",
+          "activation",
+          "joy_cultivation",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.833490"
+      }
+    },
+    {
+      "filename": "focus-on-vivaldi-summer-movement-4;-focus_1752344098024.mp3",
+      "path": "music_library/focus-on-vivaldi-summer-movement-4;-focus_1752344098024.mp3",
+      "size": 2848125,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-vivaldi-summer-movement-4;-focus_1752344098024.mp3",
+        "metadata": {
+          "filename": "focus-on-vivaldi-summer-movement-4;-focus_1752344098024.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "vivaldi",
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "summer_themed",
+            "seasonal",
+            "vivaldi_inspired",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "summer"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": true,
+          "analysis_timestamp": "2025-07-12T18:26:27.835697"
+        },
+        "vad_metrics": {
+          "valence": 0.92,
+          "energy_arousal": 0.88,
+          "dominance": 0.85,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "leadership_training",
+          "empowerment",
+          "mood_enhancement",
+          "confidence_building",
+          "activation",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.835723"
+      }
+    },
+    {
+      "filename": "focus-on-vivaldi-summer-movement-iii;-focus_1752344098025.mp3",
+      "path": "music_library/focus-on-vivaldi-summer-movement-iii;-focus_1752344098025.mp3",
+      "size": 3322245,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-vivaldi-summer-movement-iii;-focus_1752344098025.mp3",
+        "metadata": {
+          "filename": "focus-on-vivaldi-summer-movement-iii;-focus_1752344098025.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": "iii",
+          "genres": [
+            "vivaldi",
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "summer_themed",
+            "seasonal",
+            "vivaldi_inspired",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "summer"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": true,
+          "analysis_timestamp": "2025-07-12T18:26:27.838012"
+        },
+        "vad_metrics": {
+          "valence": 0.92,
+          "energy_arousal": 0.88,
+          "dominance": 0.85,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "leadership_training",
+          "empowerment",
+          "mood_enhancement",
+          "confidence_building",
+          "activation",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.838038"
+      }
+    },
+    {
+      "filename": "focus-on-vivaldi-summer-storms;-focus_1752344098025.mp3",
+      "path": "music_library/focus-on-vivaldi-summer-storms;-focus_1752344098025.mp3",
+      "size": 4230717,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-vivaldi-summer-storms;-focus_1752344098025.mp3",
+        "metadata": {
+          "filename": "focus-on-vivaldi-summer-storms;-focus_1752344098025.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "vivaldi",
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "summer_themed",
+            "seasonal",
+            "vivaldi_inspired",
+            "nature_themed"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "summer",
+            "storms"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": true,
+          "analysis_timestamp": "2025-07-12T18:26:27.840011"
+        },
+        "vad_metrics": {
+          "valence": 1.0,
+          "energy_arousal": 0.93,
+          "dominance": 0.85,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "leadership_training",
+          "empowerment",
+          "mood_enhancement",
+          "confidence_building",
+          "activation",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.840038"
+      }
+    },
+    {
+      "filename": "focus-on-vivaldi-summer-thunder;-focus_1752344098026.mp3",
+      "path": "music_library/focus-on-vivaldi-summer-thunder;-focus_1752344098026.mp3",
+      "size": 3191469,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-on-vivaldi-summer-thunder;-focus_1752344098026.mp3",
+        "metadata": {
+          "filename": "focus-on-vivaldi-summer-thunder;-focus_1752344098026.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "vivaldi",
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "summer_themed",
+            "seasonal",
+            "vivaldi_inspired",
+            "nature_themed"
+          ],
+          "musical_terms": [],
+          "nature_elements": [
+            "summer",
+            "thunder"
+          ],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": true,
+          "analysis_timestamp": "2025-07-12T18:26:27.841997"
+        },
+        "vad_metrics": {
+          "valence": 1.0,
+          "energy_arousal": 0.93,
+          "dominance": 0.85,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "leadership_training",
+          "empowerment",
+          "mood_enhancement",
+          "confidence_building",
+          "activation",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.842017"
+      }
+    },
+    {
+      "filename": "focus-primavera-brasilia;-focus_1752344121827.mp3",
+      "path": "music_library/focus-primavera-brasilia;-focus_1752344121827.mp3",
+      "size": 4819677,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "focus-primavera-brasilia;-focus_1752344121827.mp3",
+        "metadata": {
+          "filename": "focus-primavera-brasilia;-focus_1752344121827.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [],
+          "instruments": [],
+          "purposes": [
+            "focus"
+          ],
+          "characteristics": [
+            "primavera",
+            "brasilia"
+          ],
+          "musical_terms": [
+            "primavera"
+          ],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": true,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.844357"
+        },
+        "vad_metrics": {
+          "valence": 0.62,
+          "energy_arousal": 0.65,
+          "dominance": 0.58,
+          "confidence_score": 0.75,
+          "emotional_interpretation": "Balanced centered neutrality"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "healthy_boundaries",
+          "balanced_control",
+          "activation",
+          "stability",
+          "grounding",
+          "emotional_balance",
+          "motivation"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.844381"
+      }
+    },
+    {
+      "filename": "Folklore, Volume 3,  Awake;  Instrumental,  House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/Folklore, Volume 3,  Awake;  Instrumental,  House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 5104885,
+      "has_analysis": false
+    },
+    {
+      "filename": "Folklore, Volume 5,  Awake;  Instrumental,  House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/Folklore, Volume 5,  Awake;  Instrumental,  House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 3462648,
+      "has_analysis": false
+    },
+    {
+      "filename": "Game; Indie Pop; Focus (Remix)_1751909985808.mp3",
+      "path": "music_library/Game; Indie Pop; Focus (Remix)_1751909985808.mp3",
+      "size": 3983420,
+      "has_analysis": false
+    },
+    {
+      "filename": "Get that Gold; Indie Pop; Focus (1)_1751909069357.mp3",
+      "path": "music_library/Get that Gold; Indie Pop; Focus (1)_1751909069357.mp3",
+      "size": 5556455,
+      "has_analysis": false
+    },
+    {
+      "filename": "Glass Ships; Indie Pop; Focus_1751909069357.mp3",
+      "path": "music_library/Glass Ships; Indie Pop; Focus_1751909069357.mp3",
+      "size": 4665742,
+      "has_analysis": false
+    },
+    {
+      "filename": "Going for Gold; Indie Pop; Focus_1751909069357.mp3",
+      "path": "music_library/Going for Gold; Indie Pop; Focus_1751909069357.mp3",
+      "size": 5827636,
+      "has_analysis": false
+    },
+    {
+      "filename": "gutteral roar; EDM; Focus_1751912248609.mp3",
+      "path": "music_library/gutteral roar; EDM; Focus_1751912248609.mp3",
+      "size": 5015529,
+      "has_analysis": false
+    },
+    {
+      "filename": "Harvest, rejoice; instrumental, Renaissance; relaxation, pain relief, (Cover)_1751992433904.mp3",
+      "path": "music_library/Harvest, rejoice; instrumental, Renaissance; relaxation, pain relief, (Cover)_1751992433904.mp3",
+      "size": 4115130,
+      "has_analysis": false
+    },
+    {
+      "filename": "Harvest, rejoice; instrumental, Renaissance; relaxation, pain relief, (Cover)_1751993664181.mp3",
+      "path": "music_library/Harvest, rejoice; instrumental, Renaissance; relaxation, pain relief, (Cover)_1751993664181.mp3",
+      "size": 4115130,
+      "has_analysis": false
+    },
+    {
+      "filename": "Hummingbird's Song; Classical; FOCUS (Remix)_1751993979635.mp3",
+      "path": "music_library/Hummingbird's Song; Classical; FOCUS (Remix)_1751993979635.mp3",
+      "size": 8760057,
+      "has_analysis": false
+    },
+    {
+      "filename": "I Got You; Indie Pop; Focus (Remix)_1751909240329.mp3",
+      "path": "music_library/I Got You; Indie Pop; Focus (Remix)_1751909240329.mp3",
+      "size": 3410023,
+      "has_analysis": false
+    },
+    {
+      "filename": "Indie Times; Indie Pop; Focus (Remix)_1751909943556.mp3",
+      "path": "music_library/Indie Times; Indie Pop; Focus (Remix)_1751909943556.mp3",
+      "size": 3639180,
+      "has_analysis": false
+    },
+    {
+      "filename": "Indie Times; Indie Pop; Instrumental; Relaxation (1)_1751909240328.mp3",
+      "path": "music_library/Indie Times; Indie Pop; Instrumental; Relaxation (1)_1751909240328.mp3",
+      "size": 5172729,
+      "has_analysis": false
+    },
+    {
+      "filename": "Indie Times; Indie Pop; Instrumental; Relaxation_1751909240328.mp3",
+      "path": "music_library/Indie Times; Indie Pop; Instrumental; Relaxation_1751909240328.mp3",
+      "size": 5161257,
+      "has_analysis": false
+    },
+    {
+      "filename": "Interpolations, Please; EDM - 1970s, Re-Energize, HIIT (Remix) (3)_1751979575805.mp3",
+      "path": "music_library/Interpolations, Please; EDM - 1970s, Re-Energize, HIIT (Remix) (3)_1751979575805.mp3",
+      "size": 4787444,
+      "has_analysis": false
+    },
+    {
+      "filename": "Interpolations, Please; EDM - 1970s, Re-Energize, HIIT (Remix) (4)_1751910100847.mp3",
+      "path": "music_library/Interpolations, Please; EDM - 1970s, Re-Energize, HIIT (Remix) (4)_1751910100847.mp3",
+      "size": 9678915,
+      "has_analysis": false
+    },
+    {
+      "filename": "\u201cIn the Stillness; Baroque; Female; Re-Energize(Remix) (1) (1)_1752343546036.mp3",
+      "path": "music_library/\u201cIn the Stillness; Baroque; Female; Re-Energize(Remix) (1) (1)_1752343546036.mp3",
+      "size": 3842049,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "\u201cIn the Stillness; Baroque; Female; Re-Energize(Remix) (1) (1)_1752343546036.mp3",
+        "metadata": {
+          "filename": "\u201cIn the Stillness; Baroque; Female; Re-Energize(Remix) (1) (1)_1752343546036.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque"
+          ],
+          "instruments": [
+            "voice"
+          ],
+          "purposes": [
+            "energy"
+          ],
+          "characteristics": [
+            "stillness",
+            "remix"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 1,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.855808"
+        },
+        "vad_metrics": {
+          "valence": 0.92,
+          "energy_arousal": 0.62,
+          "dominance": 0.81,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Confident optimistic leadership"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "leadership_training",
+          "empowerment",
+          "mood_enhancement",
+          "confidence_building",
+          "contemplation",
+          "presence_cultivation",
+          "activation",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "motivation",
+          "stillness_practice",
+          "inner_silence"
+        ],
+        "spectral_properties": {
+          "frequency_range": "85-1100 Hz fundamental, up to 4000 Hz harmonics",
+          "spectral_character": "formant-rich with vocal tract resonances",
+          "emotional_expressivity": "very high",
+          "harmonic_complexity": "very high with counterpoint",
+          "attack_characteristics": "smooth onset with breath dynamics",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices",
+          "frequency_emphasis": "mid-range presence for alertness",
+          "dynamic_contrast": "pronounced peaks for stimulation",
+          "rhythmic_drive": "propulsive elements for motivation"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.855940"
+      }
+    },
+    {
+      "filename": "\u201cIn the Stillness; Baroque; Female; Re-Energize(Remix)_1751965370364.mp3",
+      "path": "music_library/\u201cIn the Stillness; Baroque; Female; Re-Energize(Remix)_1751965370364.mp3",
+      "size": 3842049,
+      "has_analysis": false
+    },
+    {
+      "filename": "I wish you love; instrumental, electronic, crossover; re-energize, focus_1751909128814.mp3",
+      "path": "music_library/I wish you love; instrumental, electronic, crossover; re-energize, focus_1751909128814.mp3",
+      "size": 5393270,
+      "has_analysis": false
+    },
+    {
+      "filename": "I wish you love; rock; EDM - blues rock;  118 BPM; Re-Energize (Remix)_1751910100846.mp3",
+      "path": "music_library/I wish you love; rock; EDM - blues rock;  118 BPM; Re-Energize (Remix)_1751910100846.mp3",
+      "size": 5039448,
+      "has_analysis": false
+    },
+    {
+      "filename": "je suis la voix de ton e\u0301toile ; Duet, French; Classical; Re-Energize (Remix)_1751993979636.mp3",
+      "path": "music_library/je suis la voix de ton e\u0301toile ; Duet, French; Classical; Re-Energize (Remix)_1751993979636.mp3",
+      "size": 3589020,
+      "has_analysis": false
+    },
+    {
+      "filename": "Keep Me Up; EDM; FOCUS_1751910081127.mp3",
+      "path": "music_library/Keep Me Up; EDM; FOCUS_1751910081127.mp3",
+      "size": 4911767,
+      "has_analysis": false
+    },
+    {
+      "filename": "Laetitia Nova 2, rejoice; instrumental, Renaissance; pain relief_1751993664181.mp3",
+      "path": "music_library/Laetitia Nova 2, rejoice; instrumental, Renaissance; pain relief_1751993664181.mp3",
+      "size": 4339737,
+      "has_analysis": false
+    },
+    {
+      "filename": "Limitless; Indie Pop; Focus_1751909069357.mp3",
+      "path": "music_library/Limitless; Indie Pop; Focus_1751909069357.mp3",
+      "size": 5380568,
+      "has_analysis": false
+    },
+    {
+      "filename": "Lo, She Smiles Upon the Day; Cantata, Classical; Re-Energize (Remix)_1751993979634.mp3",
+      "path": "music_library/Lo, She Smiles Upon the Day; Cantata, Classical; Re-Energize (Remix)_1751993979634.mp3",
+      "size": 4900511,
+      "has_analysis": false
+    },
+    {
+      "filename": "Love Affair with Strings; Big Band, Instrumental; Re-Energize (Remix)_1751993916057.mp3",
+      "path": "music_library/Love Affair with Strings; Big Band, Instrumental; Re-Energize (Remix)_1751993916057.mp3",
+      "size": 2601549,
+      "has_analysis": false
+    },
+    {
+      "filename": "Love's Labours Won;  Baroque; Relaxation (1)_1751993979634.mp3",
+      "path": "music_library/Love's Labours Won;  Baroque; Relaxation (1)_1751993979634.mp3",
+      "size": 2559196,
+      "has_analysis": false
+    },
+    {
+      "filename": "Malaga, my love; flamenco - classical; focus  (2)_1752252813397.mp3",
+      "path": "music_library/Malaga, my love; flamenco - classical; focus  (2)_1752252813397.mp3",
+      "size": 5136530,
+      "has_analysis": false
+    },
+    {
+      "filename": "Mount Olympus;  Indie Pop; Focus (1)_1751909173771.mp3",
+      "path": "music_library/Mount Olympus;  Indie Pop; Focus (1)_1751909173771.mp3",
+      "size": 5020075,
+      "has_analysis": false
+    },
+    {
+      "filename": "Mount Olympus;  Indie Pop; Focus_1751904825146.mp3",
+      "path": "music_library/Mount Olympus;  Indie Pop; Focus_1751904825146.mp3",
+      "size": 4882051,
+      "has_analysis": false
+    },
+    {
+      "filename": "Mustang Baby; Indie Pop; Focus_1751909128815.mp3",
+      "path": "music_library/Mustang Baby; Indie Pop; Focus_1751909128815.mp3",
+      "size": 3969694,
+      "has_analysis": false
+    },
+    {
+      "filename": "Mustang Baby, REMIX; Indie Pop; Focus_1751909128816.mp3",
+      "path": "music_library/Mustang Baby, REMIX; Indie Pop; Focus_1751909128816.mp3",
+      "size": 5280554,
+      "has_analysis": false
+    },
+    {
+      "filename": "mustangs roam free_1751910100846.mp3",
+      "path": "music_library/mustangs roam free_1751910100846.mp3",
+      "size": 4123054,
+      "has_analysis": false
+    },
+    {
+      "filename": "mustangs roam free_1751912647326.mp3",
+      "path": "music_library/mustangs roam free_1751912647326.mp3",
+      "size": 4123054,
+      "has_analysis": false
+    },
+    {
+      "filename": "mustangs roam free_1751979575805.mp3",
+      "path": "music_library/mustangs roam free_1751979575805.mp3",
+      "size": 4123054,
+      "has_analysis": false
+    },
+    {
+      "filename": "My Heart;  EDM; Energy Boost_1751910100844.mp3",
+      "path": "music_library/My Heart;  EDM; Energy Boost_1751910100844.mp3",
+      "size": 5269394,
+      "has_analysis": false
+    },
+    {
+      "filename": "My Heart;  EDM; Energy Boost_1751912647325.mp3",
+      "path": "music_library/My Heart;  EDM; Energy Boost_1751912647325.mp3",
+      "size": 5269394,
+      "has_analysis": false
+    },
+    {
+      "filename": "My Heart;  EDM; FOCUS_1751912647325.mp3",
+      "path": "music_library/My Heart;  EDM; FOCUS_1751912647325.mp3",
+      "size": 5269380,
+      "has_analysis": false
+    },
+    {
+      "filename": "Nautilus; EDM; FOCUS (Remix) (1)_1751912236089.mp3",
+      "path": "music_library/Nautilus; EDM; FOCUS (Remix) (1)_1751912236089.mp3",
+      "size": 5283001,
+      "has_analysis": false
+    },
+    {
+      "filename": "Needs; EDM; FOCUS (Remix)_1751910312210.mp3",
+      "path": "music_library/Needs; EDM; FOCUS (Remix)_1751910312210.mp3",
+      "size": 4796334,
+      "has_analysis": false
+    },
+    {
+      "filename": "New York Dive; Instrumental, Electronic; Focus, Re-Energize_1751909128815.mp3",
+      "path": "music_library/New York Dive; Instrumental, Electronic; Focus, Re-Energize_1751909128815.mp3",
+      "size": 4752773,
+      "has_analysis": false
+    },
+    {
+      "filename": "Nice One; EDM; Focus (1)_1751910100846.mp3",
+      "path": "music_library/Nice One; EDM; Focus (1)_1751910100846.mp3",
+      "size": 4442746,
+      "has_analysis": false
+    },
+    {
+      "filename": "Nice One; EDM; Focus_1751910301766.mp3",
+      "path": "music_library/Nice One; EDM; Focus_1751910301766.mp3",
+      "size": 4442746,
+      "has_analysis": false
+    },
+    {
+      "filename": "No Cheat Days; EDM; FOCUS_1751909918804.mp3",
+      "path": "music_library/No Cheat Days; EDM; FOCUS_1751909918804.mp3",
+      "size": 3922040,
+      "has_analysis": false
+    },
+    {
+      "filename": "Ode to thine love, so true;  Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "path": "music_library/Ode to thine love, so true;  Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "size": 5259491,
+      "has_analysis": false
+    },
+    {
+      "filename": "O Luce Del Giorno; Italian; Cantata, Opera; Classical; Re-Energize (Remix) (1)_1751993979634.mp3",
+      "path": "music_library/O Luce Del Giorno; Italian; Cantata, Opera; Classical; Re-Energize (Remix) (1)_1751993979634.mp3",
+      "size": 6328544,
+      "has_analysis": false
+    },
+    {
+      "filename": "Oxford Waits with Open Mind; from Two Sisters, Contemporary Musical, Classical; Re-Energize_1751993916061.mp3",
+      "path": "music_library/Oxford Waits with Open Mind; from Two Sisters, Contemporary Musical, Classical; Re-Energize_1751993916061.mp3",
+      "size": 4737747,
+      "has_analysis": false
+    },
+    {
+      "filename": "Parallel Lines; Indie Pop; Focus (Remix) (1)_1751909240329.mp3",
+      "path": "music_library/Parallel Lines; Indie Pop; Focus (Remix) (1)_1751909240329.mp3",
+      "size": 4285804,
+      "has_analysis": false
+    },
+    {
+      "filename": "Parallelogram; Indie Pop; Focus (Remix) (1)_1751909985809.mp3",
+      "path": "music_library/Parallelogram; Indie Pop; Focus (Remix) (1)_1751909985809.mp3",
+      "size": 4613847,
+      "has_analysis": false
+    },
+    {
+      "filename": "Phi Beta Kappa; EDM; FOCUS_1751910301765.mp3",
+      "path": "music_library/Phi Beta Kappa; EDM; FOCUS_1751910301765.mp3",
+      "size": 4072065,
+      "has_analysis": false
+    },
+    {
+      "filename": "Phyrgian winter, nocturne; classical, baroque, instrumental, guitar; sleep, 1st song 58 BPM 6_8 time_1752343256770.mp3",
+      "path": "music_library/Phyrgian winter, nocturne; classical, baroque, instrumental, guitar; sleep, 1st song 58 BPM 6_8 time_1752343256770.mp3",
+      "size": 3670372,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Phyrgian winter, nocturne; classical, baroque, instrumental, guitar; sleep, 1st song 58 BPM 6_8 time_1752343256770.mp3",
+        "metadata": {
+          "filename": "Phyrgian winter, nocturne; classical, baroque, instrumental, guitar; sleep, 1st song 58 BPM 6_8 time_1752343256770.mp3",
+          "bpm": 58,
+          "time_signature": "6/8",
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque",
+            "modal",
+            "instrumental",
+            "seasonal"
+          ],
+          "instruments": [
+            "guitar",
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "nocturne"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.771520"
+        },
+        "vad_metrics": {
+          "valence": 0.18,
+          "energy_arousal": 0.0,
+          "dominance": 0.42,
+          "confidence_score": 1.0,
+          "emotional_interpretation": "Controlled melancholic calm"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "catharsis",
+          "seasonal_affective_support",
+          "cold_adaptation",
+          "deep_sleep",
+          "balanced_control",
+          "introspective_seasons",
+          "grief_processing",
+          "emotional_release",
+          "winter_depression",
+          "introspection"
+        ],
+        "spectral_properties": {
+          "frequency_range": "80-4000 Hz primary, up to 8000 Hz harmonics",
+          "spectral_character": "warm harmonic-rich with string resonance",
+          "attack_characteristics": "plucked transients with finger/pick noise",
+          "sustain_properties": "natural decay with room resonance",
+          "harmonic_complexity": "very high with counterpoint",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices",
+          "temporal_characteristics": "meditative pace inducing alpha brain states",
+          "rhythmic_entrainment": "slow heart rate synchronization",
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.771545"
+      }
+    },
+    {
+      "filename": "Podium; EDM_ Focus (1)_1751910081127.mp3",
+      "path": "music_library/Podium; EDM_ Focus (1)_1751910081127.mp3",
+      "size": 4853322,
+      "has_analysis": false
+    },
+    {
+      "filename": "Podium; EDM_ Focus_1751910081127.mp3",
+      "path": "music_library/Podium; EDM_ Focus_1751910081127.mp3",
+      "size": 4853322,
+      "has_analysis": false
+    },
+    {
+      "filename": "queen and country; drumming; focus_1751912248609.mp3",
+      "path": "music_library/queen and country; drumming; focus_1751912248609.mp3",
+      "size": 5999243,
+      "has_analysis": false
+    },
+    {
+      "filename": "(. Recitative Baritone \u2013 \u201cIn the Stillne (Remix) (2)_1752343806748.mp3",
+      "path": "music_library/(. Recitative Baritone \u2013 \u201cIn the Stillne (Remix) (2)_1752343806748.mp3",
+      "size": 5161625,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "(. Recitative Baritone \u2013 \u201cIn the Stillne (Remix) (2)_1752343806748.mp3",
+        "metadata": {
+          "filename": "(. Recitative Baritone \u2013 \u201cIn the Stillne (Remix) (2)_1752343806748.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "recitative"
+          ],
+          "instruments": [
+            "voice"
+          ],
+          "purposes": [],
+          "characteristics": [
+            "remix"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 2,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.754108"
+        },
+        "vad_metrics": {
+          "valence": 0.6,
+          "energy_arousal": 0.55,
+          "dominance": 0.58,
+          "confidence_score": 0.7,
+          "emotional_interpretation": "Balanced centered neutrality"
+        },
+        "therapeutic_applications": [
+          "healthy_boundaries",
+          "work",
+          "study",
+          "balanced_control",
+          "focus",
+          "concentration",
+          "stability",
+          "grounding",
+          "emotional_balance"
+        ],
+        "spectral_properties": {
+          "frequency_range": "85-1100 Hz fundamental, up to 4000 Hz harmonics",
+          "spectral_character": "formant-rich with vocal tract resonances",
+          "emotional_expressivity": "very high",
+          "harmonic_complexity": "moderate to high with vibrato",
+          "attack_characteristics": "smooth onset with breath dynamics"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.754136"
+      }
+    },
+    {
+      "filename": "Red, White, and Row; EDM; FOCUS (Remix)_1751912647327.mp3",
+      "path": "music_library/Red, White, and Row; EDM; FOCUS (Remix)_1751912647327.mp3",
+      "size": 5385713,
+      "has_analysis": false
+    },
+    {
+      "filename": "Redwoods Speak to Me; Classic Rock; Re-Energize, Focus (Remix)_1751912647325.mp3",
+      "path": "music_library/Redwoods Speak to Me; Classic Rock; Re-Energize, Focus (Remix)_1751912647325.mp3",
+      "size": 5017546,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Reverie Instrumental; Baroque, Classical; Sleep (Remix)_1751965187466.mp3",
+      "path": "music_library/_Reverie Instrumental; Baroque, Classical; Sleep (Remix)_1751965187466.mp3",
+      "size": 4593288,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Reverie Instrumental; Baroque, Classical; Sleep (Remix)_1752343546035.mp3",
+      "path": "music_library/_Reverie Instrumental; Baroque, Classical; Sleep (Remix)_1752343546035.mp3",
+      "size": 4593288,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "_Reverie Instrumental; Baroque, Classical; Sleep (Remix)_1752343546035.mp3",
+        "metadata": {
+          "filename": "_Reverie Instrumental; Baroque, Classical; Sleep (Remix)_1752343546035.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque",
+            "instrumental"
+          ],
+          "instruments": [
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "reverie",
+            "remix"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.798146"
+        },
+        "vad_metrics": {
+          "valence": 0.51,
+          "energy_arousal": 0.08,
+          "dominance": 0.34,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Profound meditative neutrality"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "deep_sleep",
+          "balanced_control",
+          "stability",
+          "grounding",
+          "emotional_balance"
+        ],
+        "spectral_properties": {
+          "harmonic_complexity": "very high with counterpoint",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices",
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.798168"
+      }
+    },
+    {
+      "filename": "Ride; EDM; FOCUS (Remix)_1751912647326.mp3",
+      "path": "music_library/Ride; EDM; FOCUS (Remix)_1751912647326.mp3",
+      "size": 4927270,
+      "has_analysis": false
+    },
+    {
+      "filename": "Rip It; Indie Pop; Focus (Remix) (1)_1751909240326.mp3",
+      "path": "music_library/Rip It; Indie Pop; Focus (Remix) (1)_1751909240326.mp3",
+      "size": 4561856,
+      "has_analysis": false
+    },
+    {
+      "filename": "Rip Tide; Indie Pop; Focus_1751909128816.mp3",
+      "path": "music_library/Rip Tide; Indie Pop; Focus_1751909128816.mp3",
+      "size": 4558851,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Rock, instrumental, 1970s, Re-Energize (2)_1752343546036.mp3",
+      "path": "music_library/_Rock, instrumental, 1970s, Re-Energize (2)_1752343546036.mp3",
+      "size": 10075440,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "_Rock, instrumental, 1970s, Re-Energize (2)_1752343546036.mp3",
+        "metadata": {
+          "filename": "_Rock, instrumental, 1970s, Re-Energize (2)_1752343546036.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "instrumental"
+          ],
+          "instruments": [
+            "instrumental"
+          ],
+          "purposes": [
+            "energy"
+          ],
+          "characteristics": [],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 2,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.800205"
+        },
+        "vad_metrics": {
+          "valence": 0.72,
+          "energy_arousal": 0.75,
+          "dominance": 0.68,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "leadership_training",
+          "empowerment",
+          "mood_enhancement",
+          "confidence_building",
+          "activation",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {
+          "frequency_emphasis": "mid-range presence for alertness",
+          "dynamic_contrast": "pronounced peaks for stimulation",
+          "rhythmic_drive": "propulsive elements for motivation"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.800230"
+      }
+    },
+    {
+      "filename": "_Rock On; instrumental, 1970s; Re-Energize, FOCUS_1751965187466.mp3",
+      "path": "music_library/_Rock On; instrumental, 1970s; Re-Energize, FOCUS_1751965187466.mp3",
+      "size": 9573602,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Same Embrace; Instrumental; Re-Energize (Remix) (2) (1)_1752343546036.mp3",
+      "path": "music_library/_Same Embrace; Instrumental; Re-Energize (Remix) (2) (1)_1752343546036.mp3",
+      "size": 6116482,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "_Same Embrace; Instrumental; Re-Energize (Remix) (2) (1)_1752343546036.mp3",
+        "metadata": {
+          "filename": "_Same Embrace; Instrumental; Re-Energize (Remix) (2) (1)_1752343546036.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "instrumental"
+          ],
+          "instruments": [
+            "instrumental"
+          ],
+          "purposes": [
+            "energy"
+          ],
+          "characteristics": [
+            "embrace",
+            "remix"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 2,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.802557"
+        },
+        "vad_metrics": {
+          "valence": 0.84,
+          "energy_arousal": 0.8,
+          "dominance": 0.73,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "exercise",
+          "energy_boost",
+          "depression_treatment",
+          "leadership_training",
+          "empowerment",
+          "mood_enhancement",
+          "confidence_building",
+          "activation",
+          "joy_cultivation",
+          "assertiveness",
+          "celebration",
+          "motivation"
+        ],
+        "spectral_properties": {
+          "frequency_emphasis": "mid-range presence for alertness",
+          "dynamic_contrast": "pronounced peaks for stimulation",
+          "rhythmic_drive": "propulsive elements for motivation"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.802582"
+      }
+    },
+    {
+      "filename": "_Same Embrace; Instrumental; Re-Energize (Remix) (2)_1751965187466.mp3",
+      "path": "music_library/_Same Embrace; Instrumental; Re-Energize (Remix) (2)_1751965187466.mp3",
+      "size": 6116482,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Sarabande, 3; Baroque, Classical; Sleep (Remix)_1751965187466.mp3",
+      "path": "music_library/_Sarabande, 3; Baroque, Classical; Sleep (Remix)_1751965187466.mp3",
+      "size": 5423894,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Sarabande, 4; Baroque, Classical; Sleep (Remix) (1)_1751965187466.mp3",
+      "path": "music_library/_Sarabande, 4; Baroque, Classical; Sleep (Remix) (1)_1751965187466.mp3",
+      "size": 4190290,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Sarabande, 5; Baroque, Classical; Sleep (Remix) (1)_1751965187466.mp3",
+      "path": "music_library/_Sarabande, 5; Baroque, Classical; Sleep (Remix) (1)_1751965187466.mp3",
+      "size": 4637849,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Sarabande, 6; Baroque, Classical; Meditation, Affirmations, Pre-Sleep (1)_1751965370364.mp3",
+      "path": "music_library/_Sarabande, 6; Baroque, Classical; Meditation, Affirmations, Pre-Sleep (1)_1751965370364.mp3",
+      "size": 4296262,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Sarabande; Baroque, Classical; Sleep (Remix) (1)_1751965370364.mp3",
+      "path": "music_library/_Sarabande; Baroque, Classical; Sleep (Remix) (1)_1751965370364.mp3",
+      "size": 3661012,
+      "has_analysis": false
+    },
+    {
+      "filename": "Snacks; EDM; FOCUS_1751909918804.mp3",
+      "path": "music_library/Snacks; EDM; FOCUS_1751909918804.mp3",
+      "size": 4008501,
+      "has_analysis": false
+    },
+    {
+      "filename": "Songbook Love Affairs; Jazz; Relaxation_1751993916058.mp3",
+      "path": "music_library/Songbook Love Affairs; Jazz; Relaxation_1751993916058.mp3",
+      "size": 4693719,
+      "has_analysis": false
+    },
+    {
+      "filename": "SpaceTime Continuum; EDM; FOCUS (Remix)_1751912236091.mp3",
+      "path": "music_library/SpaceTime Continuum; EDM; FOCUS (Remix)_1751912236091.mp3",
+      "size": 10382687,
+      "has_analysis": false
+    },
+    {
+      "filename": "Space Trance; EDM; FOCUS (Remix)_1751912236091.mp3",
+      "path": "music_library/Space Trance; EDM; FOCUS (Remix)_1751912236091.mp3",
+      "size": 7103572,
+      "has_analysis": false
+    },
+    {
+      "filename": "Spinosa's Contemplations;  Baroque; Relaxation_1751993979634.mp3",
+      "path": "music_library/Spinosa's Contemplations;  Baroque; Relaxation_1751993979634.mp3",
+      "size": 4801493,
+      "has_analysis": false
+    },
+    {
+      "filename": "Squats; EDM; FOCUS (Remix)_1751912647327.mp3",
+      "path": "music_library/Squats; EDM; FOCUS (Remix)_1751912647327.mp3",
+      "size": 5734370,
+      "has_analysis": false
+    },
+    {
+      "filename": "Study the Sun 2; EDM; FOCUS (Remix) (1)_1751979575805.mp3",
+      "path": "music_library/Study the Sun 2; EDM; FOCUS (Remix) (1)_1751979575805.mp3",
+      "size": 5338947,
+      "has_analysis": false
+    },
+    {
+      "filename": "Summer Nocturne, Movement 2_ Baroque Instrumental; 58 BPM; sleep_1751993688198.mp3",
+      "path": "music_library/Summer Nocturne, Movement 2_ Baroque Instrumental; 58 BPM; sleep_1751993688198.mp3",
+      "size": 2786173,
+      "has_analysis": false
+    },
+    {
+      "filename": "Swag; EDM; FOCUS (Remix) (1)_1751912647327.mp3",
+      "path": "music_library/Swag; EDM; FOCUS (Remix) (1)_1751912647327.mp3",
+      "size": 5889947,
+      "has_analysis": false
+    },
+    {
+      "filename": "Tea, Cumulus; FOCUS (Remix)_1751993979635.mp3",
+      "path": "music_library/Tea, Cumulus; FOCUS (Remix)_1751993979635.mp3",
+      "size": 4930019,
+      "has_analysis": false
+    },
+    {
+      "filename": "Tell Me; EDM; FOCUS_1751911220995.mp3",
+      "path": "music_library/Tell Me; EDM; FOCUS_1751911220995.mp3",
+      "size": 4461875,
+      "has_analysis": false
+    },
+    {
+      "filename": "The Cocquette;  Baroque; Relaxation (1)_1751993979635.mp3",
+      "path": "music_library/The Cocquette;  Baroque; Relaxation (1)_1751993979635.mp3",
+      "size": 4163824,
+      "has_analysis": false
+    },
+    {
+      "filename": "The Discovery, Movement 1; Duet, Female, English; Re-Energize (Remix)_1751993916061.mp3",
+      "path": "music_library/The Discovery, Movement 1; Duet, Female, English; Re-Energize (Remix)_1751993916061.mp3",
+      "size": 4565083,
+      "has_analysis": false
+    },
+    {
+      "filename": "The Muse; Duet, French, Baroque; Re-Energize_1751993979636.mp3",
+      "path": "music_library/The Muse; Duet, French, Baroque; Re-Energize_1751993979636.mp3",
+      "size": 2839157,
+      "has_analysis": false
+    },
+    {
+      "filename": "the open desert_1751910100845.mp3",
+      "path": "music_library/the open desert_1751910100845.mp3",
+      "size": 5466152,
+      "has_analysis": false
+    },
+    {
+      "filename": "the open desert_1751912647325.mp3",
+      "path": "music_library/the open desert_1751912647325.mp3",
+      "size": 5466152,
+      "has_analysis": false
+    },
+    {
+      "filename": "_Theory of Mind; Baroque, Classical; Sleep (Remix) (1)_1751965370364.mp3",
+      "path": "music_library/_Theory of Mind; Baroque, Classical; Sleep (Remix) (1)_1751965370364.mp3",
+      "size": 5760209,
+      "has_analysis": false
+    },
+    {
+      "filename": "The Other Side; Indie Pop; Focus (Remix) (1)_1751909240328.mp3",
+      "path": "music_library/The Other Side; Indie Pop; Focus (Remix) (1)_1751909240328.mp3",
+      "size": 3191296,
+      "has_analysis": false
+    },
+    {
+      "filename": "The Path; Instrumental Flamenco Guitar and violin; Re-Energize (Remix)_1751993916060.mp3",
+      "path": "music_library/The Path; Instrumental Flamenco Guitar and violin; Re-Energize (Remix)_1751993916060.mp3",
+      "size": 4379236,
+      "has_analysis": false
+    },
+    {
+      "filename": "_There Is An Organist In Our Band; Rock, instrumental, 1970s; Re-Energize, FOCUS (1)_1751965370364.mp3",
+      "path": "music_library/_There Is An Organist In Our Band; Rock, instrumental, 1970s; Re-Energize, FOCUS (1)_1751965370364.mp3",
+      "size": 9573614,
+      "has_analysis": false
+    },
+    {
+      "filename": "Thick Beats; EDM; FOCUS (Remix)_1751979575805.mp3",
+      "path": "music_library/Thick Beats; EDM; FOCUS (Remix)_1751979575805.mp3",
+      "size": 4940968,
+      "has_analysis": false
+    },
+    {
+      "filename": "Today, I Give Myself to Thee; Cantata, Classical; Re-Energize (Remix)_1751993979634.mp3",
+      "path": "music_library/Today, I Give Myself to Thee; Cantata, Classical; Re-Energize (Remix)_1751993979634.mp3",
+      "size": 6328534,
+      "has_analysis": false
+    },
+    {
+      "filename": "_ ton miroir a un double e\u0301ternel\u201d; Duet, French, Baroque; Re-Energize (Remix) (1)_1751965187466.mp3",
+      "path": "music_library/_ ton miroir a un double e\u0301ternel\u201d; Duet, French, Baroque; Re-Energize (Remix) (1)_1751965187466.mp3",
+      "size": 3564283,
+      "has_analysis": false
+    },
+    {
+      "filename": "_ ton miroir a un double e\u0301ternel\u201d; Duet, French, Baroque; Re-Energize (Remix)_1751993916062.mp3",
+      "path": "music_library/_ ton miroir a un double e\u0301ternel\u201d; Duet, French, Baroque; Re-Energize (Remix)_1751993916062.mp3",
+      "size": 3564283,
+      "has_analysis": false
+    },
+    {
+      "filename": "Ton souffle est mon e\u0301veil de flamme; French; Baroque; Duet; Re-Energize (Remix)_1751993979635.mp3",
+      "path": "music_library/Ton souffle est mon e\u0301veil de flamme; French; Baroque; Duet; Re-Energize (Remix)_1751993979635.mp3",
+      "size": 3975215,
+      "has_analysis": false
+    },
+    {
+      "filename": "Two Step; EDM; FOCUS_1751910081127.mp3",
+      "path": "music_library/Two Step; EDM; FOCUS_1751910081127.mp3",
+      "size": 4445313,
+      "has_analysis": false
+    },
+    {
+      "filename": "\ud83c\udfa4 Verso I_1751965370364.mp3",
+      "path": "music_library/\ud83c\udfa4 Verso I_1751965370364.mp3",
+      "size": 5245905,
+      "has_analysis": false
+    },
+    {
+      "filename": "\ud83c\udfa4 Verso I (Cover)_1752343806748.mp3",
+      "path": "music_library/\ud83c\udfa4 Verso I (Cover)_1752343806748.mp3",
+      "size": 5463251,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "\ud83c\udfa4 Verso I (Cover)_1752343806748.mp3",
+        "metadata": {
+          "filename": "\ud83c\udfa4 Verso I (Cover)_1752343806748.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": "i",
+          "genres": [],
+          "instruments": [
+            "voice"
+          ],
+          "purposes": [],
+          "characteristics": [
+            "cover"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": true,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.857725"
+        },
+        "vad_metrics": {
+          "valence": 0.63,
+          "energy_arousal": 0.5,
+          "dominance": 0.58,
+          "confidence_score": 0.6,
+          "emotional_interpretation": "Balanced centered neutrality"
+        },
+        "therapeutic_applications": [
+          "healthy_boundaries",
+          "work",
+          "study",
+          "balanced_control",
+          "focus",
+          "concentration",
+          "stability",
+          "grounding",
+          "emotional_balance"
+        ],
+        "spectral_properties": {
+          "frequency_range": "85-1100 Hz fundamental, up to 4000 Hz harmonics",
+          "spectral_character": "formant-rich with vocal tract resonances",
+          "emotional_expressivity": "very high",
+          "harmonic_complexity": "moderate to high with vibrato",
+          "attack_characteristics": "smooth onset with breath dynamics"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.857748"
+      }
+    },
+    {
+      "filename": "viking shield; drumming; focus_1751912248609.mp3",
+      "path": "music_library/viking shield; drumming; focus_1751912248609.mp3",
+      "size": 5573462,
+      "has_analysis": false
+    },
+    {
+      "filename": "Wake Me Up; EDM; FOCUS (1)_1751910312209.mp3",
+      "path": "music_library/Wake Me Up; EDM; FOCUS (1)_1751910312209.mp3",
+      "size": 4740852,
+      "has_analysis": false
+    },
+    {
+      "filename": "Wants and Needs EDM; FOCUS (Remix)_1751911220996.mp3",
+      "path": "music_library/Wants and Needs EDM; FOCUS (Remix)_1751911220996.mp3",
+      "size": 5275096,
+      "has_analysis": false
+    },
+    {
+      "filename": "Wavelength; EDM; FOCUS (Remix)_1751910312210.mp3",
+      "path": "music_library/Wavelength; EDM; FOCUS (Remix)_1751910312210.mp3",
+      "size": 4881523,
+      "has_analysis": false
+    },
+    {
+      "filename": "We Are Here, Olympus;  Indie Pop; Focus_1751904884911.mp3",
+      "path": "music_library/We Are Here, Olympus;  Indie Pop; Focus_1751904884911.mp3",
+      "size": 5387953,
+      "has_analysis": false
+    },
+    {
+      "filename": "We Might Be Legends;  Indie Pop; Focus (1)_1751909173770.mp3",
+      "path": "music_library/We Might Be Legends;  Indie Pop; Focus (1)_1751909173770.mp3",
+      "size": 4579360,
+      "has_analysis": false
+    },
+    {
+      "filename": "We're Here to Cook;  Indie Pop; Focus_1751909173770.mp3",
+      "path": "music_library/We're Here to Cook;  Indie Pop; Focus_1751909173770.mp3",
+      "size": 5038727,
+      "has_analysis": false
+    },
+    {
+      "filename": "We Shall Be Together Soon; Opera; Female; Classical; Re-Energize_1751993916061.mp3",
+      "path": "music_library/We Shall Be Together Soon; Opera; Female; Classical; Re-Energize_1751993916061.mp3",
+      "size": 6042904,
+      "has_analysis": false
+    },
+    {
+      "filename": "We Spin Within the Same Embrace; Instrumental Piano; Re-Energize_1751993916060.mp3",
+      "path": "music_library/We Spin Within the Same Embrace; Instrumental Piano; Re-Energize_1751993916060.mp3",
+      "size": 4710539,
+      "has_analysis": false
+    },
+    {
+      "filename": "What I Want; EDM; FOCUS (1)_1751911220995.mp3",
+      "path": "music_library/What I Want; EDM; FOCUS (1)_1751911220995.mp3",
+      "size": 4658062,
+      "has_analysis": false
+    },
+    {
+      "filename": "Winner Chicken Dinner; EDM; FOCUS_1751910100847.mp3",
+      "path": "music_library/Winner Chicken Dinner; EDM; FOCUS_1751910100847.mp3",
+      "size": 4567077,
+      "has_analysis": false
+    },
+    {
+      "filename": "Winner Declared; EDM; FOCUS (1)_1751910100847.mp3",
+      "path": "music_library/Winner Declared; EDM; FOCUS (1)_1751910100847.mp3",
+      "size": 4260376,
+      "has_analysis": false
+    },
+    {
+      "filename": "Winter Hath Yielded;  Baroque; Re-Energizing (3)_1752343313041.mp3",
+      "path": "music_library/Winter Hath Yielded;  Baroque; Re-Energizing (3)_1752343313041.mp3",
+      "size": 4552775,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Winter Hath Yielded;  Baroque; Re-Energizing (3)_1752343313041.mp3",
+        "metadata": {
+          "filename": "Winter Hath Yielded;  Baroque; Re-Energizing (3)_1752343313041.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "baroque",
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [],
+          "characteristics": [
+            "winter_themed",
+            "seasonal"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 3,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.773548"
+        },
+        "vad_metrics": {
+          "valence": 0.5,
+          "energy_arousal": 0.45,
+          "dominance": 0.7,
+          "confidence_score": 0.7,
+          "emotional_interpretation": "Balanced centered neutrality"
+        },
+        "therapeutic_applications": [
+          "seasonal_affective_support",
+          "empowerment",
+          "leadership_training",
+          "confidence_building",
+          "work",
+          "cold_adaptation",
+          "study",
+          "introspective_seasons",
+          "focus",
+          "concentration",
+          "stability",
+          "assertiveness",
+          "winter_depression",
+          "grounding",
+          "emotional_balance"
+        ],
+        "spectral_properties": {
+          "harmonic_complexity": "very high with counterpoint",
+          "rhythmic_precision": "mathematically precise",
+          "ornamentation": "elaborate melodic decoration",
+          "counterpoint_density": "multiple independent voices"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.773568"
+      }
+    },
+    {
+      "filename": "Winter Illumination (Remix) (3)_1752343313042.mp3",
+      "path": "music_library/Winter Illumination (Remix) (3)_1752343313042.mp3",
+      "size": 1567851,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Winter Illumination (Remix) (3)_1752343313042.mp3",
+        "metadata": {
+          "filename": "Winter Illumination (Remix) (3)_1752343313042.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "seasonal"
+          ],
+          "instruments": [],
+          "purposes": [],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "remix"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": 3,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.775129"
+        },
+        "vad_metrics": {
+          "valence": 0.42,
+          "energy_arousal": 0.5,
+          "dominance": 0.5,
+          "confidence_score": 0.7,
+          "emotional_interpretation": "Balanced centered neutrality"
+        },
+        "therapeutic_applications": [
+          "seasonal_affective_support",
+          "healthy_boundaries",
+          "work",
+          "cold_adaptation",
+          "study",
+          "balanced_control",
+          "focus",
+          "concentration",
+          "stability",
+          "introspective_seasons",
+          "winter_depression",
+          "grounding",
+          "emotional_balance"
+        ],
+        "spectral_properties": {},
+        "analysis_timestamp": "2025-07-12T18:26:27.775148"
+      }
+    },
+    {
+      "filename": "Winter\u2019s deep; movement 1, classical, guitar instrumental; sleep 1 _1752343271253.mp3",
+      "path": "music_library/Winter\u2019s deep; movement 1, classical, guitar instrumental; sleep 1 _1752343271253.mp3",
+      "size": 4785059,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Winter\u2019s deep; movement 1, classical, guitar instrumental; sleep 1 _1752343271253.mp3",
+        "metadata": {
+          "filename": "Winter\u2019s deep; movement 1, classical, guitar instrumental; sleep 1 _1752343271253.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": 1,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "instrumental",
+            "seasonal"
+          ],
+          "instruments": [
+            "guitar",
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.776760"
+        },
+        "vad_metrics": {
+          "valence": 0.33,
+          "energy_arousal": 0.1,
+          "dominance": 0.4,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Controlled melancholic calm"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "catharsis",
+          "seasonal_affective_support",
+          "cold_adaptation",
+          "deep_sleep",
+          "balanced_control",
+          "introspective_seasons",
+          "grief_processing",
+          "emotional_release",
+          "winter_depression",
+          "introspection"
+        ],
+        "spectral_properties": {
+          "frequency_range": "80-4000 Hz primary, up to 8000 Hz harmonics",
+          "spectral_character": "warm harmonic-rich with string resonance",
+          "attack_characteristics": "plucked transients with finger/pick noise",
+          "sustain_properties": "natural decay with room resonance",
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.776785"
+      }
+    },
+    {
+      "filename": "Winter\u2019s deep; movement 1, classical, guitar instrumental; sleep 1 _1752343313042.mp3",
+      "path": "music_library/Winter\u2019s deep; movement 1, classical, guitar instrumental; sleep 1 _1752343313042.mp3",
+      "size": 4785059,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Winter\u2019s deep; movement 1, classical, guitar instrumental; sleep 1 _1752343313042.mp3",
+        "metadata": {
+          "filename": "Winter\u2019s deep; movement 1, classical, guitar instrumental; sleep 1 _1752343313042.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": 1,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "instrumental",
+            "seasonal"
+          ],
+          "instruments": [
+            "guitar",
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.779067"
+        },
+        "vad_metrics": {
+          "valence": 0.33,
+          "energy_arousal": 0.1,
+          "dominance": 0.4,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Controlled melancholic calm"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "catharsis",
+          "seasonal_affective_support",
+          "cold_adaptation",
+          "deep_sleep",
+          "balanced_control",
+          "introspective_seasons",
+          "grief_processing",
+          "emotional_release",
+          "winter_depression",
+          "introspection"
+        ],
+        "spectral_properties": {
+          "frequency_range": "80-4000 Hz primary, up to 8000 Hz harmonics",
+          "spectral_character": "warm harmonic-rich with string resonance",
+          "attack_characteristics": "plucked transients with finger/pick noise",
+          "sustain_properties": "natural decay with room resonance",
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.779092"
+      }
+    },
+    {
+      "filename": "winter\u2019s-deep;-movement-1,-classical,-guitar-instrumental;-sleep-1_1752343313043.mp3",
+      "path": "music_library/winter\u2019s-deep;-movement-1,-classical,-guitar-instrumental;-sleep-1_1752343313043.mp3",
+      "size": 4772277,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "winter\u2019s-deep;-movement-1,-classical,-guitar-instrumental;-sleep-1_1752343313043.mp3",
+        "metadata": {
+          "filename": "winter\u2019s-deep;-movement-1,-classical,-guitar-instrumental;-sleep-1_1752343313043.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "instrumental",
+            "seasonal"
+          ],
+          "instruments": [
+            "guitar",
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.846164"
+        },
+        "vad_metrics": {
+          "valence": 0.33,
+          "energy_arousal": 0.1,
+          "dominance": 0.3,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Deep peaceful surrender with contemplative undertones"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "catharsis",
+          "seasonal_affective_support",
+          "cold_adaptation",
+          "deep_sleep",
+          "balanced_control",
+          "introspective_seasons",
+          "grief_processing",
+          "emotional_release",
+          "winter_depression",
+          "introspection"
+        ],
+        "spectral_properties": {
+          "frequency_range": "80-4000 Hz primary, up to 8000 Hz harmonics",
+          "spectral_character": "warm harmonic-rich with string resonance",
+          "attack_characteristics": "plucked transients with finger/pick noise",
+          "sustain_properties": "natural decay with room resonance",
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.846187"
+      }
+    },
+    {
+      "filename": "Winter\u2019s deep; movement 2; classical, piano instrumental; sleep 1_1752343313043.mp3",
+      "path": "music_library/Winter\u2019s deep; movement 2; classical, piano instrumental; sleep 1_1752343313043.mp3",
+      "size": 4386805,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Winter\u2019s deep; movement 2; classical, piano instrumental; sleep 1_1752343313043.mp3",
+        "metadata": {
+          "filename": "Winter\u2019s deep; movement 2; classical, piano instrumental; sleep 1_1752343313043.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": 2,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "instrumental",
+            "seasonal"
+          ],
+          "instruments": [
+            "piano",
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.782025"
+        },
+        "vad_metrics": {
+          "valence": 0.27,
+          "energy_arousal": 0.05,
+          "dominance": 0.3,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Deep peaceful surrender with contemplative undertones"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "catharsis",
+          "seasonal_affective_support",
+          "cold_adaptation",
+          "deep_sleep",
+          "balanced_control",
+          "introspective_seasons",
+          "grief_processing",
+          "emotional_release",
+          "winter_depression",
+          "introspection"
+        ],
+        "spectral_properties": {
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.782055"
+      }
+    },
+    {
+      "filename": "Winter\u2019s deep; movement 3; classical, piano instrumental; sleep 1_1752343313043.mp3",
+      "path": "music_library/Winter\u2019s deep; movement 3; classical, piano instrumental; sleep 1_1752343313043.mp3",
+      "size": 4138708,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Winter\u2019s deep; movement 3; classical, piano instrumental; sleep 1_1752343313043.mp3",
+        "metadata": {
+          "filename": "Winter\u2019s deep; movement 3; classical, piano instrumental; sleep 1_1752343313043.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": 3,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "instrumental",
+            "seasonal"
+          ],
+          "instruments": [
+            "piano",
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.784399"
+        },
+        "vad_metrics": {
+          "valence": 0.27,
+          "energy_arousal": 0.05,
+          "dominance": 0.3,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Deep peaceful surrender with contemplative undertones"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "catharsis",
+          "seasonal_affective_support",
+          "cold_adaptation",
+          "deep_sleep",
+          "balanced_control",
+          "introspective_seasons",
+          "grief_processing",
+          "emotional_release",
+          "winter_depression",
+          "introspection"
+        ],
+        "spectral_properties": {
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.784428"
+      }
+    },
+    {
+      "filename": "winter\u2019s-deep;-movement-4-classical,-piano-instrumental;-sleep-1_1752343313044.mp3",
+      "path": "music_library/winter\u2019s-deep;-movement-4-classical,-piano-instrumental;-sleep-1_1752343313044.mp3",
+      "size": 3515517,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "winter\u2019s-deep;-movement-4-classical,-piano-instrumental;-sleep-1_1752343313044.mp3",
+        "metadata": {
+          "filename": "winter\u2019s-deep;-movement-4-classical,-piano-instrumental;-sleep-1_1752343313044.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "instrumental",
+            "seasonal"
+          ],
+          "instruments": [
+            "piano",
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.848995"
+        },
+        "vad_metrics": {
+          "valence": 0.3,
+          "energy_arousal": 0.1,
+          "dominance": 0.3,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Deep peaceful surrender with contemplative undertones"
+        },
+        "therapeutic_applications": [
+          "profound_meditation",
+          "transcendental_states",
+          "healthy_boundaries",
+          "catharsis",
+          "seasonal_affective_support",
+          "cold_adaptation",
+          "deep_sleep",
+          "balanced_control",
+          "introspective_seasons",
+          "grief_processing",
+          "emotional_release",
+          "winter_depression",
+          "introspection"
+        ],
+        "spectral_properties": {
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.849015"
+      }
+    },
+    {
+      "filename": "Winter\u2019s deep; movement 5 classical, instrumental; opera;  piano instrumental; sleep 1_1752343313043.mp3",
+      "path": "music_library/Winter\u2019s deep; movement 5 classical, instrumental; opera;  piano instrumental; sleep 1_1752343313043.mp3",
+      "size": 4888725,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "Winter\u2019s deep; movement 5 classical, instrumental; opera;  piano instrumental; sleep 1_1752343313043.mp3",
+        "metadata": {
+          "filename": "Winter\u2019s deep; movement 5 classical, instrumental; opera;  piano instrumental; sleep 1_1752343313043.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": 5,
+          "roman_numeral_movement": null,
+          "genres": [
+            "classical",
+            "opera",
+            "instrumental",
+            "seasonal"
+          ],
+          "instruments": [
+            "voice",
+            "piano",
+            "instrumental"
+          ],
+          "purposes": [
+            "sleep"
+          ],
+          "characteristics": [
+            "winter_themed",
+            "seasonal",
+            "movement_based"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": false,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.787035"
+        },
+        "vad_metrics": {
+          "valence": 0.48,
+          "energy_arousal": 0.25,
+          "dominance": 0.61,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Balanced centered neutrality"
+        },
+        "therapeutic_applications": [
+          "gentle_relaxation",
+          "seasonal_affective_support",
+          "healthy_boundaries",
+          "vocal_therapy",
+          "cold_adaptation",
+          "storytelling",
+          "emotional_catharsis",
+          "balanced_control",
+          "introspective_seasons",
+          "stability",
+          "meditation",
+          "winter_depression",
+          "grounding",
+          "mindfulness",
+          "emotional_balance",
+          "dramatic_expression"
+        ],
+        "spectral_properties": {
+          "frequency_range": "85-1100 Hz fundamental, up to 4000 Hz harmonics",
+          "spectral_character": "formant-rich with vocal tract resonances",
+          "emotional_expressivity": "very high",
+          "harmonic_complexity": "moderate to high with vibrato",
+          "attack_characteristics": "smooth onset with breath dynamics",
+          "vocal_projection": "powerful formant resonance for acoustics",
+          "dramatic_dynamics": "extreme dynamic contrasts",
+          "orchestral_support": "full symphonic backing",
+          "linguistic_clarity": "text intelligibility optimization",
+          "frequency_filtering": "high frequencies minimized for calm",
+          "amplitude_envelope": "gentle rises and falls mimicking breath",
+          "binaural_potential": "suitable for delta/theta brainwave entrainment"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.787070"
+      }
+    },
+    {
+      "filename": "Work; Indie Pop; Focus_1751904817380.mp3",
+      "path": "music_library/Work; Indie Pop; Focus_1751904817380.mp3",
+      "size": 6218135,
+      "has_analysis": false
+    },
+    {
+      "filename": "Work; Indie Pop; Vocals, Female; Energy Boost_1751909173770.mp3",
+      "path": "music_library/Work; Indie Pop; Vocals, Female; Energy Boost_1751909173770.mp3",
+      "size": 5574384,
+      "has_analysis": false
+    },
+    {
+      "filename": "Work It; Indie Pop; Focus_1751904821850.mp3",
+      "path": "music_library/Work It; Indie Pop; Focus_1751904821850.mp3",
+      "size": 6218141,
+      "has_analysis": false
+    },
+    {
+      "filename": "World Melody, Alive, Awake;  Instrumental,  House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/World Melody, Alive, Awake;  Instrumental,  House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 5583805,
+      "has_analysis": false
+    },
+    {
+      "filename": "World Melody, Alive, Awake;  Instrumental,  House; Re-Energize (Remix)_1752343806745.mp3",
+      "path": "music_library/World Melody, Alive, Awake;  Instrumental,  House; Re-Energize (Remix)_1752343806745.mp3",
+      "size": 5583805,
+      "has_analysis": true,
+      "analysis": {
+        "filename": "World Melody, Alive, Awake;  Instrumental,  House; Re-Energize (Remix)_1752343806745.mp3",
+        "metadata": {
+          "filename": "World Melody, Alive, Awake;  Instrumental,  House; Re-Energize (Remix)_1752343806745.mp3",
+          "bpm": null,
+          "time_signature": null,
+          "movement": null,
+          "roman_numeral_movement": null,
+          "genres": [
+            "house",
+            "instrumental",
+            "world"
+          ],
+          "instruments": [
+            "instrumental"
+          ],
+          "purposes": [
+            "energy"
+          ],
+          "characteristics": [
+            "remix",
+            "alive",
+            "awake",
+            "world_melody"
+          ],
+          "musical_terms": [],
+          "nature_elements": [],
+          "version": null,
+          "is_remix": true,
+          "is_cover": false,
+          "is_focus_style": false,
+          "is_vivaldi_inspired": false,
+          "analysis_timestamp": "2025-07-12T18:26:27.793397"
+        },
+        "vad_metrics": {
+          "valence": 1.0,
+          "energy_arousal": 1.0,
+          "dominance": 0.96,
+          "confidence_score": 0.85,
+          "emotional_interpretation": "Powerful energetic empowerment"
+        },
+        "therapeutic_applications": [
+          "cultural_exploration",
+          "motivation",
+          "exercise",
+          "depression_treatment",
+          "leadership_training",
+          "mood_enhancement",
+          "diversity_appreciation",
+          "rhythmic_entrainment",
+          "assertiveness",
+          "celebration",
+          "energy_boost",
+          "activation",
+          "empowerment",
+          "confidence_building",
+          "joy_cultivation",
+          "movement_expression",
+          "global_consciousness",
+          "world_unity",
+          "social_connection",
+          "dance_therapy"
+        ],
+        "spectral_properties": {
+          "rhythmic_emphasis": "strong 4/4 kick pattern",
+          "frequency_emphasis": "mid-range presence for alertness",
+          "compression_characteristics": "moderate to high for dance impact",
+          "synthesizer_content": "electronic timbres and effects",
+          "dynamic_contrast": "pronounced peaks for stimulation",
+          "rhythmic_drive": "propulsive elements for motivation"
+        },
+        "analysis_timestamp": "2025-07-12T18:26:27.793440"
+      }
+    },
+    {
+      "filename": "you are loved_1751910100846.mp3",
+      "path": "music_library/you are loved_1751910100846.mp3",
+      "size": 5094344,
+      "has_analysis": false
+    },
+    {
+      "filename": "Ionian Reverie; Instrumental, Baroque, Classical; Sleep (Remix).mp3",
+      "path": "music_library/Ionian Reverie; Instrumental, Baroque, Classical; Sleep (Remix).mp3",
+      "size": 7163689,
+      "has_analysis": false
+    },
+    {
+      "filename": "joy; classical-flamenco; re-energize (2).mp3",
+      "path": "music_library/joy; classical-flamenco; re-energize (2).mp3",
+      "size": 5408869,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-1234Hz-le-1ch-10S-20bit-extra.wav",
+      "path": "music_library/test-1234Hz-le-1ch-10S-20bit-extra.wav",
+      "size": 74,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-44100Hz-2ch-32bit-float-be.wav",
+      "path": "music_library/test-44100Hz-2ch-32bit-float-be.wav",
+      "size": 3586,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-44100Hz-2ch-32bit-float-le.wav",
+      "path": "music_library/test-44100Hz-2ch-32bit-float-le.wav",
+      "size": 3586,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-44100Hz-be-1ch-4bytes.wav",
+      "path": "music_library/test-44100Hz-be-1ch-4bytes.wav",
+      "size": 17720,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+      "size": 72,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes-early-eof.wav",
+      "size": 1024,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+      "size": 13,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes-rf64.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes-rf64.wav",
+      "size": 17756,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes.wav",
+      "size": 17720,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+      "path": "music_library/test-48000Hz-2ch-64bit-float-le-wavex.wav",
+      "size": 7792,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-be-3ch-5S-24bit.wav",
+      "path": "music_library/test-8000Hz-be-3ch-5S-24bit.wav",
+      "size": 90,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+      "path": "music_library/test-8000Hz-le-1ch-1byte-ulaw.wav",
+      "size": 70,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-2ch-1byteu.wav",
+      "path": "music_library/test-8000Hz-le-2ch-1byteu.wav",
+      "size": 1644,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+      "size": 90,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+      "size": 126,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-24bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-24bit.wav",
+      "size": 90,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-36bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-36bit.wav",
+      "size": 120,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-45bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-45bit.wav",
+      "size": 134,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-53bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-53bit.wav",
+      "size": 150,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-64bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-64bit.wav",
+      "size": 164,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-4ch-9S-12bit.wav",
+      "path": "music_library/test-8000Hz-le-4ch-9S-12bit.wav",
+      "size": 116,
+      "has_analysis": false
+    },
+    {
+      "filename": "test-8000Hz-le-5ch-9S-5bit.wav",
+      "path": "music_library/test-8000Hz-le-5ch-9S-5bit.wav",
+      "size": 89,
+      "has_analysis": false
+    },
+    {
+      "filename": "Mount Olympus; Indie Pop; Focus_1751904825146.mp3",
+      "path": "music_library/Mount Olympus; Indie Pop; Focus_1751904825146.mp3",
+      "size": 4882051,
+      "has_analysis": false
+    },
+    {
+      "filename": "We Are Here, Olympus; Indie Pop; Focus_1751904884911.mp3",
+      "path": "music_library/We Are Here, Olympus; Indie Pop; Focus_1751904884911.mp3",
+      "size": 5387953,
+      "has_analysis": false
+    },
+    {
+      "filename": "We Might Be Legends; Indie Pop; Focus (1)_1751909173770.mp3",
+      "path": "music_library/We Might Be Legends; Indie Pop; Focus (1)_1751909173770.mp3",
+      "size": 4579360,
+      "has_analysis": false
+    },
+    {
+      "filename": "We're Here to Cook; Indie Pop; Focus_1751909173770.mp3",
+      "path": "music_library/We're Here to Cook; Indie Pop; Focus_1751909173770.mp3",
+      "size": 5038727,
+      "has_analysis": false
+    },
+    {
+      "filename": "Mount Olympus; Indie Pop; Focus (1)_1751909173771.mp3",
+      "path": "music_library/Mount Olympus; Indie Pop; Focus (1)_1751909173771.mp3",
+      "size": 5020075,
+      "has_analysis": false
+    },
+    {
+      "filename": "I wish you love; rock; EDM - blues rock; 118 BPM; Re-Energize (Remix)_1751910100846.mp3",
+      "path": "music_library/I wish you love; rock; EDM - blues rock; 118 BPM; Re-Energize (Remix)_1751910100846.mp3",
+      "size": 5039448,
+      "has_analysis": false
+    },
+    {
+      "filename": "My Heart; EDM; Energy Boost_1751910100844.mp3",
+      "path": "music_library/My Heart; EDM; Energy Boost_1751910100844.mp3",
+      "size": 5269394,
+      "has_analysis": false
+    },
+    {
+      "filename": "battle cry; EDM; focus (1)_1751912248609.mp3",
+      "path": "music_library/battle cry; EDM; focus (1)_1751912248609.mp3",
+      "size": 4078437,
+      "has_analysis": false
+    },
+    {
+      "filename": "drummer's day; EDM; focus (2)_1751912248609.mp3",
+      "path": "music_library/drummer's day; EDM; focus (2)_1751912248609.mp3",
+      "size": 4650682,
+      "has_analysis": false
+    },
+    {
+      "filename": "drummer's day; EDM; focus_1751912267241.mp3",
+      "path": "music_library/drummer's day; EDM; focus_1751912267241.mp3",
+      "size": 4487996,
+      "has_analysis": false
+    },
+    {
+      "filename": "My Heart; EDM; FOCUS_1751912647325.mp3",
+      "path": "music_library/My Heart; EDM; FOCUS_1751912647325.mp3",
+      "size": 5269380,
+      "has_analysis": false
+    },
+    {
+      "filename": "My Heart; EDM; Energy Boost_1751912647325.mp3",
+      "path": "music_library/My Heart; EDM; Energy Boost_1751912647325.mp3",
+      "size": 5269394,
+      "has_analysis": false
+    },
+    {
+      "filename": "118; Pop, EDM, Funk; Re-Energize (Remix) (1)_1751966154213.mp3",
+      "path": "music_library/118; Pop, EDM, Funk; Re-Energize (Remix) (1)_1751966154213.mp3",
+      "size": 3423720,
+      "has_analysis": false
+    },
+    {
+      "filename": "Autumn, Gentle Light; Instrumental, Electronic, Baroque; Relaxation (Remix) (1)_1751966756358.mp3",
+      "path": "music_library/Autumn, Gentle Light; Instrumental, Electronic, Baroque; Relaxation (Remix) (1)_1751966756358.mp3",
+      "size": 2135523,
+      "has_analysis": false
+    },
+    {
+      "filename": "Autumn Hath Yielded A Most Gentle Light; Instrumental, Electronic, Baroque; Relaxation (Remix)_1751966756358.mp3",
+      "path": "music_library/Autumn Hath Yielded A Most Gentle Light; Instrumental, Electronic, Baroque; Relaxation (Remix)_1751966756358.mp3",
+      "size": 4405799,
+      "has_analysis": false
+    },
+    {
+      "filename": "All Kinds; Instrumental Americana, 2020s; Relaxation (Remix)_1751966756358.mp3",
+      "path": "music_library/All Kinds; Instrumental Americana, 2020s; Relaxation (Remix)_1751966756358.mp3",
+      "size": 4422937,
+      "has_analysis": false
+    },
+    {
+      "filename": "Amongst the Tall Grass; Instrumental Americana, 2020s; Relaxation (Remix) (1)_1751966756359.mp3",
+      "path": "music_library/Amongst the Tall Grass; Instrumental Americana, 2020s; Relaxation (Remix) (1)_1751966756359.mp3",
+      "size": 4222370,
+      "has_analysis": false
+    },
+    {
+      "filename": "Baroque chamber (1)_1751966756359.mp3",
+      "path": "music_library/Baroque chamber (1)_1751966756359.mp3",
+      "size": 5048210,
+      "has_analysis": false
+    },
+    {
+      "filename": "Berkelely in August; Classic Rock, Jam Band, Improvisational (Remix), Relaxation_1751992433904.mp3",
+      "path": "music_library/Berkelely in August; Classic Rock, Jam Band, Improvisational (Remix), Relaxation_1751992433904.mp3",
+      "size": 3969149,
+      "has_analysis": false
+    },
+    {
+      "filename": "Folklore, Volume 5, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/Folklore, Volume 5, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 3462648,
+      "has_analysis": false
+    },
+    {
+      "filename": "Folklore, Volume 3, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/Folklore, Volume 3, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 5104885,
+      "has_analysis": false
+    },
+    {
+      "filename": "World Melody, Alive, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/World Melody, Alive, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 5583805,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Duet for Strings; Bluegrass, Instrumental; REMIX, Relaxation. (3)_1751993916059.mp3",
+      "path": "music_library/A Duet for Strings; Bluegrass, Instrumental; REMIX, Relaxation. (3)_1751993916059.mp3",
+      "size": 4813739,
+      "has_analysis": false
+    },
+    {
+      "filename": "Love's Labours Won; Baroque; Relaxation (1)_1751993979634.mp3",
+      "path": "music_library/Love's Labours Won; Baroque; Relaxation (1)_1751993979634.mp3",
+      "size": 2559196,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Gentle Light Falls Upon My Lover's Brow; Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "path": "music_library/A Gentle Light Falls Upon My Lover's Brow; Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "size": 2781441,
+      "has_analysis": false
+    },
+    {
+      "filename": "The Cocquette; Baroque; Relaxation (1)_1751993979635.mp3",
+      "path": "music_library/The Cocquette; Baroque; Relaxation (1)_1751993979635.mp3",
+      "size": 4163824,
+      "has_analysis": false
+    },
+    {
+      "filename": "Spinosa's Contemplations; Baroque; Relaxation_1751993979634.mp3",
+      "path": "music_library/Spinosa's Contemplations; Baroque; Relaxation_1751993979634.mp3",
+      "size": 4801493,
+      "has_analysis": false
+    },
+    {
+      "filename": "Ode to thine love, so true; Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "path": "music_library/Ode to thine love, so true; Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "size": 5259491,
+      "has_analysis": false
+    },
+    {
+      "filename": "Malaga, my love; flamenco - classical; focus (2)_1752252813397.mp3",
+      "path": "music_library/Malaga, my love; flamenco - classical; focus (2)_1752252813397.mp3",
+      "size": 5136530,
+      "has_analysis": false
+    },
+    {
+      "filename": "Winter Hath Yielded; Baroque; Re-Energizing (3)_1752343313041.mp3",
+      "path": "music_library/Winter Hath Yielded; Baroque; Re-Energizing (3)_1752343313041.mp3",
+      "size": 4552775,
+      "has_analysis": false
+    },
+    {
+      "filename": "Winter\u2019s deep; movement 5 classical, instrumental; opera; piano instrumental; sleep 1_1752343313043.mp3",
+      "path": "music_library/Winter\u2019s deep; movement 5 classical, instrumental; opera; piano instrumental; sleep 1_1752343313043.mp3",
+      "size": 4888725,
+      "has_analysis": false
+    },
+    {
+      "filename": "A Gentle Light Falls Upon My Lover's Brow; Baroque; Relaxation_1752343806749.mp3",
+      "path": "music_library/A Gentle Light Falls Upon My Lover's Brow; Baroque; Relaxation_1752343806749.mp3",
+      "size": 2565683,
+      "has_analysis": false
+    },
+    {
+      "filename": "World Melody, Alive, Awake; Instrumental, House; Re-Energize (Remix)_1752343806745.mp3",
+      "path": "music_library/World Melody, Alive, Awake; Instrumental, House; Re-Energize (Remix)_1752343806745.mp3",
+      "size": 5583805,
+      "has_analysis": false
+    },
+    {
+      "filename": "Intonations of Instrumental, Dialogue; Baroque, Classical; Sleep (Remix) (5).mp3",
+      "path": "music_library/Intonations of Instrumental, Dialogue; Baroque, Classical; Sleep (Remix) (5).mp3",
+      "size": 4573400,
+      "has_analysis": false
+    },
+    {
+      "filename": "Intonations of the Dialogic; Baroque, Classical; Sleep (Remix) (2).mp3",
+      "path": "music_library/Intonations of the Dialogic; Baroque, Classical; Sleep (Remix) (2).mp3",
+      "size": 4967847,
+      "has_analysis": false
+    },
+    {
+      "filename": "Intrepid Strings; Electronic, House, Instrumental, Rock; Re-Energize. (Remix) (1).mp3",
+      "path": "music_library/Intrepid Strings; Electronic, House, Instrumental, Rock; Re-Energize. (Remix) (1).mp3",
+      "size": 2990893,
+      "has_analysis": false
+    }
+  ]
+}

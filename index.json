@@ -1,0 +1,65 @@
+{
+  "version": "2.0.0",
+  "method": "VAD_analysis",
+  "timestamp": "2025-08-20T01:48:14.078Z",
+  "categories": {
+    "focus": 89,
+    "relaxation": 0,
+    "energy_boost": 60,
+    "mood_boost": 139,
+    "anxiety_management": 41,
+    "sleep_enhancement": 20,
+    "misc": 0
+  },
+  "total": 349,
+  "vad_criteria": {
+    "focus": {
+      "minValence": 0.5,
+      "maxValence": 0.8,
+      "minArousal": 0.3,
+      "maxArousal": 0.7,
+      "minDominance": 0.4,
+      "maxDominance": 0.8
+    },
+    "relaxation": {
+      "minValence": 0.4,
+      "maxValence": 0.8,
+      "minArousal": 0,
+      "maxArousal": 0.4,
+      "minDominance": 0.2,
+      "maxDominance": 0.6
+    },
+    "energy_boost": {
+      "minValence": 0.6,
+      "maxValence": 1,
+      "minArousal": 0.7,
+      "maxArousal": 1,
+      "minDominance": 0.6,
+      "maxDominance": 1
+    },
+    "mood_boost": {
+      "minValence": 0.7,
+      "maxValence": 1,
+      "minArousal": 0.4,
+      "maxArousal": 0.8,
+      "minDominance": 0.5,
+      "maxDominance": 0.9
+    },
+    "anxiety_management": {
+      "minValence": 0.3,
+      "maxValence": 0.7,
+      "minArousal": 0,
+      "maxArousal": 0.3,
+      "minDominance": 0.3,
+      "maxDominance": 0.7
+    },
+    "sleep_enhancement": {
+      "minValence": 0.4,
+      "maxValence": 0.7,
+      "minArousal": 0,
+      "maxArousal": 0.2,
+      "minDominance": 0.2,
+      "maxDominance": 0.5
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "organization_date": "2025-08-09T02:08:16.515656",
+  "total_files": 60,
+  "library_path": "music_library",
+  "files": [
+    {
+      "filename": "test-1234Hz-le-1ch-10S-20bit-extra.wav",
+      "path": "music_library/test-1234Hz-le-1ch-10S-20bit-extra.wav",
+      "size": 74,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-44100Hz-2ch-32bit-float-be.wav",
+      "path": "music_library/test-44100Hz-2ch-32bit-float-be.wav",
+      "size": 3586,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-44100Hz-2ch-32bit-float-le.wav",
+      "path": "music_library/test-44100Hz-2ch-32bit-float-le.wav",
+      "size": 3586,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-44100Hz-be-1ch-4bytes.wav",
+      "path": "music_library/test-44100Hz-be-1ch-4bytes.wav",
+      "size": 17720,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+      "size": 72,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes-early-eof.wav",
+      "size": 1024,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+      "size": 13,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes-rf64.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes-rf64.wav",
+      "size": 17756,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-44100Hz-le-1ch-4bytes.wav",
+      "path": "music_library/test-44100Hz-le-1ch-4bytes.wav",
+      "size": 17720,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+      "path": "music_library/test-48000Hz-2ch-64bit-float-le-wavex.wav",
+      "size": 7792,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-be-3ch-5S-24bit.wav",
+      "path": "music_library/test-8000Hz-be-3ch-5S-24bit.wav",
+      "size": 90,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+      "path": "music_library/test-8000Hz-le-1ch-1byte-ulaw.wav",
+      "size": 70,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-2ch-1byteu.wav",
+      "path": "music_library/test-8000Hz-le-2ch-1byteu.wav",
+      "size": 1644,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+      "size": 90,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+      "size": 126,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-24bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-24bit.wav",
+      "size": 90,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-36bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-36bit.wav",
+      "size": 120,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-45bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-45bit.wav",
+      "size": 134,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-53bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-53bit.wav",
+      "size": 150,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-3ch-5S-64bit.wav",
+      "path": "music_library/test-8000Hz-le-3ch-5S-64bit.wav",
+      "size": 164,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-4ch-9S-12bit.wav",
+      "path": "music_library/test-8000Hz-le-4ch-9S-12bit.wav",
+      "size": 116,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "test-8000Hz-le-5ch-9S-5bit.wav",
+      "path": "music_library/test-8000Hz-le-5ch-9S-5bit.wav",
+      "size": 89,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Mount Olympus; Indie Pop; Focus_1751904825146.mp3",
+      "path": "music_library/Mount Olympus; Indie Pop; Focus_1751904825146.mp3",
+      "size": 4882051,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "We Are Here, Olympus; Indie Pop; Focus_1751904884911.mp3",
+      "path": "music_library/We Are Here, Olympus; Indie Pop; Focus_1751904884911.mp3",
+      "size": 5387953,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "We Might Be Legends; Indie Pop; Focus (1)_1751909173770.mp3",
+      "path": "music_library/We Might Be Legends; Indie Pop; Focus (1)_1751909173770.mp3",
+      "size": 4579360,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "We're Here to Cook; Indie Pop; Focus_1751909173770.mp3",
+      "path": "music_library/We're Here to Cook; Indie Pop; Focus_1751909173770.mp3",
+      "size": 5038727,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Mount Olympus; Indie Pop; Focus (1)_1751909173771.mp3",
+      "path": "music_library/Mount Olympus; Indie Pop; Focus (1)_1751909173771.mp3",
+      "size": 5020075,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "I wish you love; rock; EDM - blues rock; 118 BPM; Re-Energize (Remix)_1751910100846.mp3",
+      "path": "music_library/I wish you love; rock; EDM - blues rock; 118 BPM; Re-Energize (Remix)_1751910100846.mp3",
+      "size": 5039448,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "My Heart; EDM; Energy Boost_1751910100844.mp3",
+      "path": "music_library/My Heart; EDM; Energy Boost_1751910100844.mp3",
+      "size": 5269394,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "battle cry; EDM; focus (1)_1751912248609.mp3",
+      "path": "music_library/battle cry; EDM; focus (1)_1751912248609.mp3",
+      "size": 4078437,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "drummer's day; EDM; focus (2)_1751912248609.mp3",
+      "path": "music_library/drummer's day; EDM; focus (2)_1751912248609.mp3",
+      "size": 4650682,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "drummer's day; EDM; focus_1751912267241.mp3",
+      "path": "music_library/drummer's day; EDM; focus_1751912267241.mp3",
+      "size": 4487996,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "My Heart; EDM; FOCUS_1751912647325.mp3",
+      "path": "music_library/My Heart; EDM; FOCUS_1751912647325.mp3",
+      "size": 5269380,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "My Heart; EDM; Energy Boost_1751912647325.mp3",
+      "path": "music_library/My Heart; EDM; Energy Boost_1751912647325.mp3",
+      "size": 5269394,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "118; Pop, EDM, Funk; Re-Energize (Remix) (1)_1751966154213.mp3",
+      "path": "music_library/118; Pop, EDM, Funk; Re-Energize (Remix) (1)_1751966154213.mp3",
+      "size": 3423720,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Autumn, Gentle Light; Instrumental, Electronic, Baroque; Relaxation (Remix) (1)_1751966756358.mp3",
+      "path": "music_library/Autumn, Gentle Light; Instrumental, Electronic, Baroque; Relaxation (Remix) (1)_1751966756358.mp3",
+      "size": 2135523,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Autumn Hath Yielded A Most Gentle Light; Instrumental, Electronic, Baroque; Relaxation (Remix)_1751966756358.mp3",
+      "path": "music_library/Autumn Hath Yielded A Most Gentle Light; Instrumental, Electronic, Baroque; Relaxation (Remix)_1751966756358.mp3",
+      "size": 4405799,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "All Kinds; Instrumental Americana, 2020s; Relaxation (Remix)_1751966756358.mp3",
+      "path": "music_library/All Kinds; Instrumental Americana, 2020s; Relaxation (Remix)_1751966756358.mp3",
+      "size": 4422937,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Amongst the Tall Grass; Instrumental Americana, 2020s; Relaxation (Remix) (1)_1751966756359.mp3",
+      "path": "music_library/Amongst the Tall Grass; Instrumental Americana, 2020s; Relaxation (Remix) (1)_1751966756359.mp3",
+      "size": 4222370,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Baroque chamber (1)_1751966756359.mp3",
+      "path": "music_library/Baroque chamber (1)_1751966756359.mp3",
+      "size": 5048210,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Berkelely in August; Classic Rock, Jam Band, Improvisational (Remix), Relaxation_1751992433904.mp3",
+      "path": "music_library/Berkelely in August; Classic Rock, Jam Band, Improvisational (Remix), Relaxation_1751992433904.mp3",
+      "size": 3969149,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Folklore, Volume 5, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/Folklore, Volume 5, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 3462648,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Folklore, Volume 3, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/Folklore, Volume 3, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 5104885,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "World Melody, Alive, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "path": "music_library/World Melody, Alive, Awake; Instrumental, House; Re-Energize (Remix)_1751993664181.mp3",
+      "size": 5583805,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "A Duet for Strings; Bluegrass, Instrumental; REMIX, Relaxation. (3)_1751993916059.mp3",
+      "path": "music_library/A Duet for Strings; Bluegrass, Instrumental; REMIX, Relaxation. (3)_1751993916059.mp3",
+      "size": 4813739,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Love's Labours Won; Baroque; Relaxation (1)_1751993979634.mp3",
+      "path": "music_library/Love's Labours Won; Baroque; Relaxation (1)_1751993979634.mp3",
+      "size": 2559196,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "A Gentle Light Falls Upon My Lover's Brow; Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "path": "music_library/A Gentle Light Falls Upon My Lover's Brow; Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "size": 2781441,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "The Cocquette; Baroque; Relaxation (1)_1751993979635.mp3",
+      "path": "music_library/The Cocquette; Baroque; Relaxation (1)_1751993979635.mp3",
+      "size": 4163824,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Spinosa's Contemplations; Baroque; Relaxation_1751993979634.mp3",
+      "path": "music_library/Spinosa's Contemplations; Baroque; Relaxation_1751993979634.mp3",
+      "size": 4801493,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Ode to thine love, so true; Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "path": "music_library/Ode to thine love, so true; Baroque; Relaxation (Remix)_1751993979634.mp3",
+      "size": 5259491,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Malaga, my love; flamenco - classical; focus (2)_1752252813397.mp3",
+      "path": "music_library/Malaga, my love; flamenco - classical; focus (2)_1752252813397.mp3",
+      "size": 5136530,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Winter Hath Yielded; Baroque; Re-Energizing (3)_1752343313041.mp3",
+      "path": "music_library/Winter Hath Yielded; Baroque; Re-Energizing (3)_1752343313041.mp3",
+      "size": 4552775,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Winter\u2019s deep; movement 5 classical, instrumental; opera; piano instrumental; sleep 1_1752343313043.mp3",
+      "path": "music_library/Winter\u2019s deep; movement 5 classical, instrumental; opera; piano instrumental; sleep 1_1752343313043.mp3",
+      "size": 4888725,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "A Gentle Light Falls Upon My Lover's Brow; Baroque; Relaxation_1752343806749.mp3",
+      "path": "music_library/A Gentle Light Falls Upon My Lover's Brow; Baroque; Relaxation_1752343806749.mp3",
+      "size": 2565683,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "World Melody, Alive, Awake; Instrumental, House; Re-Energize (Remix)_1752343806745.mp3",
+      "path": "music_library/World Melody, Alive, Awake; Instrumental, House; Re-Energize (Remix)_1752343806745.mp3",
+      "size": 5583805,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Intonations of Instrumental, Dialogue; Baroque, Classical; Sleep (Remix) (5).mp3",
+      "path": "music_library/Intonations of Instrumental, Dialogue; Baroque, Classical; Sleep (Remix) (5).mp3",
+      "size": 4573400,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Intonations of the Dialogic; Baroque, Classical; Sleep (Remix) (2).mp3",
+      "path": "music_library/Intonations of the Dialogic; Baroque, Classical; Sleep (Remix) (2).mp3",
+      "size": 4967847,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Intrepid Strings; Electronic, House, Instrumental, Rock; Re-Energize. (Remix) (1).mp3",
+      "path": "music_library/Intrepid Strings; Electronic, House, Instrumental, Rock; Re-Energize. (Remix) (1).mp3",
+      "size": 2990893,
+      "action": "moved",
+      "original_location": "."
+    },
+    {
+      "filename": "Ionian Reverie; Instrumental, Baroque, Classical; Sleep (Remix).mp3",
+      "path": "music_library/Ionian Reverie; Instrumental, Baroque, Classical; Sleep (Remix).mp3",
+      "size": 7163689,
+      "action": "already_organized"
+    },
+    {
+      "filename": "joy; classical-flamenco; re-energize (2).mp3",
+      "path": "music_library/joy; classical-flamenco; re-energize (2).mp3",
+      "size": 5408869,
+      "action": "already_organized"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-08-07T15:55:21.227Z",
+  "processed": 100,
+  "succeeded": 0,
+  "failed": 100,
+  "errors": [
+    "Track 9: Both move and copy failed: Object not found",
+    "Track 15: Both move and copy failed: Object not found",
+    "Track 16: Both move and copy failed: Object not found",
+    "Track 29: Both move and copy failed: Object not found",
+    "Track 32: Both move and copy failed: Object not found",
+    "Track 48: Both move and copy failed: Object not found",
+    "Track 50: Both move and copy failed: Object not found",
+    "Track 91: Both move and copy failed: Object not found",
+    "Track 92: Both move and copy failed: Object not found",
+    "Track 101: Both move and copy failed: Object not found"
+  ]
+}

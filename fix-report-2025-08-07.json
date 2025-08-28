@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-08-07T15:47:51.285Z",
+  "mode": "PRODUCTION",
+  "processed": 10,
+  "succeeded": 0,
+  "failed": 10,
+  "errors": [
+    "Track 9: Download failed: {}",
+    "Track 15: Download failed: {}",
+    "Track 16: Download failed: {}",
+    "Track 29: Download failed: {}",
+    "Track 32: Download failed: {}",
+    "Track 48: Download failed: {}",
+    "Track 50: Download failed: {}",
+    "Track 91: Download failed: {}",
+    "Track 92: Download failed: {}",
+    "Track 101: Download failed: {}"
+  ]
+}
