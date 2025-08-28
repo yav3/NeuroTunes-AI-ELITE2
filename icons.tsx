@@ -1,0 +1,1 @@
+/* Full inline SVG icon components here */

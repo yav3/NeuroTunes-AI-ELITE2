@@ -1,0 +1,28 @@
+APP API
+
+
+Artists (/v1/artists)Operational
+
+Genre  (/v1/genre)Operational
+
+Enterprise ID (/v1/me, /v1/enterpriseID/{enterprise_id})
+
+Library (/v1/me/*/albums-sav, /v1/me/*/tracks, /v1/me/*/shows)Operational
+
+Mood    (/v1/mood)Operational
+
+Personalization (/v1/me/top/)Operational
+
+Player (/v1/me/player)Operational
+
+Playlists (/v1/playlists, /v1/*/playlists)Operational
+
+Search (/v1/search)Operational
+
+Tracks (/v1/tracks, /v1/audio-analysis, /v1/audio-features)Operational
+
+Use-Cases (/v1/*/Use-Cases, /v1/*/Use-Cases)Operational
+
+Users Profile (/v1/me, /v1/users/{user_id})
+
+

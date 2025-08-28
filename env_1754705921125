@@ -1,0 +1,7 @@
+
+# API keys moved to Secrets for better security
+# Use the Secrets tool to manage sensitive environment variables
+
+PORT=5000AI_DJ_MODE=development
+THERAPEUTIC_MODE=focus
+SUPABASE_SERVICE_ROLE_KEY=const SERVICE_KEY = 'SUPABASE_SERVICE_KEY'

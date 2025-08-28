@@ -1,0 +1,137 @@
+You’re calling path.resolve() with an undefined segment in server/vite.ts (line ~48). That happens when a variable like clientRoot, distDir, or indexHtmlPath wasn’t initialized (common when switching between dev/prod or when relying on __dirname in ESM without defining it).
+
+Below is a drop-in, pasteable server/vite.ts that is defensive and works in both dev (Vite middleware) and prod (serve built files). It guarantees all paths are strings, computes __dirname for ESM, validates existence, and falls back sanely.
+
+// server/vite.ts
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import type { Express, Request, Response, NextFunction } from 'express';
+
+type AttachOpts = {
+  mode?: 'development' | 'production';
+  // Optional overrides, but must be strings if provided
+  clientDir?: string;   // absolute path to your /client folder
+  distSubdir?: string;  // defaults to "dist"
+};
+
+/**
+ * Attach Vite (dev) or static (prod) middleware to an Express app.
+ * Prevents ERR_INVALID_ARG_TYPE by ensuring all path segments are strings.
+ */
+export async function attachFrontend(app: Express, opts: AttachOpts = {}) {
+  const modeEnv = (opts.mode ?? process.env.NODE_ENV ?? 'development').toLowerCase();
+  const mode: 'development' | 'production' = modeEnv.startsWith('prod') ? 'production' : 'development';
+
+  // ESM-friendly __dirname
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+
+  // Derive repo root and defaults based on this file being at /server/vite.ts
+  // Adjust one level up to project root, then "client"
+  const projectRoot = path.resolve(__dirname, '..');                // /server -> project root
+  const defaultClientDir = path.resolve(projectRoot, '../client');  // ../client relative to /server
+
+  // Ensure we have string paths
+  const clientDir = String(opts.clientDir || process.env.CLIENT_DIR || defaultClientDir);
+  const distSubdir = String(opts.distSubdir || process.env.VITE_DIST_DIR || 'dist');
+
+  // Guards: make sure these evaluate to actual directories when used
+  const clientExists = fs.existsSync(clientDir) && fs.statSync(clientDir).isDirectory();
+  if (!clientExists) {
+    throw new Error(
+      `[vite.ts] clientDir not found: ${clientDir}. ` +
+      `Set opts.clientDir or CLIENT_DIR env var to the absolute path of your client folder.`
+    );
+  }
+
+  if (mode === 'development') {
+    // Vite middleware mode
+    // Import only in dev to keep prod bundle light and avoid requiring dev deps
+    const { createServer: createViteServer } = await import('vite');
+
+    const vite = await createViteServer({
+      root: clientDir,
+      appType: 'custom',
+      server: { middlewareMode: true },
+      // Optional: quiet down logs in hosted environments
+      logLevel: process.env.VITE_LOG_LEVEL as any || 'info',
+    });
+
+    // Use Vite connect instance as Express middleware
+    app.use(vite.middlewares);
+
+    // SSR/SPA index fallback: let Vite transform index.html
+    app.use('*', async (req: Request, res: Response, next: NextFunction) => {
+      try {
+        const indexPath = path.resolve(clientDir, 'index.html'); // string + string only
+        let html = fs.readFileSync(indexPath, 'utf-8');
+        html = await vite.transformIndexHtml(req.originalUrl, html);
+        res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
+      } catch (err) {
+        next(err);
+      }
+    });
+
+    return;
+  }
+
+  // Production: serve prebuilt assets
+  const distDir = path.resolve(clientDir, distSubdir); // string + string only
+  const hasDist = fs.existsSync(distDir) && fs.statSync(distDir).isDirectory();
+
+  if (!hasDist) {
+    throw new Error(
+      `[vite.ts] Missing production build at ${distDir}. Run your client build (e.g., "vite build").`
+    );
+  }
+
+  // Static file serving
+  const serveStatic = (await import('serve-static')).default;
+  app.use(serveStatic(distDir, { index: false, fallthrough: true, maxAge: '1y', extensions: ['html'] }));
+
+  // SPA fallback to index.html
+  const indexHtmlPath = path.resolve(distDir, 'index.html');
+  const hasIndex = fs.existsSync(indexHtmlPath) && fs.statSync(indexHtmlPath).isFile();
+  if (!hasIndex) {
+    throw new Error(`[vite.ts] index.html not found in ${distDir}.`);
+  }
+
+  app.get('*', (_req: Request, res: Response) => {
+    res.sendFile(indexHtmlPath);
+  });
+}
+
+How to wire it in your server (Express)
+
+Make sure you call this with no undefineds:
+
+// server/index.ts
+import express from 'express';
+import { attachFrontend } from './vite.js'; // note: .js at runtime after TS compiles
+
+const app = express();
+
+// other API routes go here…
+
+await attachFrontend(app, {
+  mode: process.env.NODE_ENV as any,            // 'development' or 'production'
+  // clientDir: '/absolute/path/to/client',     // optional override IF your structure differs
+  // distSubdir: 'dist'                         // optional if you use a custom outDir
+});
+
+const port = Number(process.env.PORT) || 5000;
+app.listen(port, () => {
+  console.log(`[server] listening on :${port} (${process.env.NODE_ENV || 'development'})`);
+});
+
+Why your error happened (plainly)
+	•	Somewhere you had something like path.resolve(clientRoot, 'index.html') where clientRoot was undefined (often due to missing __dirname in ESM, a wrong relative hop like ../../client, or an unset env var).
+	•	The code above always constructs string paths and throws clear, early errors if folders/files are missing, rather than passing undefined into path.resolve.
+
+Quick checks you can run
+	1.	Confirm your layout: server/vite.ts is in /server, client is in /client.
+	2.	If your layout differs, pass an absolute clientDir in attachFrontend(...).
+	3.	In prod, run vite build (or your build script) so /client/dist/index.html exists.
+
+If you paste this in and still see issues, share your repo layout (just top-level folders) and I’ll adapt the path math to match it exactly.

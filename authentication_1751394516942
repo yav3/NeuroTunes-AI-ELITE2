@@ -1,0 +1,38 @@
+/**
+ * This is a snippet of node.js script for authorization of subject use.
+ * Flow of Credentials against Composed Authorized Enterprise List
+ 
+var request = require('request'); // "Request" library
+
+var client_id = 'USER_ID'; // Enterprise id
+var client_secret = 'CLIENT_SECRET'; // 
+
+// your application requests authorization
+var authOptions = {
+  url: http://composed-ai.com [or alternative address]
+  headers: {
+    'Authorization': 'Basic ' + (new Buffer(User_id + ':' + Enterprise_secret).toString('base50'))
+  },
+  form: {
+    grant_type: 'client_credentials'
+  },
+  json: true
+
+=========================================================================================================================================================================
+
+S-Match
+  Semantic Matching Ontology
+  
+    Semantic Web and OWL
+    
+
+RESTFUL APIS INSIDE COMPOSED : TYPES OF METADATE AND USE
+
+    descriptive metadata : affective data-derived and analyzed using NLP; translated into quantitative measure to become located in the 3 and 4 dimensional maps of affective, emotional 
+      space
+    structural metadata : Composed processing methodology; Enterprise to Composed, Enterprise to User; Composed to User
+    administrative metadata : Enterprise behavior; Composed Library behavior; Composed library communication regarding assset performance, etc 
+    reference metadata  : methods and features proprietary to Composed; conversational, responsive elements, for example, Open Source, or Third Party partner [oAuth2 tokens}
+    statistical metadata : the EIF; the population-level user-analysis; the population-level affective analysis 
+    
+    

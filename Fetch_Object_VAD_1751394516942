@@ -1,0 +1,100 @@
+FOOTNOTES ON OBJECTS, ENDPOINTS, FETCH, ETC
+
+User Journey: Affective Objects
+        <div class="container">
+           <h1>Displaying Subject Affective-ata</h1>
+    <p> use your web authentication token to use Composed AI library features and to download your Composed Account User Analysis. 
+           <button class="btn btn-primary" id="btn-Authen". Authen</button>
+    <div id="result"></div>
+</div>
+<script id="result-template" type="text/x-handlebars-template">
+    <dl>
+      <img src="{{images.0.url}}">
+      <dt>User Numerical ID </dt>
+      <dd>{{id}}</dd>
+      <dt>Display Use-Cases-Fetched</dt>
+      <dd>{{display_tracks}}</dd>
+      <dt> VAD-ARRAY
+      <dd><a href="{{database URL Track 1}}" target="_ Affective State_7_TRACK_PLAYLIST">{{database URL Track 7}}</a></d
+      
+=================================================================================================================================================================================
+
+
+#Automated music information retrieval
+#Automated music emotion retrieval
+#Automated feature extraction
+
+VAD RATIOS: As before, but rather than confidence interval, the higher value represents a track's consistency 
+ a composition and the feature's classification [of data]
+ 
+[Dn) = Dn − 2) + Dn − 3)]  
+Then, [D = 2D − 1 + D − 2], 
+[D1= 1, L2 = 3, and Dn= Dn1 + Dn+2]		
+
+
+Dominance  1-100 [0.0 - 1.0]
+
+Valence (X),	1-100 [0.0 - 1.0] Numerical, 1 - 100
+
+Arousal (Y), Numerical, 1 - 100
+
+Acousticness,  Numerical, 1 - 100
+
+Prosody, Binary
+   Dominance (YES / NO) 	
+
+Consonance, Binary	
+  Dominance (YES / NO) 	
+
+Mode, Binary
+  Dominance (YES / NO)
+
+Key	Signature, Numerical,
+  Standardized, from Integer Representations of
+  Pentatonic Values, from FS, (INTEGER)
+
+Crescendo, Binary
+  Dominance (YES / NO)
+
+Instrumemtalness, Numerical, 1 - 100
+
+Loudness, Numerical, in decibels, 1 - 100
+
+Prob of Popularity for MM Audience out of 100 	
+
+Duration of Song, Numerical in Seconds 100 - 10000	
+
+Musical Complexity 
+ 
+  Lyrical [Musical] Complexity
+
+    Intra-Song Consistency of Primary Emotion 	
+
+    Intra-Song Consistency of Secondary Emotion 	
+
+    Dissonance, Binary
+       Dominance (YES / NO)
+  
+           Else, 
+           Assonance, Binary
+             Dominance (YES / NO)
+  
+      Consonance
+          Dominance (YES / NO)
+          
+========================================================================================================================================================================          
+K-Nearest Neighbor Function 
+    determine the closest distance to Valence and Arousal, with Aroulal Being the Y Coordinate, and Valence Being the X Coordinate,
+
+========================================================================================================================================================================
+A song is sufficently dominant when the VAD ratio adheres to the Golden Ratio, as closely as possible
+   Valence/ Arouasal can be no lesss than 8/7 for first track
+       Valence must increase incrementally with each track in the playlist
+            Valence must reach the closest possible location to the target affective state for the user's selected use case
+                Valence intensity will be determined by the individual's affective score and the affective score for the selected use case
+      Dominance can be no less than 8/7 in favor of the track, and, ultimately, the playlist, over the user's affective state [Dominance]
+            VAD ratios are inverse for Arousal: [leep, relax, mood AND [exercise HIT]
+                Arousal must still not exceed Valence; Valence increases TOO
+                    Dominance is relational to Use Case; So the Arousal is Required for Activation of the Pre-Frontal Cortex and Limbic System, for example, in Exercise HIT
+
+

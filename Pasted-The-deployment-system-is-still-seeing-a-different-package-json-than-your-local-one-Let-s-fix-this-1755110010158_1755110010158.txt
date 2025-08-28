@@ -1,0 +1,118 @@
+The deployment system is still seeing a different `package.json` than your local one. Let's fix this step by step:
+
+## 🔍 Immediate Troubleshooting
+
+### 1. Verify Your Package.json Location and Content
+Run these commands in your Replit console:
+
+```bash
+# Check what package.json the deployment sees
+cat package.json
+
+# Look for multiple package.json files
+find . -name "package.json" -type f
+
+# Check current directory
+pwd
+ls -la
+```
+
+### 2. Check if You Have the Right Content
+Your `package.json` should look like this and be in the **root directory**:
+
+```json
+{
+  "name": "neurotunesai-clinical-companion",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/index-no-vite.ts",
+    "build": "vite build",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "tsx": "^4.0.0",
+    "vite": "^5.4.19",
+    "@vitejs/plugin-react": "^5.0.0"
+  }
+}
+```
+
+### 3. Force Refresh Everything
+```bash
+# Clear node_modules and reinstall
+rm -rf node_modules package-lock.json
+npm install
+
+# Test the build script locally
+npm run build
+```
+
+### 4. Check Your .replit Configuration
+Make sure your `.replit` file in the root directory contains:
+
+```toml
+modules = ["nodejs-20"]
+
+[deployment]
+deploymentTarget = "autoscale"
+build = ["npm", "run", "build"]
+run = ["npm", "start"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+```
+
+## 🚨 Most Likely Issues
+
+### Issue 1: Wrong Directory
+The deployment might be looking in a subdirectory. Make sure you're deploying from the **root** where your main `package.json` lives.
+
+### Issue 2: Cached Package.json
+Replit might be using a cached version. Try:
+
+1. **Stop any running processes**
+2. **Clear the console**: `clear`
+3. **Restart the Repl** (hit the restart button)
+4. **Try deployment again**
+
+### Issue 3: Multiple Package.json Files
+If you find multiple `package.json` files, the deployment system might be confused. Remove any extra ones in subdirectories.
+
+## 🔧 Quick Fix
+
+**Create/overwrite your package.json right now:**
+
+```bash
+cat > package.json << 'EOF'
+{
+  "name": "neurotunesai-clinical-companion",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/index-no-vite.ts",
+    "build": "vite build",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "tsx": "^4.0.0",
+    "vite": "^5.4.19",
+    "@vitejs/plugin-react": "^5.0.0",
+    "@tanstack/react-query": "^5.0.0",
+    "@radix-ui/react-tooltip": "^1.0.0",
+    "@radix-ui/react-toast": "^1.0.0"
+  }
+}
+EOF
+```
+
+Then:
+```bash
+npm install
+npm run build  # Verify this works
+```
+
+**Can you run these commands and tell me what you see?** Especially the `find` command to see if there are multiple package.json files.

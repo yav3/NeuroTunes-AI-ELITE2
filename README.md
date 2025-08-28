@@ -1,417 +1,207 @@
-# NeuroTunes-AI-ELITE2
-NeuroTunes AI + System Architecture
-Architecture Overview
-File-based therapeutic music platform with real-time streaming and neuroscience targeting.
+[![librosa logo](docs/img/librosa_logo_text.svg)](https://librosa.org/)
 
-Core Components
-Centralized Track System Architecture:
-┌─────────────────────────────────────────┐
-│          File System Catalog           │
-├─────────────────────────────────────────┤
-│  attached_assets/                       │
-│  ├── *.mp3 (3,648 therapeutic tracks)   │
-│  ├── Metadata encoded in filenames     │
-│  └── VAD psychological scoring          │
-├─────────────────────────────────────────┤
-│       Memory-Based Track Cache          │
-│  ├── Real-time track loading           │
-│  ├── Instant filtering & search        │
-│  └── Sub-100ms response times          │
-├─────────────────────────────────────────┤
-│      Therapeutic Classification         │
-│  ├── Focus (302 tracks)                │
-│  ├── Classical, New Age, & Acoustic    │
-│  ├── Electronic, EDM, Rock, & Pop      │
-│  └── Lightning feedback system         │
-└─────────────────────────────────────────┘
-2. Audio Streaming Architecture
-Optimized audio delivery with advanced caching and streaming capabilities:
+# librosa
 
-Audio Streaming Pipeline:
-┌─────────────────────────────────────────┐
-│           Client Request                │
-├─────────────────────────────────────────┤
-│    Session-based Authentication         │
-├─────────────────────────────────────────┤
-│        Audio Protection Layer           │
-│  ├── Stream-only access                │
-│  ├── No download capability            │
-│  └── Rate limiting                     │
-├─────────────────────────────────────────┤
-│      Server-Side Audio Caching         │
-│  ├── HTTP optimization headers         │
-│  ├── Range request support             │
-│  └── Efficient file serving            │
-├─────────────────────────────────────────┤
-│         Optimized Delivery              │
-│  ├── MP3 streaming with headers        │
-│  ├── Progressive loading               │
-│  └── Error recovery mechanisms         │
-└─────────────────────────────────────────┘
-System Components
-Frontend Architecture
-Single-Page Application (SPA)
 
-adaptive-music-app.html - Complete therapeutic music interface
-Responsive design with mobile-first approach
-Progressive Web App (PWA) capabilities
-Touch-optimized controls with haptic feedback
-Core Frontend Features:
+A python package for music and audio analysis.  
 
-<!-- Main application structure -->
-<div id="neurotunes-app">
-  ├── Header with therapeutic goal selection
-  ├── Genre filtering interface
-  ├── Audio player with streaming controls
-  ├── Track discovery and favorites system
-  ├── Real-time analytics dashboard
-  └── Debug panel (Ctrl+Shift+D)
-</div>
-JavaScript Architecture:
+[![PyPI](https://img.shields.io/pypi/v/librosa.svg)](https://pypi.python.org/pypi/librosa)
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/librosa/badges/version.svg)](https://anaconda.org/conda-forge/librosa)
+[![License](https://img.shields.io/pypi/l/librosa.svg)](https://github.com/librosa/librosa/blob/main/LICENSE.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.591533.svg)](https://doi.org/10.5281/zenodo.591533)
 
-// Modular component system
-NeuroTunesApp = {
-  audioPlayer: AudioPlayerManager,
-  trackSystem: TrackDiscoverySystem,
-  userSession: SessionManager,
-  monitoring: MonitoringSystem,
-  analytics: AnalyticsEngine,
-  debugPanel: DebugInterface
-};
-Backend Architecture
-Node.js/Express Server (server/index.ts)
+[![CI](https://github.com/librosa/librosa/actions/workflows/ci.yml/badge.svg)](https://github.com/librosa/librosa/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/librosa/librosa/branch/main/graph/badge.svg?token=ULWnUHaIJC)](https://codecov.io/gh/librosa/librosa)
+[![Docs](https://github.com/librosa/librosa/actions/workflows/docs.yml/badge.svg)](https://librosa.org/doc/latest/index.html)
 
-TypeScript-based server with ES modules
-RESTful API with comprehensive endpoints
-Session-based user management
-Real-time health monitoring
-Core Server Components:
+#  Table of Contents
 
-// Primary server modules
-├── centralized-track-system.ts    // Music catalog management
-├── therapeutic-recommendation-engine.ts  // AI personalization
-├── debug-monitoring.ts            // Health & performance monitoring
-├── storage.ts                     // Data persistence layer
-└── index.ts                       // Main server entry point
-Therapeutic Targeting Engine
-VAD-Based Psychological Profiling:
+- [Documentation](#Documentation)
+- [Installation](#Installation)
+  - [Using PyPI](#using-pypi)
+  - [Using Anaconda](#using-anaconda)
+  - [Building From Source](#building-from-source)
+  - [Hints for Installation](#hints-for-the-installation)
+    - [`soundfile`](#soundfile)
+    - [`audioread`](#audioread-and-mp3-support)
+      - [Linux (`apt get`)](#linux-apt-get)
+      - [Linux (`yum`)](#linux-yum)
+      - [Mac](#mac)
+      - [Windows](#windows)
+- [Discussion](#discussion)
+- [Citing](#citing)
 
-interface VADModel {
-  valence: number;    // Emotional positivity (-1 to 1)
-  arousal: number;    // Energy level (-1 to 1)
-  dominance: number;  // Control/confidence (-1 to 1)
-}
-// Therapeutic applications
-const therapeuticTargets = {
-  focus_enhancement: {
-    bpm: { min: 78, max: 100 },
-    vad: { valence: [0.0, 0.7], arousal: [0.0, 0.5] },
-    requirements: ["instrumental", "no_vocals", "focus_keyword"]
-  },
-  nsdr_deep_rest: {
-    bpm: { min: 40, max: 60 },
-    vad: { valence: [0.0, 0.5], arousal: [-1.0, -0.3] },
-    requirements: ["classical_new_age_only", "ultra_slow"]
-  }
-};
-Advanced Classification System:
+---
 
-// 4-Genre Classification with strict rules
-enum TherapeuticGenre {
-  FOCUS = "Focus",                           // 302 tracks - cognitive enhancement
-  CLASSICAL = "Classical, New Age, & Acoustic", // 572 tracks - relaxation
-  ELECTRONIC = "Electronic, EDM, Rock, & Pop",  // 2,774 tracks - energy
-}
-// Focus track requirements (strictest validation)
-const focusValidation = {
-  filenamePattern: /focus.*focus/,  // "focus" before AND after semicolon
-  bpmRange: [78, 100],              // Optimal cognitive BPM
-  instrumentalScore: > 0.7,         // High instrumental requirement
-  vocalRestriction: false           // No vocals preferred
-};
-Data Flow Architecture
-Request Processing Pipeline
-sequenceDiagram
-    participant C as Client
-    participant S as Server
-    participant T as Track System
-    participant A as Audio Cache
-    participant M as Monitoring
-    
-    C->>S: Request tracks with therapeutic goal
-    S->>T: Query filtered tracks
-    T->>T: Apply VAD & BPM filtering
-    T->>S: Return therapeutic matches
-    S->>C: JSON response with tracks
-    
-    C->>S: Request audio stream
-    S->>A: Check audio cache
-    A->>S: Return optimized stream
-    S->>C: Audio with range support
-    
-    S->>M: Log performance metrics
-    M->>M: Update analytics dashboard
-Session Management Flow
-// Session-based user isolation
-interface UserSession {
-  sessionId: string;        // Unique session identifier
-  created: Date;           // Session creation time
-  lastActivity: Date;      // Last user interaction
-  preferences: {
-    lastGoal: TherapeuticGoal;
-    lastGenre: Genre;
-    favorites: number[];
-  };
-  analytics: {
-    tracksPlayed: number;
-    sessionDuration: number;
-    skipRate: number;
-  };
-}
-// Automatic session creation and management
-const sessionManager = {
-  createSession: () => generateUniqueSessionId(),
-  validateSession: (sessionId) => checkSessionValidity(sessionId),
-  updateActivity: (sessionId) => recordUserActivity(sessionId),
-  cleanup: () => removeExpiredSessions()
-};
-Monitoring & Analytics Architecture
-Comprehensive Monitoring System
-Sentry Error Tracking Integration:
+## Documentation
 
-// Backend error capture
-import * as Sentry from '@sentry/node';
-// Automatic error tracking with context
-Sentry.captureException(error, {
-  tags: {
-    component: 'therapeutic-engine',
-    goal: currentGoal
-  },
-  extra: {
-    trackMetadata: sanitizedMetadata,
-    userSession: anonymizedSession
-  }
-});
-LogRocket Session Recording:
 
-// Frontend user journey tracking
-LogRocket.init('project-id');
-// Capture therapeutic interactions
-LogRocket.captureMessage('Therapeutic goal selected', {
-  goal: selectedGoal,
-  tracks_available: trackCount,
-  user_session_duration: sessionTime
-});
-Real-Time Debug Panel:
+See https://librosa.org/doc/ for a complete reference manual and introductory tutorials.
 
-// Debug panel accessible via Ctrl+Shift+D
-const debugPanel = {
-  systemHealth: () => fetchSystemMetrics(),
-  audioPerformance: () => getAudioAnalytics(),
-  sessionInfo: () => getUserSessionData(),
-  errorLogs: () => getRecentErrors(),
-  performanceMetrics: () => getResponseTimes()
-};
-Health Monitoring Endpoints
-// Comprehensive health monitoring
-app.get('/api/health', (req, res) => {
-  res.json({
-    status: 'healthy',
-    service: 'NeuroTunes AI + Therapeutic Music Platform',
-    timestamp: new Date().toISOString()
-  });
-});
-app.get('/api/debug-status', async (req, res) => {
-  const metrics = {
-    uptime: process.uptime(),
-    memory: process.memoryUsage(),
-    tracks: await getTrackCounts(),
-    sessions: getActiveSessionCount(),
-    performance: getPerformanceMetrics()
-  };
-  res.json(metrics);
-});
-Security Architecture
-Audio Protection System
-// Multi-layer audio protection
-const audioProtection = {
-  sessionValidation: (req) => validateUserSession(req),
-  rateLimiting: (userId) => checkStreamingLimits(userId),
-  downloadPrevention: (res) => setStreamOnlyHeaders(res),
-  metadataProtection: (track) => sanitizeTrackMetadata(track)
-};
-// Secure audio streaming headers
-const secureHeaders = {
-  'Content-Type': 'audio/mpeg',
-  'Content-Disposition': 'inline',
-  'X-Content-Type-Options': 'nosniff',
-  'Cache-Control': 'public, max-age=3600',
-  'Accept-Ranges': 'bytes'
-};
-Privacy-First Design
-// Anonymous session management
-const privacyFeatures = {
-  anonymousSessions: true,           // No personal data required
-  sessionIsolation: true,            // Multi-user support without data mixing
-  autoExpiration: 24 * 60 * 60 * 1000, // 24-hour session lifetime
-  sanitizedLogging: true,            // Remove sensitive data from logs
-  gdprCompliant: true                // Automatic data expiration
-};
-Performance Optimization
-Caching Strategy
-// Multi-layer caching system
-const cachingStrategy = {
-  trackMetadata: {
-    method: 'memory',
-    duration: '10 minutes',
-    invalidation: 'lightning-feedback'
-  },
-  audioFiles: {
-    method: 'http-headers',
-    duration: '1 hour',
-    compression: 'none' // Audio files not compressed
-  },
-  genreLists: {
-    method: 'memory',
-    duration: '30 minutes',
-    invalidation: 'manual'
-  }
-};
-Audio Streaming Optimization
-// Optimized audio delivery
-const audioOptimization = {
-  fileFormat: 'MP3',               // Web-compatible format
-  bitrateTarget: '128kbps+',       // Quality threshold
-  streamingMethod: 'progressive',   // Progressive download
-  rangeSupport: true,              // HTTP range requests
-  compressionHeaders: false,       // No compression for audio
-  cacheStrategy: 'aggressive'      // 1-hour cache headers
-};
-Scalability Architecture
-Horizontal Scaling Patterns
-// Stateless server design for scaling
-const scalabilityFeatures = {
-  statelessSessions: true,          // Session data in memory/external store
-  fileBasedCatalog: true,          // No database dependency
-  horizontalReady: true,           // Multiple server instances supported
-  loadBalancerCompatible: true,    // Standard HTTP load balancing
-  cacheSharing: 'redis-optional'   // Optional Redis for shared caching
-};
-Database-Optional Architecture
-// File system as primary data source
-const dataStrategy = {
-  primaryStorage: 'file-system',    // 3,648 tracks in attached_assets/
-  metadataEncoding: 'filename',     // VAD data encoded in filenames
-  trackIndex: 'memory-cached',      // Fast in-memory track index
-  userSessions: 'memory-store',     // Session-based user data
-  analytics: 'optional-external'   // External analytics if configured
-};
-Integration Architecture
-External Service Integration
-// Optional external services
-const integrations = {
-  errorTracking: {
-    service: 'Sentry',
-    required: false,
-    configuration: 'VITE_SENTRY_DSN'
-  },
-  sessionRecording: {
-    service: 'LogRocket',
-    required: false,
-    configuration: 'VITE_LOGROCKET_ID'
-  },
-  database: {
-    service: 'PostgreSQL',
-    required: false,
-    fallback: 'file-system-only'
-  }
-};
-API Integration Patterns
-// RESTful API design
-const apiArchitecture = {
-  endpoints: {
-    '/api/tracks': 'Track discovery with therapeutic filtering',
-    '/api/audio/*': 'Secure audio streaming',
-    '/api/favorites': 'User personalization',
-    '/api/health': 'System health monitoring',
-    '/api/debug-status': 'Comprehensive system metrics'
-  },
-  responseFormat: 'JSON',
-  authentication: 'session-based',
-  rateLimit: 'per-session',
-  compression: 'gzip-enabled'
-};
-Development Architecture
-TypeScript-First Development
-// Strict TypeScript configuration
-interface DevelopmentStandards {
-  strictMode: true;
-  explicitTypes: true;
-  errorHandling: 'comprehensive';
-  testCoverage: '>90%';
-  documentation: 'inline-required';
-}
-// Therapeutic type safety
-interface TherapeuticTrack {
-  id: number;
-  title: string;
-  genre: TherapeuticGenre;
-  bpm: number;
-  vad: VADModel;
-  therapeuticUse: TherapeuticGoal[];
-  isValidForFocus: boolean;
-  audioFeatures: AudioAnalysisResult;
-}
-Testing Architecture
-// Comprehensive testing strategy
-const testingStrategy = {
-  unitTesting: {
-    framework: 'Jest',
-    coverage: '>90%',
-    focus: 'therapeutic-targeting-logic'
-  },
-  integrationTesting: {
-    framework: 'Supertest',
-    coverage: 'all-api-endpoints',
-    focus: 'audio-streaming-performance'
-  },
-  e2eTesting: {
-    framework: 'Playwright',
-    coverage: 'critical-user-journeys',
-    focus: 'therapeutic-goal-completion'
-  }
-};
-Deployment Architecture
-Multi-Environment Support
-// Environment-specific configurations
-const deploymentTargets = {
-  development: {
-    platform: 'local',
-    database: 'optional',
-    monitoring: 'debug-panel-only',
-    audioSource: 'attached_assets'
-  },
-  production: {
-    platform: 'replit-autoscale',
-    database: 'postgresql-optional',
-    monitoring: 'sentry-logrocket',
-    audioSource: 'cdn-optional'
-  },
-  containerized: {
-    platform: 'docker',
-    database: 'postgres-container',
-    monitoring: 'external-services',
-    audioSource: 'volume-mounted'
-  }
-};
-Cloud-Native Patterns
-// Cloud deployment readiness
-const cloudFeatures = {
-  twelveFactorApp: true,           // 12-factor app compliance
-  environmentConfig: true,         // Environment variable configuration
-  statelessDesign: true,           // Horizontal scaling ready
-  healthChecks: true,              // Kubernetes/Docker health checks
-  gracefulShutdown: true,          // Clean process termination
-  observability: true              // Comprehensive monitoring/logging
-};
-This architecture provides a solid foundation for therapeutic music delivery with comprehensive monitoring, security, and scalability features while maintaining the flexibility to operate with or without external dependencies.
+The [advanced example gallery](https://librosa.org/doc/latest/advanced.html) should give you a quick sense of the kinds
+of things that librosa can do.
+
+---
+
+[Back To Top ↥](#librosa)
+
+
+## Installation
+
+
+### Using PyPI
+
+The latest stable release is available on PyPI, and you can install it by saying
+```
+python -m pip install librosa
+```
+
+### Using Anaconda
+
+Anaconda users can install using ```conda-forge```:
+```
+conda install -c conda-forge librosa
+```
+
+### Building from source
+
+To build librosa from source, say 
+```
+python setup.py build
+```
+Then, to install librosa, say 
+```
+python setup.py install
+```
+If all went well, you should be able to execute the following commands from a python console:
+```
+import librosa
+librosa.show_versions()
+```
+This should print out a description of your software environment, along with the installed versions of other packages used by librosa.
+
+📝 OS X users should follow the installation guide given below.
+
+Alternatively, you can download or clone the repository and use `pip` to handle dependencies:
+
+```
+unzip librosa.zip
+python -m pip install -e librosa
+```
+or
+
+```
+git clone https://github.com/librosa/librosa.git
+python -m pip install -e librosa
+```
+
+By calling `pip list` you should see `librosa` now as an installed package:
+```
+librosa (0.x.x, /path/to/librosa)
+```
+
+---
+
+[Back To Top ↥](#librosa)
+
+### Hints for the Installation
+
+`librosa` uses `soundfile` and `audioread` to load audio files.
+
+📝 Note that older releases of `soundfile` (prior to 0.11) do not support MP3, which will cause librosa to fall back on the `audioread` library.
+
+### `soundfile`
+
+If you're using `conda` to install librosa, then audio encoding dependencies will be handled automatically.
+
+If you're using `pip` on a Linux environment, you may need to install `libsndfile`
+manually.  Please refer to the [SoundFile installation documentation](https://pysoundfile.readthedocs.io/#installation) for details.
+
+### `audioread` and MP3 support
+
+To fuel `audioread` with more audio-decoding power (e.g., for reading MP3 files),
+you may need to install either *ffmpeg* or *GStreamer*.
+
+📝*Note that on some platforms, `audioread` needs at least one of the programs to work properly.*
+
+If you are using Anaconda, install *ffmpeg* by calling
+
+```
+conda install -c conda-forge ffmpeg
+```
+
+If you are not using Anaconda, here are some common commands for different operating systems:
+
+- ####  Linux (`apt-get`): 
+
+```
+apt-get install ffmpeg
+```
+or
+ 
+```
+apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly
+```
+- #### Linux (`yum`):
+```
+yum install ffmpeg
+```
+or
+
+
+```
+yum install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly
+```
+
+- #### Mac: 
+```
+brew install ffmpeg
+```
+or
+
+```
+brew install gstreamer
+```
+
+- #### Windows: 
+
+download ffmpeg binaries from this [website](https://www.gyan.dev/ffmpeg/builds/) or gstreamer binaries from this [website](https://gstreamer.freedesktop.org/)
+
+For GStreamer, you also need to install the Python bindings with 
+
+```
+python -m pip install pygobject
+```
+
+---
+
+[Back To Top ↥](#librosa)
+
+## Discussion
+
+
+Please direct non-development questions and discussion topics to our web forum at
+https://groups.google.com/forum/#!forum/librosa
+
+---
+
+[Back To Top ↥](#librosa)
+
+## Citing
+
+
+If you want to cite librosa in a scholarly work, there are two ways to do it.
+
+- If you are using the library for your work, for the sake of reproducibility, please cite
+  the version you used as indexed at Zenodo:
+
+    [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.591533.svg)](https://doi.org/10.5281/zenodo.591533)
+
+- If you wish to cite librosa for its design, motivation, etc., please cite the paper
+  published at SciPy 2015:
+
+    McFee, Brian, Colin Raffel, Dawen Liang, Daniel PW Ellis, Matt McVicar, Eric Battenberg, and Oriol Nieto. "librosa: Audio and music signal analysis in python." In Proceedings of the 14th python in science conference, pp. 18-25. 2015.
+
+---
+
+[Back To Top ↥](#librosa)
