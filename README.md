@@ -1,207 +1,86 @@
-[![librosa logo](docs/img/librosa_logo_text.svg)](https://librosa.org/)
+# NeuroTunes+ Database Management Scripts
 
-# librosa
+This directory contains Python scripts for managing and maintaining the NeuroTunes+ PostgreSQL database.
 
+## Track Deduplication Script
 
-A python package for music and audio analysis.  
+The `dedupe_tracks.py` script helps analyze and remove duplicate tracks from your music library.
 
-[![PyPI](https://img.shields.io/pypi/v/librosa.svg)](https://pypi.python.org/pypi/librosa)
-[![Anaconda-Server Badge](https://anaconda.org/conda-forge/librosa/badges/version.svg)](https://anaconda.org/conda-forge/librosa)
-[![License](https://img.shields.io/pypi/l/librosa.svg)](https://github.com/librosa/librosa/blob/main/LICENSE.md)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.591533.svg)](https://doi.org/10.5281/zenodo.591533)
+### Prerequisites
 
-[![CI](https://github.com/librosa/librosa/actions/workflows/ci.yml/badge.svg)](https://github.com/librosa/librosa/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/librosa/librosa/branch/main/graph/badge.svg?token=ULWnUHaIJC)](https://codecov.io/gh/librosa/librosa)
-[![Docs](https://github.com/librosa/librosa/actions/workflows/docs.yml/badge.svg)](https://librosa.org/doc/latest/index.html)
+1. **Python 3.x** (you've already installed this with `brew install python`)
+2. **Required packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-#  Table of Contents
+### Usage
 
-- [Documentation](#Documentation)
-- [Installation](#Installation)
-  - [Using PyPI](#using-pypi)
-  - [Using Anaconda](#using-anaconda)
-  - [Building From Source](#building-from-source)
-  - [Hints for Installation](#hints-for-the-installation)
-    - [`soundfile`](#soundfile)
-    - [`audioread`](#audioread-and-mp3-support)
-      - [Linux (`apt get`)](#linux-apt-get)
-      - [Linux (`yum`)](#linux-yum)
-      - [Mac](#mac)
-      - [Windows](#windows)
-- [Discussion](#discussion)
-- [Citing](#citing)
+1. **Run the script**:
+   ```bash
+   python dedupe_tracks.py
+   ```
 
----
+2. **The script will**:
+   - Connect to your PostgreSQL database using `DATABASE_URL`
+   - Show database statistics
+   - Analyze tracks for duplicates using title + artist + duration fingerprints
+   - Display detailed duplicate analysis
+   - Offer options to export or remove duplicates
 
-## Documentation
+### Features
 
+- **Safe Analysis**: Non-destructive duplicate detection
+- **Fingerprint Matching**: Uses title, artist, and duration for accurate matching
+- **Dry Run Mode**: Test removal without actually deleting data
+- **Export Options**: Save duplicate data to JSON for review
+- **Database Statistics**: View comprehensive library metrics
 
-See https://librosa.org/doc/ for a complete reference manual and introductory tutorials.
+### Safety Features
 
-The [advanced example gallery](https://librosa.org/doc/latest/advanced.html) should give you a quick sense of the kinds
-of things that librosa can do.
+- **Dry Run First**: Always shows what would be deleted before actual removal
+- **Confirmation Required**: Requires typing 'YES' for permanent deletion
+- **Backup Recommendations**: Always backup before running destructive operations
 
----
-
-[Back To Top ↥](#librosa)
-
-
-## Installation
-
-
-### Using PyPI
-
-The latest stable release is available on PyPI, and you can install it by saying
-```
-python -m pip install librosa
-```
-
-### Using Anaconda
-
-Anaconda users can install using ```conda-forge```:
-```
-conda install -c conda-forge librosa
-```
-
-### Building from source
-
-To build librosa from source, say 
-```
-python setup.py build
-```
-Then, to install librosa, say 
-```
-python setup.py install
-```
-If all went well, you should be able to execute the following commands from a python console:
-```
-import librosa
-librosa.show_versions()
-```
-This should print out a description of your software environment, along with the installed versions of other packages used by librosa.
-
-📝 OS X users should follow the installation guide given below.
-
-Alternatively, you can download or clone the repository and use `pip` to handle dependencies:
+### Example Output
 
 ```
-unzip librosa.zip
-python -m pip install -e librosa
-```
-or
+NeuroTunes+ Track Deduplication Tool
+==================================================
 
-```
-git clone https://github.com/librosa/librosa.git
-python -m pip install -e librosa
-```
+DATABASE STATISTICS
+==================================================
+Total Tracks: 1,247
+Unique Artists: 342
+Unique Moods: 8
 
-By calling `pip list` you should see `librosa` now as an installed package:
-```
-librosa (0.x.x, /path/to/librosa)
-```
+Tracks by Mood:
+  calm: 312
+  energetic: 198
+  focused: 156
+  peaceful: 134
 
----
+Found 23 tracks in database
+Found 3 duplicate groups
+Total duplicate tracks: 7
 
-[Back To Top ↥](#librosa)
+DUPLICATE ANALYSIS RESULTS
+================================================================================
 
-### Hints for the Installation
+Group 1: 2 duplicate(s)
+   Original: 'Ocean Waves' by Therapeutic Sounds
+   Duration: 240s
+   Created: 2025-01-15 10:30:00
 
-`librosa` uses `soundfile` and `audioread` to load audio files.
-
-📝 Note that older releases of `soundfile` (prior to 0.11) do not support MP3, which will cause librosa to fall back on the `audioread` library.
-
-### `soundfile`
-
-If you're using `conda` to install librosa, then audio encoding dependencies will be handled automatically.
-
-If you're using `pip` on a Linux environment, you may need to install `libsndfile`
-manually.  Please refer to the [SoundFile installation documentation](https://pysoundfile.readthedocs.io/#installation) for details.
-
-### `audioread` and MP3 support
-
-To fuel `audioread` with more audio-decoding power (e.g., for reading MP3 files),
-you may need to install either *ffmpeg* or *GStreamer*.
-
-📝*Note that on some platforms, `audioread` needs at least one of the programs to work properly.*
-
-If you are using Anaconda, install *ffmpeg* by calling
-
-```
-conda install -c conda-forge ffmpeg
+   Duplicates to remove:
+     1. ID 45 - Created: 2025-01-16 14:22:00
+     2. ID 78 - Created: 2025-01-17 09:15:00
 ```
 
-If you are not using Anaconda, here are some common commands for different operating systems:
+### Integration with NeuroTunes+
 
-- ####  Linux (`apt-get`): 
+This script directly connects to your existing PostgreSQL database and maintains all therapeutic metadata and relationships. It's designed to work seamlessly with your existing music wellness platform.
 
-```
-apt-get install ffmpeg
-```
-or
- 
-```
-apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly
-```
-- #### Linux (`yum`):
-```
-yum install ffmpeg
-```
-or
+### Security Note
 
-
-```
-yum install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly
-```
-
-- #### Mac: 
-```
-brew install ffmpeg
-```
-or
-
-```
-brew install gstreamer
-```
-
-- #### Windows: 
-
-download ffmpeg binaries from this [website](https://www.gyan.dev/ffmpeg/builds/) or gstreamer binaries from this [website](https://gstreamer.freedesktop.org/)
-
-For GStreamer, you also need to install the Python bindings with 
-
-```
-python -m pip install pygobject
-```
-
----
-
-[Back To Top ↥](#librosa)
-
-## Discussion
-
-
-Please direct non-development questions and discussion topics to our web forum at
-https://groups.google.com/forum/#!forum/librosa
-
----
-
-[Back To Top ↥](#librosa)
-
-## Citing
-
-
-If you want to cite librosa in a scholarly work, there are two ways to do it.
-
-- If you are using the library for your work, for the sake of reproducibility, please cite
-  the version you used as indexed at Zenodo:
-
-    [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.591533.svg)](https://doi.org/10.5281/zenodo.591533)
-
-- If you wish to cite librosa for its design, motivation, etc., please cite the paper
-  published at SciPy 2015:
-
-    McFee, Brian, Colin Raffel, Dawen Liang, Daniel PW Ellis, Matt McVicar, Eric Battenberg, and Oriol Nieto. "librosa: Audio and music signal analysis in python." In Proceedings of the 14th python in science conference, pp. 18-25. 2015.
-
----
-
-[Back To Top ↥](#librosa)
+The script uses your existing `DATABASE_URL` environment variable, so no additional configuration is needed. It maintains all security protocols of your existing database connection.
