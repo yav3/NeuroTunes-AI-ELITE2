@@ -1,0 +1,2617 @@
+# NeuroTunes Elite - Complete Codebase
+
+Copy each file below into your GitHub repository with the exact file paths shown.
+
+## 📁 Root Files
+
+### `package.json`
+
+```json
+{
+  "name": "neurotunes-elite",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/index.ts",
+    "build": "tsc && vite build",
+    "start": "node dist/server.js",
+    "preview": "vite preview",
+    "test": "vitest",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "tsx": "^4.7.1",
+    "vite": "^5.1.4",
+    "@vitejs/plugin-react": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "@supabase/supabase-js": "^2.39.8",
+    "@tanstack/react-query": "^5.28.4",
+    "zustand": "^4.5.2",
+    "tailwindcss": "^3.4.1",
+    "lucide-react": "^0.365.0",
+    "serve-static": "^1.15.0",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.25",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.4.2",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "vitest": "^1.4.0",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/jest-dom": "^6.4.2",
+    "jsdom": "^24.0.0"
+  }
+}
+```
+
+### `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./client/src/*"],
+      "@server/*": ["./server/*"]
+    }
+  },
+  "include": ["client/src", "server", "vite.config.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+```
+
+### `tsconfig.node.json`
+
+```json
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["vite.config.ts", "server"]
+}
+```
+
+### `vite.config.ts`
+
+```typescript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
+
+export default defineConfig({
+  plugins: [react()],
+  root: './client',
+  build: {
+    outDir: '../dist/client',
+    emptyOutDir: true
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './client/src')
+    }
+  },
+  server: {
+    port: 3000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true
+      }
+    }
+  }
+})
+```
+
+### `tailwind.config.js`
+
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./client/index.html",
+    "./client/src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f0f9ff',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          900: '#1e3a8a',
+        }
+      }
+    },
+  },
+  plugins: [],
+}
+```
+
+### `postcss.config.js`
+
+```javascript
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+```
+
+### `.env.example`
+
+```bash
+# Supabase
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+
+# Server
+NODE_ENV=development
+PORT=5000
+ALLOWED_ORIGINS=http://localhost:3000
+
+# Security
+RATE_LIMIT_MAX=100
+RATE_LIMIT_WINDOW=15
+
+# Audio Processing
+MAX_FILE_SIZE=50000000
+```
+
+### `lovable.config.js`
+
+```javascript
+export default {
+  name: "neurotunes-elite",
+  framework: "react-vite",
+  build: {
+    command: "npm run build",
+    outputDirectory: "dist/client",
+    environment: {
+      NODE_ENV: "production"
+    }
+  },
+  dev: {
+    command: "npm run dev",
+    port: 3000,
+    env: {
+      NODE_ENV: "development"
+    }
+  },
+  install: {
+    command: "npm ci"
+  }
+}
+```
+
+### `railway.json`
+
+```json
+{
+  "build": {
+    "command": "npm run build"
+  },
+  "deploy": {
+    "startCommand": "npm start",
+    "healthcheckPath": "/api/health",
+    "healthcheckTimeout": 100,
+    "restartPolicyType": "on_failure"
+  }
+}
+```
+
+### `.gitignore`
+
+```
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production builds
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Temporary folders
+tmp/
+temp/
+```
+
+-----
+
+## 🎵 Frontend Code
+
+### `client/index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/brain-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NeuroTunes Elite - Evidence-based therapeutic music for peak performance" />
+    <title>NeuroTunes Elite</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+```
+
+### `client/src/main.tsx`
+
+```typescript
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'
+
+// Error handling for the entire app
+window.addEventListener('error', (event) => {
+  console.error('Global error:', event.error)
+})
+
+window.addEventListener('unhandledrejection', (event) => {
+  console.error('Unhandled promise rejection:', event.reason)
+})
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
+```
+
+### `client/src/App.tsx`
+
+```typescript
+import React, { Suspense } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { AudioProvider } from '@/context/AudioContext'
+import { ErrorBoundary } from '@/components/ErrorBoundary'
+import { PageLoadingSpinner } from '@/components/LoadingSpinner'
+
+// Lazy load pages
+const HomePage = React.lazy(() => import('@/pages/HomePage'))
+const FullPlayer = React.lazy(() => import('@/components/FullPlayer'))
+
+// Create a client
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 3,
+      staleTime: 5 * 60 * 1000, // 5 minutes
+      refetchOnWindowFocus: false,
+    },
+  },
+})
+
+function App() {
+  return (
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <AudioProvider>
+          <BrowserRouter>
+            <Suspense fallback={<PageLoadingSpinner />}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/player" element={<FullPlayer />} />
+                <Route path="*" element={<HomePage />} />
+              </Routes>
+            </Suspense>
+          </BrowserRouter>
+        </AudioProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
+  )
+}
+
+export default App
+```
+
+### `client/src/index.css`
+
+```css
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  #root {
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .slider {
+    @apply appearance-none bg-transparent cursor-pointer;
+  }
+  
+  .slider::-webkit-slider-track {
+    @apply bg-white/20 rounded-full;
+    height: 8px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    @apply appearance-none w-5 h-5 bg-white rounded-full cursor-pointer shadow-lg;
+    margin-top: -6px;
+  }
+  
+  .slider::-moz-range-track {
+    @apply bg-white/20 rounded-full border-none;
+    height: 8px;
+  }
+  
+  .slider::-moz-range-thumb {
+    @apply w-5 h-5 bg-white rounded-full cursor-pointer border-none shadow-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Focus styles */
+*:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-gray-900;
+}
+
+/* Selection */
+::selection {
+  @apply bg-purple-600 text-white;
+}
+```
+
+### `client/src/types/index.ts`
+
+```typescript
+export interface MusicTrack {
+  id: string
+  title: string
+  original_title?: string
+  genre: string
+  energy: number
+  valence: number
+  acousticness: number
+  danceability: number
+  loudness: number
+  bpm: number
+  file_path: string
+  bucket_name: string
+  file_size?: number
+  file_type?: string
+  upload_status: 'pending' | 'uploading' | 'completed' | 'failed'
+  created_at: string
+  updated_at: string
+  therapeutic_applications: TherapeuticApplication[]
+  spectral_analysis?: SpectralAnalysis[]
+}
+
+export interface TherapeuticApplication {
+  id: string
+  track_id: string
+  frequency_band_primary: FrequencyBand
+  frequency_band_secondary?: FrequencyBand[]
+  condition_targets: string[]
+  anxiety_evidence_score?: number
+  depression_evidence_score?: number
+  pain_evidence_score?: number
+  focus_evidence_score?: number
+  sleep_evidence_score?: number
+  ptsd_evidence_score?: number
+  effect_size?: number
+  participant_count?: number
+  confidence_interval?: string
+  supporting_studies?: string[]
+}
+
+export interface SpectralAnalysis {
+  id: string
+  track_id: string
+  delta_band_power: number
+  theta_band_power: number
+  alpha_band_power: number
+  beta_band_power: number
+  gamma_band_power: number
+  therapeutic_delta_score: number
+  therapeutic_theta_score: number
+  therapeutic_alpha_score: number
+  therapeutic_beta_score: number
+  therapeutic_gamma_score: number
+  spectral_centroid?: number
+  spectral_bandwidth?: number
+  fundamental_frequency?: number
+}
+
+export type FrequencyBand = 'delta' | 'theta' | 'alpha' | 'beta' | 'gamma'
+
+export interface AudioState {
+  isPlaying: boolean
+  currentTime: number
+  duration: number
+  volume: number
+  isLoading: boolean
+  error?: string
+}
+
+export interface AppError {
+  message: string
+  code?: string
+  details?: any
+  timestamp: string
+}
+```
+
+### `client/src/services/logger.ts`
+
+```typescript
+export enum LogLevel {
+  ERROR = 'error',
+  WARN = 'warn', 
+  INFO = 'info',
+  DEBUG = 'debug'
+}
+
+class Logger {
+  private static instance: Logger
+  private logLevel: LogLevel = LogLevel.INFO
+
+  static getInstance(): Logger {
+    if (!Logger.instance) {
+      Logger.instance = new Logger()
+    }
+    return Logger.instance
+  }
+
+  private log(level: LogLevel, message: string, meta?: any) {
+    const timestamp = new Date().toISOString()
+    const logEntry = {
+      timestamp,
+      level,
+      message,
+      ...(meta && { meta })
+    }
+
+    // Console output
+    switch (level) {
+      case LogLevel.ERROR:
+        console.error(`[ERROR] ${timestamp}: ${message}`, meta)
+        break
+      case LogLevel.WARN:
+        console.warn(`[WARN] ${timestamp}: ${message}`, meta)
+        break
+      case LogLevel.INFO:
+        console.info(`[INFO] ${timestamp}: ${message}`, meta)
+        break
+      case LogLevel.DEBUG:
+        console.debug(`[DEBUG] ${timestamp}: ${message}`, meta)
+        break
+    }
+
+    // Send to external logging service in production
+    if (import.meta.env.PROD && level === LogLevel.ERROR) {
+      this.sendToExternalService(logEntry)
+    }
+  }
+
+  private async sendToExternalService(logEntry: any) {
+    try {
+      await fetch('/api/logs', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(logEntry)
+      })
+    } catch (error) {
+      console.error('Failed to send log to external service:', error)
+    }
+  }
+
+  error(message: string, meta?: any) {
+    this.log(LogLevel.ERROR, message, meta)
+  }
+
+  warn(message: string, meta?: any) {
+    this.log(LogLevel.WARN, message, meta)
+  }
+
+  info(message: string, meta?: any) {
+    this.log(LogLevel.INFO, message, meta)
+  }
+
+  debug(message: string, meta?: any) {
+    this.log(LogLevel.DEBUG, message, meta)
+  }
+}
+
+export const logger = Logger.getInstance()
+```
+
+### `client/src/services/supabase.ts`
+
+```typescript
+import { createClient } from '@supabase/supabase-js'
+import type { MusicTrack, FrequencyBand } from '@/types'
+import { logger } from './logger'
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  throw new Error('Missing Supabase environment variables')
+}
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+
+export class SupabaseService {
+  static async getTrackUrl(filePath: string, bucketName: string = 'neurotunes-music'): Promise<string> {
+    try {
+      const { data } = supabase.storage.from(bucketName).getPublicUrl(filePath)
+      return data.publicUrl
+    } catch (error) {
+      logger.error('Failed to get track URL', { filePath, bucketName, error })
+      throw error
+    }
+  }
+
+  static async uploadTrack(file: File, path: string, bucketName: string = 'neurotunes-music') {
+    try {
+      const { data, error } = await supabase.storage
+        .from(bucketName)
+        .upload(path, file, { 
+          upsert: false,
+          contentType: file.type 
+        })
+      
+      if (error) throw error
+      
+      logger.info('Track uploaded successfully', { path, fileSize: file.size })
+      return data
+    } catch (error) {
+      logger.error('Failed to upload track', { path, error })
+      throw error
+    }
+  }
+
+  static async fetchTracks(options?: {
+    bandFilter?: FrequencyBand | 'all'
+    condition?: string
+    limit?: number
+    offset?: number
+  }): Promise<MusicTrack[]> {
+    try {
+      let query = supabase
+        .from('music_tracks')
+        .select(`
+          *,
+          therapeutic_applications (*),
+          spectral_analysis (*)
+        `)
+        .eq('upload_status', 'completed')
+        .order('created_at', { ascending: false })
+
+      if (options?.limit) {
+        query = query.limit(options.limit)
+      }
+
+      if (options?.offset) {
+        query = query.range(options.offset, options.offset + (options.limit || 10) - 1)
+      }
+
+      if (options?.bandFilter && options.bandFilter !== 'all') {
+        query = query.eq('therapeutic_applications.frequency_band_primary', options.bandFilter)
+      }
+
+      if (options?.condition) {
+        query = query.contains('therapeutic_applications.condition_targets', [options.condition])
+      }
+
+      const { data, error } = await query
+
+      if (error) throw error
+
+      logger.info('Tracks fetched successfully', { 
+        count: data?.length || 0, 
+        filters: options 
+      })
+
+      return data || []
+    } catch (error) {
+      logger.error('Failed to fetch tracks', { options, error })
+      throw error
+    }
+  }
+
+  static async trackTherapeuticSession(
+    trackId: string, 
+    duration: number, 
+    frequencyBand: FrequencyBand
+  ) {
+    try {
+      const { error } = await supabase
+        .from('therapeutic_sessions')
+        .insert({
+          track_id: trackId,
+          duration_seconds: duration,
+          frequency_band: frequencyBand,
+          session_timestamp: new Date().toISOString()
+        })
+
+      if (error) throw error
+
+      logger.info('Therapeutic session tracked', { 
+        trackId, 
+        duration, 
+        frequencyBand 
+      })
+    } catch (error) {
+      logger.error('Failed to track therapeutic session', { trackId, error })
+    }
+  }
+}
+```
+
+### `client/src/context/AudioContext.tsx`
+
+```typescript
+import React, { createContext, useContext, useReducer, useRef, useCallback, useEffect } from 'react'
+import type { MusicTrack, AudioState } from '@/types'
+import { SupabaseService } from '@/services/supabase'
+import { logger } from '@/services/logger'
+
+interface AudioContextType {
+  state: AudioState
+  currentTrack: MusicTrack | null
+  playlist: MusicTrack[]
+  setPlaylist: (tracks: MusicTrack[]) => void
+  toggle: () => void
+  seek: (time: number) => void
+  setVolume: (volume: number) => void
+  loadTrack: (track: MusicTrack) => Promise<void>
+  next: () => void
+  prev: () => void
+  clearError: () => void
+}
+
+type AudioAction =
+  | { type: 'SET_PLAYING'; payload: boolean }
+  | { type: 'SET_TIME'; payload: number }
+  | { type: 'SET_DURATION'; payload: number }
+  | { type: 'SET_VOLUME'; payload: number }
+  | { type: 'SET_LOADING'; payload: boolean }
+  | { type: 'SET_ERROR'; payload: string }
+  | { type: 'CLEAR_ERROR' }
+
+const initialState: AudioState = {
+  isPlaying: false,
+  currentTime: 0,
+  duration: 0,
+  volume: 0.8,
+  isLoading: false
+}
+
+function audioReducer(state: AudioState, action: AudioAction): AudioState {
+  switch (action.type) {
+    case 'SET_PLAYING':
+      return { ...state, isPlaying: action.payload }
+    case 'SET_TIME':
+      return { ...state, currentTime: action.payload }
+    case 'SET_DURATION':
+      return { ...state, duration: action.payload }
+    case 'SET_VOLUME':
+      return { ...state, volume: action.payload }
+    case 'SET_LOADING':
+      return { ...state, isLoading: action.payload }
+    case 'SET_ERROR':
+      return { ...state, error: action.payload, isLoading: false, isPlaying: false }
+    case 'CLEAR_ERROR':
+      return { ...state, error: undefined }
+    default:
+      return state
+  }
+}
+
+const AudioContext = createContext<AudioContextType | null>(null)
+
+export function AudioProvider({ children }: { children: React.ReactNode }) {
+  const [state, dispatch] = useReducer(audioReducer, initialState)
+  const [currentTrack, setCurrentTrack] = React.useState<MusicTrack | null>(null)
+  const [playlist, setPlaylist] = React.useState<MusicTrack[]>([])
+  const audioRef = useRef<HTMLAudioElement | null>(null)
+  const sessionStartTime = useRef<number>(0)
+
+  // Initialize audio element
+  useEffect(() => {
+    const audio = new Audio()
+    audioRef.current = audio
+    
+    // Set initial volume
+    audio.volume = state.volume
+
+    // Audio event listeners
+    const handleLoadedMetadata = () => {
+      dispatch({ type: 'SET_DURATION', payload: audio.duration })
+      dispatch({ type: 'SET_LOADING', payload: false })
+    }
+
+    const handleTimeUpdate = () => {
+      dispatch({ type: 'SET_TIME', payload: audio.currentTime })
+    }
+
+    const handleEnded = () => {
+      dispatch({ type: 'SET_PLAYING', payload: false })
+      
+      // Track therapeutic session
+      if (currentTrack && sessionStartTime.current) {
+        const duration = Date.now() - sessionStartTime.current
+        SupabaseService.trackTherapeuticSession(
+          currentTrack.id,
+          Math.floor(duration / 1000),
+          currentTrack.therapeutic_applications[0]?.frequency_band_primary || 'alpha'
+        )
+      }
+      
+      // Auto-play next track
+      next()
+    }
+
+    const handleLoadStart = () => {
+      dispatch({ type: 'SET_LOADING', payload: true })
+    }
+
+    const handleCanPlay = () => {
+      dispatch({ type: 'SET_LOADING', payload: false })
+    }
+
+    const handleError = () => {
+      const errorMsg = 'Failed to load audio track'
+      logger.error(errorMsg, { currentTrack: currentTrack?.id })
+      dispatch({ type: 'SET_ERROR', payload: errorMsg })
+    }
+
+    // Add event listeners
+    audio.addEventListener('loadedmetadata', handleLoadedMetadata)
+    audio.addEventListener('timeupdate', handleTimeUpdate)
+    audio.addEventListener('ended', handleEnded)
+    audio.addEventListener('loadstart', handleLoadStart)
+    audio.addEventListener('canplay', handleCanPlay)
+    audio.addEventListener('error', handleError)
+
+    // Cleanup
+    return () => {
+      audio.removeEventListener('loadedmetadata', handleLoadedMetadata)
+      audio.removeEventListener('timeupdate', handleTimeUpdate)
+      audio.removeEventListener('ended', handleEnded)
+      audio.removeEventListener('loadstart', handleLoadStart)
+      audio.removeEventListener('canplay', handleCanPlay)
+      audio.removeEventListener('error', handleError)
+      
+      audio.pause()
+      audio.src = ''
+    }
+  }, [])
+
+  const loadTrack = useCallback(async (track: MusicTrack) => {
+    if (!audioRef.current) return
+
+    try {
+      dispatch({ type: 'CLEAR_ERROR' })
+      dispatch({ type: 'SET_LOADING', payload: true })
+      
+      const url = await SupabaseService.getTrackUrl(track.file_path, track.bucket_name)
+      
+      // Stop current playback
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+      
+      // Load new track
+      audioRef.current.src = url
+      audioRef.current.load()
+      
+      setCurrentTrack(track)
+      sessionStartTime.current = Date.now()
+      
+      logger.info('Track loaded successfully', { 
+        trackId: track.id, 
+        title: track.title 
+      })
+    } catch (error) {
+      const errorMsg = 'Failed to load track'
+      logger.error(errorMsg, { error, trackId: track.id })
+      dispatch({ type: 'SET_ERROR', payload: errorMsg })
+    }
+  }, [])
+
+  const toggle = useCallback(async () => {
+    if (!audioRef.current || !currentTrack) return
+
+    try {
+      if (state.isPlaying) {
+        audioRef.current.pause()
+        dispatch({ type: 'SET_PLAYING', payload: false })
+      } else {
+        await audioRef.current.play()
+        dispatch({ type: 'SET_PLAYING', payload: true })
+        sessionStartTime.current = Date.now()
+      }
+    } catch (error) {
+      const errorMsg = 'Failed to play audio'
+      logger.error(errorMsg, { error, trackId: currentTrack?.id })
+      dispatch({ type: 'SET_ERROR', payload: errorMsg })
+    }
+  }, [state.isPlaying, currentTrack])
+
+  const seek = useCallback((time: number) => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = Math.max(0, Math.min(time, audioRef.current.duration || 0))
+    }
+  }, [])
+
+  const setVolume = useCallback((volume: number) => {
+    const clampedVolume = Math.max(0, Math.min(1, volume))
+    if (audioRef.current) {
+      audioRef.current.volume = clampedVolume
+      dispatch({ type: 'SET_VOLUME', payload: clampedVolume })
+      
+      // Save to localStorage
+      localStorage.setItem('neurotunes-volume', clampedVolume.toString())
+    }
+  }, [])
+
+  const next = useCallback(() => {
+    if (!currentTrack || playlist.length === 0) return
+    
+    const currentIndex = playlist.findIndex(track => track.id === currentTrack.id)
+    const nextIndex = (currentIndex + 1) % playlist.length
+    loadTrack(playlist[nextIndex])
+  }, [currentTrack, playlist, loadTrack])
+
+  const prev = useCallback(() => {
+    if (!currentTrack || playlist.length === 0) return
+    
+    const currentIndex = playlist.findIndex(track => track.id === currentTrack.id)
+    const prevIndex = (currentIndex - 1 + playlist.length) % playlist.length
+    loadTrack(playlist[prevIndex])
+  }, [currentTrack, playlist, loadTrack])
+
+  const clearError = useCallback(() => {
+    dispatch({ type: 'CLEAR_ERROR' })
+  }, [])
+
+  // Load saved volume on mount
+  useEffect(() => {
+    const savedVolume = localStorage.getItem('neurotunes-volume')
+    if (savedVolume) {
+      const volume = parseFloat(savedVolume)
+      if (!isNaN(volume)) {
+        setVolume(volume)
+      }
+    }
+  }, [setVolume])
+
+  const value: AudioContextType = {
+    state,
+    currentTrack,
+    playlist,
+    setPlaylist,
+    toggle,
+    seek,
+    setVolume,
+    loadTrack,
+    next,
+    prev,
+    clearError
+  }
+
+  return (
+    <AudioContext.Provider value={value}>
+      {children}
+    </AudioContext.Provider>
+  )
+}
+
+export function useAudio() {
+  const context = useContext(AudioContext)
+  if (!context) {
+    throw new Error('useAudio must be used within AudioProvider')
+  }
+  return context
+}
+```
+
+### `client/src/components/ErrorBoundary.tsx`
+
+```typescript
+import React from 'react'
+import { AlertTriangle, RefreshCw } from 'lucide-react'
+import { logger } from '@/services/logger'
+
+interface Props {
+  children: React.ReactNode
+  fallback?: React.ComponentType<{ error: Error; retry: () => void }>
+}
+
+interface State {
+  hasError: boolean
+  error: Error | null
+  errorId: string
+}
+
+export class ErrorBoundary extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props)
+    this.state = {
+      hasError: false,
+      error: null,
+      errorId: ''
+    }
+  }
+
+  static getDerivedStateFromError(error: Error): Partial<State> {
+    const errorId = Math.random().toString(36).substr(2, 9)
+    return {
+      hasError: true,
+      error,
+      errorId
+    }
+  }
+
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+    logger.error('React Error Boundary caught error', {
+      error: error.message,
+      stack: error.stack,
+      errorInfo,
+      errorId: this.state.errorId,
+      url: window.location.href,
+      userAgent: navigator.userAgent
+    })
+  }
+
+  retry = () => {
+    this.setState({
+      hasError: false,
+      error: null,
+      errorId: ''
+    })
+  }
+
+  render() {
+    if (this.state.hasError) {
+      const { fallback: Fallback } = this.props
+
+      if (Fallback && this.state.error) {
+        return <Fallback error={this.state.error} retry={this.retry} />
+      }
+
+      return (
+        <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
+          <div className="bg-gray-800 rounded-xl p-8 max-w-md w-full text-center border border-red-500/20">
+            <AlertTriangle className="mx-auto mb-4 text-red-500" size={48} />
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Something went wrong
+            </h2>
+            <p className="text-gray-400 mb-6">
+              We're sorry, but something unexpected happened. Our team has been notified.
+            </p>
+            <div className="space-y-3">
+              <button
+                onClick={this.retry}
+                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+              >
+                <RefreshCw size={20} />
+                Try Again
+              </button>
+              <button
+                onClick={() => window.location.reload()}
+                className="w-full px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+              >
+                Reload Page
+              </button>
+            </div>
+            {this.state.errorId && (
+              <p className="text-xs text-gray-500 mt-4">
+                Error ID: {this.state.errorId}
+              </p>
+            )}
+          </div>
+        </div>
+      )
+    }
+
+    return this.props.children
+  }
+}
+```
+
+### `client/src/components/LoadingSpinner.tsx`
+
+```typescript
+import React from 'react'
+import { Loader2 } from 'lucide-react'
+
+interface LoadingSpinnerProps {
+  size?: 'sm' | 'md' | 'lg'
+  text?: string
+  className?: string
+}
+
+export const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({ 
+  size = 'md', 
+  text,
+  className = ''
+}) => {
+  const sizeClasses = {
+    sm: 'w-4 h-4',
+    md: 'w-8 h-8', 
+    lg: 'w-12 h-12'
+  }
+
+  return (
+    <div className={`flex items-center justify-center gap-3 ${className}`}>
+      <Loader2 className={`${sizeClasses[size]} animate-spin text-blue-500`} />
+      {text && (
+        <span className="text-gray-400 text-sm">{text}</span>
+      )}
+    </div>
+  )
+}
+
+export const PageLoadingSpinner: React.FC = () => (
+  <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+    <LoadingSpinner size="lg" text="Loading NeuroTunes Elite..." />
+  </div>
+)
+
+export const InlineLoadingSpinner: React.FC<{ text?: string }> = ({ text = 'Loading...' }) => (
+  <div className="flex items-center justify-center py-8">
+    <LoadingSpinner text={text} />
+  </div>
+)
+```
+
+### `client/src/components/FrequencyBand.tsx`
+
+```typescript
+import React from 'react'
+import type { FrequencyBand as FrequencyBandType } from '@/types'
+
+interface FrequencyBandProps {
+  band: FrequencyBandType
+  isActive: boolean
+  onClick: (band: FrequencyBandType) => void
+  count?: number
+}
+
+const bandInfo = {
+  delta: { 
+    range: '0.5-4Hz', 
+    purpose: 'Deep Sleep & Healing', 
+    color: 'from-purple-600 to-blue-600', 
+    icon: '🌙',
+    description: 'Promotes deep sleep, healing, and regeneration'
+  },
+  theta: { 
+    range: '4-8Hz', 
+    purpose: 'Meditation & Creativity', 
+    color: 'from-blue-600 to-teal-600', 
+    icon: '🧘',
+    description: 'Enhances meditation, creativity, and intuition'
+  },
+  alpha: { 
+    range: '8-13Hz', 
+    purpose: 'Relaxed Focus', 
+    color: 'from-teal-600 to-green-600', 
+    icon: '🌊',
+    description: 'Calms the mind while maintaining alertness'
+  },
+  beta: { 
+    range: '13-30Hz', 
+    purpose: 'Active Concentration', 
+    color: 'from-green-600 to-yellow-600', 
+    icon: '⚡',
+    description: 'Supports focused thinking and problem-solving'
+  },
+  gamma: { 
+    range: '30-100Hz', 
+    purpose: 'Peak Performance', 
+    color: 'from-yellow-600 to-red-600', 
+    icon: '🚀',
+    description: 'Enhances cognitive function and peak performance'
+  }
+} as const
+
+export const FrequencyBand: React.FC<FrequencyBandProps> = ({ 
+  band, 
+  isActive, 
+  onClick, 
+  count 
+}) => {
+  const info = bandInfo[band]
+  
+  return (
+    <button
+      onClick={() => onClick(band)}
+      className={`
+        group relative p-6 rounded-2xl border-2 transition-all duration-300
+        ${isActive 
+          ? `bg-gradient-to-r ${info.color} text-white shadow-lg transform scale-105 border-transparent` 
+          : 'bg-gray-800/50 hover:bg-gray-700/50 text-gray-300 border-gray-700 hover:border-gray-600'
+        }
+      `}
+      aria-label={`${band} frequency band: ${info.purpose}`}
+    >
+      <div className="text-center">
+        <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">
+          {info.icon}
+        </div>
+        
+        <h3 className="text-lg font-bold capitalize mb-1">
+          {band}
+        </h3>
+        
+        <div className={`text-sm mb-2 ${isActive ? 'text-white/80' : 'text-gray-400'}`}>
+          {info.range}
+        </div>
+        
+        <div className={`text-xs font-medium mb-3 ${isActive ? 'text-white' : 'text-gray-300'}`}>
+          {info.purpose}
+        </div>
+        
+        {count !== undefined && (
+          <div className={`
+            inline-flex items-center px-2 py-1 rounded-full text-xs font-medium
+            ${isActive 
+              ? 'bg-white/20 text-white' 
+              : 'bg-gray-700 text-gray-300'
+            }
+          `}>
+            {count} tracks
+          </div>
+        )}
+      </div>
+      
+      {/* Tooltip */}
+      <div className="
+        absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2
+        bg-gray-900 text-white text-xs rounded-lg px-3 py-2 
+        opacity-0 group-hover:opacity-100 transition-opacity duration-200
+        pointer-events-none z-10 whitespace-nowrap
+      ">
+        {info.description}
+      </div>
+    </button>
+  )
+}
+
+export default FrequencyBand
+```
+
+### `client/src/components/TrackCard.tsx`
+
+```typescript
+import React from 'react'
+import { Play, Pause, Brain, TrendingUp, Clock } from 'lucide-react'
+import type { MusicTrack } from '@/types'
+import { useAudio } from '@/context/AudioContext'
+
+interface TrackCardProps {
+  track: MusicTrack
+}
+
+const formatDuration = (seconds: number): string => {
+  const mins = Math.floor(seconds / 60)
+  const secs = seconds % 60
+  return `${mins}:${secs.toString().padStart(2, '0')}`
+}
+
+const getEvidenceColor = (score?: number): string => {
+  if (!score) return 'text-gray-400'
+  if (score >= 0.8) return 'text-green-400'
+  if (score >= 0.6) return 'text-yellow-400'
+  return 'text-orange-400'
+}
+
+export const TrackCard: React.FC<TrackCardProps> = ({ track }) => {
+  const { currentTrack, state, loadTrack, toggle } = useAudio()
+  
+  const isCurrentTrack = currentTrack?.id === track.id
+  const isPlaying = isCurrentTrack && state.isPlaying
+  const isLoading = isCurrentTrack && state.isLoading
+  
+  const primaryApp = track.therapeutic_applications[0]
+  const bandColors = {
+    delta: 'border-purple-500 bg-purple-500/10',
+    theta: 'border-blue-500 bg-blue-500/10',
+    alpha: 'border-teal-500 bg-teal-500/10',
+    beta: 'border-green-500 bg-green-500/10',
+    gamma: 'border-yellow-500 bg-yellow-500/10'
+  }
+
+  const handlePlayClick = async () => {
+    if (isCurrentTrack) {
+      toggle()
+    } else {
+      await loadTrack(track)
+      // Auto-play after loading
+      setTimeout(() => toggle(), 100)
+    }
+  }
+
+  const getBestEvidenceScore = () => {
+    if (!primaryApp) return null
+    
+    const scores = [
+      { label: 'Anxiety', value: primaryApp.anxiety_evidence_score },
+      { label: 'Sleep', value: primaryApp.sleep_evidence_score },
+      { label: 'Focus', value: primaryApp.focus_evidence_score },
+      { label: 'Pain Relief', value: primaryApp.pain_evidence_score },
+      { label: 'Depression', value: primaryApp.depression_evidence_score }
+    ].filter(s => s.value !== undefined && s.value !== null)
+    
+    if (scores.length === 0) return null
+    
+    const best = scores.reduce((max, current) => 
+      (current.value || 0) > (max.value || 0) ? current : max
+    )
+    
+    return best
+  }
+
+  const bestEvidence = getBestEvidenceScore()
+
+  return (
+    <div className={`
+      group bg-gray-800/80 backdrop-blur-sm rounded-2xl p-6 
+      border-2 transition-all duration-300 hover:shadow-xl
+      ${isCurrentTrack 
+        ? `${bandColors[primaryApp?.frequency_band_primary || 'alpha']} shadow-lg` 
+        : 'border-gray-700 hover:border-gray-600'
+      }
+    `}>
+      {/* Header */}
+      <div className="flex justify-between items-start mb-4">
+        <div className="flex-1">
+          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+            {track.title}
+          </h3>
+          <div className="flex items-center gap-4 text-sm text-gray-400">
+            <span className="capitalize">{track.genre}</span>
+            <span className="flex items-center gap-1">
+              <Clock size={14} />
+              {track.bpm} BPM
+            </span>
+          </div>
+        </div>
+        
+        {/* Play Button */}
+        <button
+          onClick={handlePlayClick}
+          disabled={isLoading}
+          className={`
+            relative p-4 rounded-full transition-all duration-300 group-hover:scale-110
+            ${isPlaying
+              ? 'bg-red-600 hover:bg-red-700 text-white'
+              : 'bg-green-600 hover:bg-green-700 text-white'
+            }
+            disabled:opacity-50 disabled:cursor-not-allowed
+          `}
+          aria-label={isPlaying ? 'Pause' : 'Play'}
+        >
+          {isLoading ? (
+            <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
+          ) : isPlaying ? (
+            <Pause size={24} />
+          ) : (
+            <Play size={24} className="ml-1" />
+          )}
+        </button>
+      </div>
+
+      {/* Therapeutic Info */}
+      {primaryApp && (
+        <div className="mb-4">
+          <div className="flex items-center gap-2 mb-2">
+            <Brain size={16} className="text-purple-400" />
+            <span className="text-sm text-gray-300 capitalize">
+              {primaryApp.frequency_band_primary} Band
+              <span className="text-xs text-gray-500 ml-1">
+                ({primaryApp.frequency_band_primary === 'delta' ? '0.5-4Hz' :
+                  primaryApp.frequency_band_primary === 'theta' ? '4-8Hz' :
+                  primaryApp.frequency_band_primary === 'alpha' ? '8-13Hz' :
+                  primaryApp.frequency_band_primary === 'beta' ? '13-30Hz' :
+                  '30-100Hz'})
+              </span>
+            </span>
+          </div>
+          
+          {/* Condition Tags */}
+          <div className="flex flex-wrap gap-2 mb-3">
+            {primaryApp.condition_targets.slice(0, 3).map((condition) => (
+              <span 
+                key={condition} 
+                className="px-2 py-1 bg-gray-700 text-xs rounded-full text-gray-300 hover:bg-gray-600 transition-colors"
+              >
+                {condition.replace('_', ' ')}
+              </span>
+            ))}
+            {primaryApp.condition_targets.length > 3 && (
+              <span className="px-2 py-1 bg-gray-700 text-xs rounded-full text-gray-400">
+                +{primaryApp.condition_targets.length - 3} more
+              </span>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Evidence Score */}
+      {bestEvidence && (
+        <div className="mb-4">
+          <div className="flex justify-between items-center mb-2">
+            <span className="text-sm text-gray-400 flex items-center gap-1">
+              <TrendingUp size={14} />
+              {bestEvidence.label} Evidence
+            </span>
+            <span className={`text-sm font-medium ${getEvidenceColor(bestEvidence.value)}`}>
+              {Math.round((bestEvidence.value || 0) * 100)}%
+            </span>
+          </div>
+          <div className="w-full bg-gray-700 rounded-full h-2">
+            <div 
+              className="bg-gradient-to-r from-green-500 to-teal-500 h-2 rounded-full transition-all duration-500" 
+              style={{ width: `${(bestEvidence.value || 0) * 100}%` }}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Audio Characteristics */}
+      <div className="grid grid-cols-2 gap-4 text-sm">
+        <div>
+          <span className="text-gray-400">Energy</span>
+          <div className="flex items-center gap-2 mt-1">
+            <div className="flex-1 bg-gray-700 rounded-full h-1.5">
+              <div 
+                className="bg-gradient-to-r from-blue-500 to-purple-500 h-1.5 rounded-full" 
+                style={{ width: `${track.energy * 100}%` }}
+              />
+            </div>
+            <span className="text-white text-xs w-8">
+              {Math.round(track.energy * 100)}%
+            </span>
+          </div>
+        </div>
+        
+        <div>
+          <span className="text-gray-400">Valence</span>
+          <div className="flex items-center gap-2 mt-1">
+            <div className="flex-1 bg-gray-700 rounded-full h-1.5">
+              <div 
+                className="bg-gradient-to-r from-yellow-500 to-green-500 h-1.5 rounded-full" 
+                style={{ width: `${track.valence * 100}%` }}
+              />
+            </div>
+            <span className="text-white text-xs w-8">
+              {Math.round(track.valence * 100)}%
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Error State */}
+      {isCurrentTrack && state.error && (
+        <div className="mt-4 p-3 bg-red-500/10 border border-red-500/20 rounded-lg">
+          <p className="text-red-400 text-sm">{state.error}</p>
+        </div>
+      )}
+
+      {/* Progress Bar (only for current track) */}
+      {isCurrentTrack && state.duration > 0 && (
+        <div className="mt-4">
+          <div className="flex justify-between text-xs text-gray-400 mb-1">
+            <span>{formatDuration(Math.floor(state.currentTime))}</span>
+            <span>{formatDuration(Math.floor(state.duration))}</span>
+          </div>
+          <div className="w-full bg-gray-700 rounded-full h-1">
+            <div 
+              className="bg-gradient-to-r from-blue-500 to-purple-500 h-1 rounded-full transition-all duration-100" 
+              style={{ width: `${(state.currentTime / state.duration) * 100}%` }}
+            />
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default TrackCard
+```
+
+### `client/src/components/FullPlayer.tsx`
+
+```typescript
+import React, { useEffect, useMemo, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { ArrowLeft, Play, Pause, SkipForward, SkipBack, Volume2, Maximize, Minimize } from 'lucide-react'
+import { useAudio } from '@/context/AudioContext'
+
+const formatTime = (seconds: number): string => {
+  if (!Number.isFinite(seconds)) return '0:00'
+  const mins = Math.floor(seconds / 60)
+  const secs = Math.floor(seconds % 60)
+  return `${mins}:${secs.toString().padStart(2, '0')}`
+}
+
+export const FullPlayer: React.FC = () => {
+  const navigate = useNavigate()
+  const { state, toggle, seek, setVolume, next, prev, currentTrack, clearError } = useAudio()
+  const wrapperRef = useRef<HTMLDivElement>(null)
+  const [isFullscreen, setIsFullscreen] = useState(false)
+
+  // Track fullscreen changes
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement)
+    }
+    
+    document.addEventListener('fullscreenchange', handleFullscreenChange)
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange)
+  }, [])
+
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Don't trigger shortcuts if user is typing
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return
+      }
+
+      switch (e.code) {
+        case 'Space':
+          e.preventDefault()
+          toggle()
+          break
+        case 'ArrowRight':
+          e.preventDefault()
+          seek((state.currentTime || 0) + 10)
+          break
+        case 'ArrowLeft':
+          e.preventDefault()
+          seek(Math.max(0, (state.currentTime || 0) - 10))
+          break
+        case 'ArrowUp':
+          e.preventDefault()
+          setVolume(Math.min(1, state.volume + 0.1))
+          break
+        case 'ArrowDown':
+          e.preventDefault()
+          setVolume(Math.max(0, state.volume - 0.1))
+          break
+        case 'KeyN':
+          e.preventDefault()
+          next()
+          break
+        case 'KeyP':
+          e.preventDefault()
+          prev()
+          break
+        case 'Escape':
+          if (isFullscreen) {
+            exitFullscreen()
+          } else {
+            navigate(-1)
+          }
+          break
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [toggle, seek, state.currentTime, state.volume, setVolume, next, prev, isFullscreen, navigate])
+
+  // Fullscreen controls
+  const toggleFullscreen = async () => {
+    try {
+      if (!document.fullscreenElement && wrapperRef.current) {
+        await wrapperRef.current.requestFullscreen()
+      } else {
+        await document.exitFullscreen()
+      }
+    } catch (error) {
+      console.warn('Fullscreen not supported or failed:', error)
+    }
+  }
+
+  const exitFullscreen = async () => {
+    try {
+      if (document.fullscreenElement) {
+        await document.exitFullscreen()
+      }
+    } catch (error) {
+      console.warn('Exit fullscreen failed:', error)
+    }
+  }
+
+  // Derived track info
+  const trackInfo = useMemo(() => {
+    if (!currentTrack) return null
+    
+    const primaryApp = currentTrack.therapeutic_applications[0]
+    return {
+      title: currentTrack.title,
+      band: primaryApp?.frequency_band_primary || 'unknown',
+      bpm: currentTrack.bpm,
+      conditions: primaryApp?.condition_targets || [],
+      genre: currentTrack.genre
+    }
+  }, [currentTrack])
+
+  const progressPercentage = state.duration > 0 ? (state.currentTime / state.duration) * 100 : 0
+
+  if (!currentTrack) {
+    return (
+      <div className="fixed inset-0 z-50 bg-gray-900 text-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-6xl mb-4">🎵</div>
+          <h2 className="text-2xl font-bold mb-4">No Track Selected</h2>
+          <p className="text-gray-400 mb-6">Select a track from your library to start listening</p>
+          <button
+            onClick={() => navigate(-1)}
+            className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-xl transition-colors"
+          >
+            Back to Library
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div 
+      ref={wrapperRef}
+      className="fixed inset-0 z-50 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden"
+    >
+      {/* Header */}
+      <header className="flex items-center justify-between p-6 bg-gray-900/50 backdrop-blur-sm">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-2 px-4 py-2 hover:bg-white/10 rounded-lg transition-colors"
+          aria-label="Back to library"
+        >
+          <ArrowLeft size={20} />
+          <span className="hidden sm:inline">Back</span>
+        </button>
+        
+        <div className="text-center">
+          <h1 className="font-medium">Now Playing</h1>
+        </div>
+        
+        <button
+          onClick={toggleFullscreen}
+          className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+          aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
+        >
+          {isFullscreen ? <Minimize size={20} /> : <Maximize size={20} />}
+        </button>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-1 flex flex-col justify-center px-6 pb-20">
+        {/* Album Art */}
+        <div className="flex justify-center mb-8">
+          <div className="relative">
+            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl bg-gradient-to-br from-purple-600 via-blue-600 to-teal-600 flex items-center justify-center shadow-2xl">
+              <div className="text-6xl md:text-7xl lg:text-8xl">🧠</div>
+            </div>
+            
+            {/* Central Play Button */}
+            <button
+              onClick={toggle}
+              disabled={state.isLoading}
+              className="absolute inset-0 flex items-center justify-center group"
+              aria-label={state.isPlaying ? 'Pause' : 'Play'}
+            >
+              <div className="bg-black/20 backdrop-blur-md rounded-full p-6 border border-white/20 group-hover:scale-110 group-active:scale-95 transition-transform">
+                {state.isLoading ? (
+                  <div className="w-8 h-8 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                ) : state.isPlaying ? (
+                  <Pause size={32} />
+                ) : (
+                  <Play size={32} className="ml-1" />
+                )}
+              </div>
+            </button>
+          </div>
+        </div>
+
+        {/* Track Info */}
+        {trackInfo && (
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+              {trackInfo.title}
+            </h2>
+            <div className="text-lg text-gray-300 mb-3">
+              {trackInfo.band.charAt(0).toUpperCase() + trackInfo.band.slice(1)} Band • {trackInfo.bpm} BPM
+            </div>
+            <div className="text-sm text-gray-400 mb-2">
+              {trackInfo.genre}
+            </div>
+            {trackInfo.conditions.length > 0 && (
+              <div className="flex flex-wrap justify-center gap-2">
+                {trackInfo.conditions.slice(0, 4).map((condition) => (
+                  <span
+                    key={condition}
+                    className="px-3 py-1 bg-white/10 rounded-full text-xs text-gray-300"
+                  >
+                    {condition.replace('_', ' ')}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Error Display */}
+        {state.error && (
+          <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
+            <p className="text-red-400 text-center">{state.error}</p>
+            <div className="flex justify-center mt-2">
+              <button
+                onClick={clearError}
+                className="text-red-300 hover:text-red-200 text-sm underline"
+              >
+                Dismiss
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Transport Controls */}
+        <div className="flex items-center justify-center gap-8 mb-8">
+          <button
+            onClick={prev}
+            className="p-3 hover:bg-white/10 rounded-full transition-colors"
+            aria-label="Previous track"
+          >
+            <SkipBack size={24} />
+          </button>
+          
+          <button
+            onClick={toggle}
+            disabled={state.isLoading}
+            className="p-5 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 transition-colors disabled:opacity-50"
+            aria-label={state.isPlaying ? 'Pause' : 'Play'}
+          >
+            {state.isLoading ? (
+              <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
+            ) : state.isPlaying ? (
+              <Pause size={28} />
+            ) : (
+              <Play size={28} className="ml-1" />
+            )}
+          </button>
+          
+          <button
+            onClick={next}
+            className="p-3 hover:bg-white/10 rounded-full transition-colors"
+            aria-label="Next track"
+          >
+            <SkipForward size={24} />
+          </button>
+        </div>
+
+        {/* Progress Bar */}
+        <div className="mb-6">
+          <div className="relative">
+            <input
+              type="range"
+              min={0}
+              max={state.duration || 0}
+              step={0.1}
+              value={state.currentTime || 0}
+              onChange={(e) => seek(parseFloat(e.target.value))}
+              className="w-full h-2 bg-white/20 rounded-full appearance-none cursor-pointer slider"
+              aria-label="Seek"
+            />
+          </div>
+          <div className="flex justify-between text-sm text-gray-400 mt-2">
+            <span>{formatTime(state.currentTime || 0)}</span>
+            <span>{formatTime(state.duration || 0)}</span>
+          </div>
+        </div>
+
+        {/* Volume Control */}
+        <div className="flex items-center justify-center gap-4">
+          <Volume2 size={20} className="text-gray-400" />
+          <div className="w-32">
+            <input
+              type="range"
+              min={0}
+              max={1}
+              step={0.01}
+              value={state.volume}
+              onChange={(e) => setVolume(parseFloat(e.target.value))}
+              className="w-full h-1 bg-white/20 rounded-full appearance-none cursor-pointer slider"
+              aria-label="Volume"
+            />
+          </div>
+          <span className="text-sm text-gray-400 w-8">
+            {Math.round(state.volume * 100)}%
+          </span>
+        </div>
+      </main>
+
+      {/* Progress Indicator */}
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10">
+        <div
+          className="h-full bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-100"
+          style={{ width: `${progressPercentage}%` }}
+        />
+      </div>
+
+      {/* Custom slider styles */}
+      <style jsx>{`
+        .slider::-webkit-slider-thumb {
+          appearance: none;
+          width: 16px;
+          height: 16px;
+          background: white;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .slider::-moz-range-thumb {
+          width: 16px;
+          height: 16px;
+          background: white;
+          border-radius: 50%;
+          cursor: pointer;
+          border: none;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+      `}</style>
+    </div>
+  )
+}
+
+export default FullPlayer
+```
+
+### `client/src/pages/HomePage.tsx`
+
+```typescript
+import React, { useState, useEffect, useMemo } from 'react'
+import { Brain, Heart, Zap, Search, Filter } from 'lucide-react'
+import { useQuery } from '@tanstack/react-query'
+import { SupabaseService } from '@/services/supabase'
+import { useAudio } from '@/context/AudioContext'
+import FrequencyBand from '@/components/FrequencyBand'
+import TrackCard from '@/components/TrackCard'
+import { LoadingSpinner, InlineLoadingSpinner } from '@/components/LoadingSpinner'
+import type { FrequencyBand as FrequencyBandType, MusicTrack } from '@/types'
+
+export const HomePage: React.FC = () => {
+  const [selectedBand, setSelectedBand] = useState<FrequencyBandType | 'all'>('all')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedCondition, setSelectedCondition] = useState<string>('')
+  const { setPlaylist } = useAudio()
+
+  // Fetch tracks with React Query
+  const { 
+    data: tracks = [], 
+    isLoading, 
+    error, 
+    refetch 
+  } = useQuery({
+    queryKey: ['tracks', selectedBand, selectedCondition],
+    queryFn: () => SupabaseService.fetchTracks({
+      bandFilter: selectedBand,
+      condition: selectedCondition || undefined,
+      limit: 50
+    }),
+    staleTime: 5 * 60 * 1000, // 5 minutes
+    retry: 3
+  })
+
+  // Set playlist when tracks change
+  useEffect(() => {
+    if (tracks.length > 0) {
+      setPlaylist(tracks)
+    }
+  }, [tracks, setPlaylist])
+
+  // Filter tracks by search query
+  const filteredTracks = useMemo(() => {
+    if (!searchQuery.trim()) return tracks
+    
+    const query = searchQuery.toLowerCase()
+    return tracks.filter(track => 
+      track.title.toLowerCase().includes(query) ||
+      track.genre.toLowerCase().includes(query) ||
+      track.therapeutic_applications.some(app =>
+        app.condition_targets.some(condition =>
+          condition.toLowerCase().includes(query)
+        )
+      )
+    )
+  }, [tracks, searchQuery])
+
+  // Get track counts by frequency band
+  const bandCounts = useMemo(() => {
+    const counts = tracks.reduce((acc, track) => {
+      const band = track.therapeutic_applications[0]?.frequency_band_primary
+      if (band) {
+        acc[band] = (acc[band] || 0) + 1
+      }
+      return acc
+    }, {} as Record<FrequencyBandType, number>)
+    
+    return counts
+  }, [tracks])
+
+  // Get unique conditions for filter
+  const availableConditions = useMemo(() => {
+    const conditions = new Set<string>()
+    tracks.forEach(track => {
+      track.therapeutic_applications.forEach(app => {
+        app.condition_targets.forEach(condition => conditions.add(condition))
+      })
+    })
+    return Array.from(conditions).sort()
+  }, [tracks])
+
+  const handleBandFilter = (band: FrequencyBandType) => {
+    setSelectedBand(selectedBand === band ? 'all' : band)
+  }
+
+  const clearFilters = () => {
+    setSelectedBand('all')
+    setSelectedCondition('')
+    setSearchQuery('')
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+        <div className="text-center p-8">
+          <div className="text-red-500 text-6xl mb-4">⚠️</div>
+          <h2 className="text-2xl font-bold text-white mb-4">Failed to Load Tracks</h2>
+          <p className="text-gray-400 mb-6">
+            {error instanceof Error ? error.message : 'Something went wrong'}
+          </p>
+          <button
+            onClick={() => refetch()}
+            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition-colors"
+          >
+            Try Again
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-900 text-white">
+      {/* Header */}
+      <header className="bg-gradient-to-r from-purple-900 via-blue-900 to-teal-900 p-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-4 mb-6">
+            <Brain size={48} className="text-purple-400" />
+            <div>
+              <h1 className="text-4xl font-bold">NeuroTunes Elite</h1>
+              <p className="text-gray-300 text-lg">Evidence-Based Therapeutic Music</p>
+            </div>
+          </div>
+          
+          <div className="flex flex-wrap items-center gap-6 text-sm">
+            <div className="flex items-center gap-2">
+              <Heart className="text-red-400" size={18} />
+              <span>Clinical Research</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Zap className="text-yellow-400" size={18} />
+              <span>Brainwave Entrainment</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Brain className="text-purple-400" size={18} />
+              <span>Therapeutic Applications</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto p-6">
+        {/* Search and Filters */}
+        <section className="mb-8">
+          <div className="flex flex-col lg:flex-row gap-4 mb-6">
+            {/* Search */}
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+              <input
+                type="text"
+                placeholder="Search tracks, genres, or conditions..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+            </div>
+
+            {/* Condition Filter */}
+            <div className="relative">
+              <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+              <select
+                value={selectedCondition}
+                onChange={(e) => setSelectedCondition(e.target.value)}
+                className="pl-10 pr-8 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none cursor-pointer"
+              >
+                <option value="">All Conditions</option>
+                {availableConditions.map(condition => (
+                  <option key={condition} value={condition}>
+                    {condition.replace('_', ' ')}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Clear Filters */}
+            {(selectedBand !== 'all' || selectedCondition || searchQuery) && (
+              <button
+                onClick={clearFilters}
+                className="px-4 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-xl transition-colors"
+              >
+                Clear Filters
+              </button>
+            )}
+          </div>
+        </section>
+
+        {/* Frequency Band Selector */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-6">Select Brainwave Frequency</h2>
+          {isLoading ? (
+            <InlineLoadingSpinner text="Loading frequency bands..." />
+          ) : (
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {(['delta', 'theta', 'alpha', 'beta', 'gamma'] as FrequencyBandType[]).map((band) => (
+                <FrequencyBand
+                  key={band}
+                  band={band}
+                  isActive={selectedBand === band}
+                  onClick={handleBandFilter}
+                  count={bandCounts[band] || 0}
+                />
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* Track Library */}
+        <section>
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold">
+              {selectedBand === 'all' 
+                ? 'All Therapeutic Tracks' 
+                : `${selectedBand.charAt(0).toUpperCase() + selectedBand.slice(1)} Band Tracks`
+              }
+              {selectedCondition && (
+                <span className="text-lg font-normal text-purple-400 ml-2">
+                  for {selectedCondition.replace('_', ' ')}
+                </span>
+              )}
+            </h2>
+            <span className="text-gray-400">
+              {filteredTracks.length} track{filteredTracks.length !== 1 ? 's' : ''}
+            </span>
+          </div>
+
+          {isLoading ? (
+            <InlineLoadingSpinner text="Loading tracks..." />
+          ) : filteredTracks.length === 0 ? (
+            <div className="text-center py-12">
+              <div className="text-6xl mb-4">🎵</div>
+              <h3 className="text-xl font-bold text-gray-300 mb-2">No tracks found</h3>
+              <p className="text-gray-400 mb-4">
+                {searchQuery || selectedBand !== 'all' || selectedCondition
+                  ? 'Try adjusting your filters or search terms'
+                  : 'No tracks have been uploaded yet'
+                }
+              </p>
+              {(searchQuery || selectedBand !== 'all' || selectedCondition) && (
+                <button
+                  onClick={clearFilters}
+                  className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl transition-colors"
+                >
+                  Clear All Filters
+                </button>
+              )}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {filteredTracks.map((track) => (
+                <TrackCard key={track.id} track={track} />
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* Stats Section */}
+        {tracks.length > 0 && (
+          <section className="mt-12 p-6 bg-gray-800/50 rounded-2xl">
+            <h3 className="text-xl font-bold mb-4">Library Statistics</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-purple-400">{tracks.length}</div>
+                <div className="text-sm text-gray-400">Total Tracks</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-400">
+                  {Object.keys(bandCounts).length}
+                </div>
+                <div className="text-sm text-gray-400">Frequency Bands</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-teal-400">
+                  {availableConditions.length}
+                </div>
+                <div className="text-sm text-gray-400">Conditions</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-green-400">
+                  {tracks.filter(t => 
+                    t.therapeutic_applications.some(app => 
+                      (app.anxiety_evidence_score || 0) > 0.7 ||
+                      (app.focus_evidence_score || 0) > 0.7 ||
+                      (app.sleep_evidence_score || 0) > 0.7
+                    )
+                  ).length}
+                </div>
+                <div className="text-sm text-gray-400">High Evidence</div>
+              </div>
+            </div>
+          </section>
+        )}
+      </main>
+    </div>
+  )
+}
+
+export default HomePage
+```
+
+-----
+
+## 🖥️ Backend Code
+
+### `server/index.ts`
+
+```typescript
+import express from 'express'
+import { attachFrontend } from './vite.js'
+import { setupSecurity } from './middleware/security.js'
+import { requestLogger, errorHandler } from './middleware/logging.js'
+import healthRouter from './routes/health.js'
+
+const app = express()
+
+// Security middleware
+setupSecurity(app)
+
+// Logging
+app.use(requestLogger)
+
+// Parse JSON
+app.use(express.json({ limit: '10mb' }))
+
+// API Routes
+app.use('/api/health', healthRouter)
+
+// Catch-all API error handler
+app.use('/api/*', (req, res) => {
+  res.status(404).json({ error: 'API endpoint not found' })
+})
+
+// Frontend attachment (Vite dev or static prod)
+await attachFrontend(app, {
+  mode: process.env.NODE_ENV as 'development' | 'production',
+})
+
+// Error handler (must be last)
+app.use(errorHandler)
+
+const port = Number(process.env.PORT) || 5000
+const server = app.listen(port, () => {
+  console.log(`🎵 NeuroTunes Elite Server`)
+  console.log(`🚀 Running on http://localhost:${port}`)
+  console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`)
+  console.log(`⏰ Started at: ${new Date().toISOString()}`)
+})
+
+// Graceful shutdown
+process.on('SIGTERM', () => {
+  console.log('Received SIGTERM, shutting down gracefully...')
+  server.close(() => {
+    console.log('Server closed')
+    process.exit(0)
+  })
+})
+```
+
+### `server/vite.ts`
+
+```typescript
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import type { Express, Request, Response, NextFunction } from 'express'
+
+type AttachOptions = {
+  mode?: 'development' | 'production'
+  clientDir?: string
+}
+
+export async function attachFrontend(app: Express, options: AttachOptions = {}) {
+  const mode = options.mode ?? (process.env.NODE_ENV as 'development' | 'production') ?? 'development'
+  
+  // ESM-friendly __dirname
+  const __filename = fileURLToPath(import.meta.url)
+  const __dirname = path.dirname(__filename)
+  const projectRoot = path.resolve(__dirname, '..')
+  const clientDir = options.clientDir ?? path.resolve(projectRoot, 'client')
+
+  // Validate client directory exists
+  if (!fs.existsSync(clientDir) || !fs.statSync(clientDir).isDirectory()) {
+    throw new Error(`Client directory not found: ${clientDir}`)
+  }
+
+  if (mode === 'development') {
+    console.log('🔧 Starting Vite dev server...')
+    
+    const { createServer: createViteServer } = await import('vite')
+    
+    const vite = await createViteServer({
+      root: clientDir,
+      appType: 'custom',
+      server: { 
+        middlewareMode: true,
+        hmr: { port: 3001 }
+      },
+      logLevel: 'info'
+    })
+
+    app.use(vite.middlewares)
+
+    // Catch-all handler for SPA
+    app.use('*', async (req: Request, res: Response, next: NextFunction) => {
+      try {
+        const indexPath = path.resolve(clientDir, 'index.html')
+        let html = fs.readFileSync(indexPath, 'utf-8')
+        
+        // Transform HTML with Vite
+        html = await vite.transformIndexHtml(req.originalUrl, html)
+        
+        res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
+      } catch (error) {
+        console.error('Vite SSR error:', error)
+        next(error)
+      }
+    })
+
+    console.log('✅ Vite dev server ready')
+  } else {
+    // Production mode - serve static files
+    console.log('📦 Serving production build...')
+    
+    const distDir = path.resolve(projectRoot, 'dist/client')
+    
+    if (!fs.existsSync(distDir) || !fs.statSync(distDir).isDirectory()) {
+      throw new Error(`Production build not found: ${distDir}. Run 'npm run build' first.`)
+    }
+
+    // Import serve-static dynamically
+    const { default: serveStatic } = await import('serve-static')
+    
+    // Serve static files
+    app.use(serveStatic(distDir, {
+      index: false,
+      fallthrough: true,
+      maxAge: '1y',
+      setHeaders: (res, path) => {
+        // Cache HTML files for less time
+        if (path.endsWith('.html')) {
+          res.setHeader('Cache-Control', 'public, max-age=300') // 5 minutes
+        }
+      }
+    }))
+
+    // SPA fallback
+    const indexHtmlPath = path.resolve(distDir, 'index.html')
+    
+    if (!fs.existsSync(indexHtmlPath)) {
+      throw new Error(`index.html not found in ${distDir}`)
+    }
+
+    app.get('*', (req: Request, res: Response) => {
+      res.sendFile(indexHtmlPath)
+    })
+
+    console.log('✅ Production build ready')
+  }
+}
+```
+
+### `server/middleware/security.ts`
+
+```typescript
+import helmet from 'helmet'
+import cors from 'cors'
+import rateLimit from 'express-rate-limit'
+import type { Express } from 'express'
+
+export function setupSecurity(app: Express) {
+  // Security headers
+  app.use(helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+        scriptSrc: ["'self'"],
+        fontSrc: ["'self'", "https://fonts.gstatic.com"],
+        imgSrc: ["'self'", "data:", "https:"],
+        mediaSrc: ["'self'", "https://*.supabase.co"],
+        connectSrc: ["'self'", "https://*.supabase.co"]
+      }
+    },
+    crossOriginEmbedderPolicy: false
+  }))
+
+  // CORS
+  const allowedOrigins = process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:3000']
+  app.use(cors({
+    origin: allowedOrigins,
+    credentials: true
+  }))
+
+  // Rate limiting
+  const limiter = rateLimit({
+    windowMs: parseInt(process.env.RATE_LIMIT_WINDOW || '15') * 60 * 1000, // Default 15 minutes
+    max: parseInt(process.env.RATE_LIMIT_MAX || '100'), // Default 100 requests
+    message: {
+      error: 'Too many requests from this IP, please try again later.',
+      retryAfter: '15 minutes'
+    },
+    standardHeaders: true,
+    legacyHeaders: false
+  })
+  
+  app.use('/api/', limiter)
+}
+```
+
+### `server/middleware/logging.ts`
+
+```typescript
+import type { Request, Response, NextFunction } from 'express'
+
+export function requestLogger(req: Request, res: Response, next: NextFunction) {
+  const start = Date.now()
+  const originalUrl = req.originalUrl
+  const method = req.method
+  const ip = req.ip || req.connection.remoteAddress
+  const userAgent = req.get('User-Agent')
+
+  res.on('finish', () => {
+    const duration = Date.now() - start
+    const status = res.statusCode
+    
+    console.log(`${new Date().toISOString()} - ${method} ${originalUrl} ${status} ${duration}ms - ${ip} - ${userAgent}`)
+    
+    // Log errors
+    if (status >= 400) {
+      console.error(`Error ${status}: ${method} ${originalUrl} - Duration: ${duration}ms`)
+    }
+  })
+
+  next()
+}
+
+export function errorHandler(error: Error, req: Request, res: Response, next: NextFunction) {
+  console.error(`${new Date().toISOString()} - Error:`, {
+    message: error.message,
+    stack: error.stack,
+    url: req.originalUrl,
+    method: req.method,
+    ip: req.ip,
+    userAgent: req.get('User-Agent')
+  })
+
+  // Don't leak error details in production
+  const isDevelopment = process.env.NODE_ENV === 'development'
+  
+  res.status(500).json({
+    error: isDevelopment ? error.message : 'Internal server error',
+    ...(isDevelopment && { stack: error.stack })
+  })
+}
+```
+
+### `server/routes/health.ts`
+
+```typescript
+import { Router } from 'express'
+import { createClient } from '@supabase/supabase-js'
+
+const router = Router()
+
+// Health check endpoint
+router.get('/', async (req, res) => {
+  try {
+    const healthCheck = {
+      status: 'ok',
+      timestamp: new Date().toISOString(),
+      uptime: process.uptime(),
+      environment: process.env.NODE_ENV || 'development',
+      version: '2.0.0'
+    }
+
+    // Test database connection if in production
+    if (process.env.NODE_ENV === 'production' && process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      try {
+        const supabase = createClient(
+          process.env.VITE_SUPABASE_URL!,
+          process.env.SUPABASE_SERVICE_ROLE_KEY
+        )
+        
+        const { error } = await supabase.from('music_tracks').select('id').limit(1)
+        
+        if (error) throw error
+        
+        healthCheck.database = 'connected'
+      } catch (dbError) {
+        healthCheck.database = 'error'
+        healthCheck.status = 'degraded'
+      }
+    }
+
+    const statusCode = healthCheck.status === 'ok' ? 200 : 503
+    res.status(statusCode).json(healthCheck)
+  } catch (error) {
+    console.error('Health check failed:', error)
+    res.status(503).json({
+      status: 'error',
+      timestamp: new Date().toISOString(),
+      error: 'Health check failed'
+    })
+  }
+})
+
+export default router
+```
+
+-----
+
+## 🗄️ Database Schema
+
+### `database/schema.sql`
+
+```sql
+-- NeuroTunes Elite Database Schema
+-- Run this in your Supabase SQL editor
+
+-- Music tracks table (already exists from your earlier schema)
+-- Ensure all required columns are present
+ALTER TABLE music_tracks 
+ADD COLUMN IF NOT EXISTS file_path TEXT,
+ADD COLUMN IF NOT EXISTS bucket_name TEXT DEFAULT 'neurotunes-music',
+ADD COLUMN IF NOT EXISTS file_size BIGINT,
+ADD COLUMN IF NOT EXISTS file_type TEXT,
+ADD COLUMN IF NOT EXISTS original_filename TEXT,
+ADD COLUMN IF NOT EXISTS upload_status TEXT DEFAULT 'pending' CHECK (upload_status IN ('pending', 'uploading', 'completed', 'failed'));
+
+-- Therapeutic sessions tracking table
+CREATE TABLE IF NOT EXISTS therapeutic_sessions (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  track_id UUID NOT NULL REFERENCES music_tracks(id) ON DELETE CASCADE,
+  duration_seconds INTEGER NOT NULL,
+  frequency_band TEXT NOT NULL CHECK (frequency_band IN ('delta', 'theta', 'alpha', 'beta', 'gamma')),
+  session_timestamp TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+  user_id UUID, -- For future user tracking
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Create optimized indexes
+CREATE INDEX IF NOT EXISTS idx_therapeutic_sessions_track_id ON therapeutic_sessions(track_id);
+CREATE INDEX IF NOT EXISTS idx_therapeutic_sessions_timestamp ON therapeutic_sessions(session_timestamp);
+CREATE INDEX IF NOT EXISTS idx_therapeutic_sessions_frequency ON therapeutic_sessions(frequency_band);
+
+CREATE INDEX IF NOT EXISTS idx_music_tracks_upload_status ON music_tracks(upload_status) WHERE upload_status = 'completed';
+CREATE INDEX IF NOT EXISTS idx_music_tracks_genre_energy ON music_tracks(genre, energy) WHERE upload_status = 'completed';
+CREATE INDEX IF NOT EXISTS idx_therapeutic_evidence_compound ON therapeutic_applications(anxiety_evidence_score, sleep_evidence_score, focus_evidence_score) WHERE anxiety_evidence_score IS NOT NULL OR sleep_evidence_score IS NOT NULL OR focus_evidence_score IS NOT NULL;
+
+-- Enable Row Level Security
+ALTER TABLE therapeutic_sessions ENABLE ROW LEVEL SECURITY;
+
+-- RLS Policies
+CREATE POLICY "Allow public read access on therapeutic_sessions" ON therapeutic_sessions FOR SELECT USING (true);
+CREATE POLICY "Allow authenticated insert on therapeutic_sessions" ON therapeutic_sessions FOR INSERT WITH CHECK (auth.role() = 'authenticated' OR true);
+
+-- Storage policies for neurotunes-music bucket
+-- Run these in Supabase dashboard or via client
+-- Allow public read access
+INSERT INTO storage.policies (id, bucket_id, name, definition, check, command)
+VALUES (
+  gen_random_uuid(),
+  'neurotunes-music',
+  'Allow public read access',
+  '(bucket_id = ''neurotunes-music'')',
+  '(bucket_id = ''neurotunes-music'')',
+  'SELECT'
+) ON CONFLICT DO NOTHING;
+
+-- Allow authenticated upload
+INSERT INTO storage.policies (id, bucket_id, name, definition, check, command)
+VALUES (
+  gen_random_uuid(),
+  'neurotunes-music', 
+  'Allow authenticated upload',
+  '(bucket_id = ''neurotunes-music'' AND auth.role() = ''authenticated'')',
+  '(bucket_id = ''neurotunes-music'' AND auth.role() = ''authenticated'')',
+  'INSERT'
+) ON CONFLICT DO NOTHING;
+```
+
+-----
+
+## 📖 README.md
+
+### `README.md`
+
+```markdown
+# NeuroTunes Elite 🧠🎵
+
+Evidence-based therapeutic music platform powered by neuroscience research.
+
+## ✨ Features
+
+- **🎯 Frequency-Targeted Therapy**: Delta, Theta, Alpha, Beta, Gamma brainwave entrainment
+- **📊 Evidence-Based**: Clinical research integration with effectiveness scores
+- **🎵 High-Quality Audio**: Optimized streaming for therapeutic applications
+- **📱 Responsive Design**: Works seamlessly on all devices
+- **🔊 Advanced Player**: Full-screen player with keyboard shortcuts
+- **📈 Session Tracking**: Monitor therapeutic usage and effectiveness
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+
+- Supabase account
+- Git
+
+### 1. Clone & Install
+```bash
+git clone https://github.com/yourusername/neurotunes-elite
+cd neurotunes-elite
+npm install
+```
+
+### 2. Environment Setup
+
+```bash
+cp .env.example .env
+# Edit .env with your Supabase credentials
+```
+
+### 3. Database Setup
+
+1. Create new Supabase project
+1. Run the SQL schema in `database/schema.sql`
+1. Create `neurotunes-music` storage bucket
+1. Set bucket to public
+
+### 4. Development
+
+```bash
+npm run dev
+# Frontend: http://localhost:3000
+# Backend: http://localhost:5000
+```
+
+### 5. Production Build
+
+```bash
+npm run build
+npm start
+```
+
+## 🌐 Deployment
+
+### Lovable.dev (Development
